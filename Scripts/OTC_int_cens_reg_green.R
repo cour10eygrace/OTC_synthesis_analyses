@@ -1,6 +1,6 @@
 ##load and organize data----
-load("data/Courtney/OTC_analysis/greenupdata.RData")
-subsites<-read.csv("data/LOOKUPS/subsites.csv") 
+load("Data/Phenology.data/greenupdata.RData")
+subsites<-read.csv("Data/LOOKUPS/subsites.csv") 
 
 library(brms)
 library(dplyr)#make sure plyr is not on
@@ -104,7 +104,7 @@ fit_m6x_green<- brm(m6x, data = regmodsx, control = list(adapt_delta=0.99, max_t
 save(fit_m6x_green, file="fit_m6x_green.Rdata")
 
 #add in climate info 
-load("data/Courtney/OTC_analysis/climate_phenology.Rdata")
+load("Data/Climate.data/climate_phenology.Rdata")
 regmodsx<-left_join(regmodsx, avg_clim_green)
 regmodsx<-filter(regmodsx, !is.na(siteT)) #NAs mean that more than 5 days of the prior-period were infilled 
 
