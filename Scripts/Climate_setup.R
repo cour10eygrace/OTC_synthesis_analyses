@@ -62,21 +62,8 @@ clim_infilled<-rename(clim_infilled, sub_name=subsite)%>%
 clim2<-left_join(clim_itex_OTC, clim_infilled)
 clim3<-mutate(clim2, av_air_temp_C=ifelse(is.na(av_air_temp_C), final_tmean, av_air_temp_C))
 
-##load OTC models to determine site-years for each phenophase
-load("fit_m2x_flow.Rdata") 
-load("fit_m2x_flowend.Rdata") 
-load("fit_m2x_green.Rdata") 
-load("fit_m2x_sen.Rdata") 
-load("fit_m2x_fruit.Rdata") 
-load("fit_m2x_disp.Rdata") 
-#pull out all site years that went into models
-flowsiteyrs<-fit_m2x_flow$data%>%select(site_name:year)%>%distinct(.)%>%unite(siteyr, site_name, year, remove=FALSE)
-flowendsiteyrs<-fit_m2x_flowend$data%>%select(site_name:year)%>%distinct(.)%>%unite(siteyr, site_name, year, remove=FALSE)
-greensiteyrs<-fit_m2x_green$data%>%select(site_name:year)%>%distinct(.)%>%unite(siteyr, site_name, year, remove=FALSE)
-sensiteyrs<-fit_m2x_sen$data%>%select(site_name:year)%>%distinct(.)%>%unite(siteyr, site_name, year, remove=FALSE)
-dispsiteyrs<-fit_m2x_disp$data%>%select(site_name:year)%>%distinct(.)%>%unite(siteyr, site_name, year, remove=FALSE)
-fruitsiteyrs<-fit_m2x_fruit$data%>%select(site_name:year)%>%distinct(.)%>%unite(siteyr, site_name, year, remove=FALSE)
-allsiteyrs<-rbind(flowsiteyrs, flowendsiteyrs, greensiteyrs, sensiteyrs, fruitsiteyrs, dispsiteyrs)%>%distinct(.)
+#pull out all modeled site years 
+allsiteyrs<-read.csv("Data/Climate.data/site_years.csv")
 
 #filter climate dataset by relevant site years
 clim4<-filter(clim3, siteyear %in% allsiteyrs$siteyr)
