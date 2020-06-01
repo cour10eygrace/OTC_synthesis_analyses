@@ -17,7 +17,7 @@ library(Taxonstand)
 
 ### Combine subsite data for all file
 # -- READ SUBSITE LIST ----
-subsites=read.csv('data/LOOKUPS/subsites.csv')
+subsites=read.csv('Data/LOOKUPS/subsites.csv')
 #select subsites with OTCs
 subsites<- filter(subsites, grepl(pattern = "OTC", x = TRT))
 subsites<-subset(subsites, ready=="TRUE")
@@ -31,10 +31,10 @@ for (i in 1:nrow(subsites)){
     s=subsites$subsite[i]
     cat(paste0("reading subsite ", s))
     cat ('\n')
-    all_phen[[s]]=read.csv(paste0('data/', s, '/', s, '.phen.csv'))
-    all_qual[[s]]=read.csv(paste0('data/', s, '/', s, '.qual.csv'))
+    all_phen[[s]]=read.csv(paste0('Data/Phenology.data', s, '/', s, '.phen.csv'))
+    all_qual[[s]]=read.csv(paste0('Data/Phenology.data', s, '/', s, '.qual.csv'))
     if (subsites$sf_available[i])
-      all_sf[[s]]=read.csv(paste0('data/', s, '/', s, '.sf.csv'))
+      all_sf[[s]]=read.csv(paste0('Data/Phenology.data', s, '/', s, '.sf.csv'))
   }
 }
 
@@ -47,7 +47,7 @@ qual$X<-NULL
 
 ##standardize spp names 
 #read in species_table with new spp codes from TPL 
-species<-read.csv("data/lookups/species_table.csv")
+species<-read.csv("Data/LOOKUPS/species_table.csv")
 #replace spp codes in pheno with updated info from TPL
 pheno<-full_join(pheno, select(species, spp, New.spp))%>%filter(!is.na(site_name))
 missing<-subset(pheno, is.na(New.spp))#make sure this is zero
@@ -55,7 +55,7 @@ pheno$spp<-pheno$New.spp
 pheno$New.spp<-NULL
 
 #standardize phen stage names 
-phen_stages<-read.csv('data/LOOKUPS/phenophases.csv')
+phen_stages<-read.csv('Data/LOOKUPS/phenophases.csv')
 Green<-subset(phen_stages, simple_phen=="Green")
 Flower<- subset(phen_stages, simple_phen=="Flower")
 Flowerend<- subset(phen_stages, simple_phen=="FlowerEnd")
@@ -213,7 +213,7 @@ hist(green$doy-green$prior_visit)#all positive
 hist(sen$prior_visit)
 hist(sen$doy)
 hist(sen$doy-sen$prior_visit)#all positive 
-save(green, sen, file="data/Courtney/OTC_analysis/greenupdata.RData")
+save(green, sen, file="Data/Phenology.data/greenupdata.RData")
 
 
 #FLOWERING----
@@ -339,7 +339,7 @@ hist(flowerend$prior_visit)
 hist(flowerend$doy)
 hist(flowerend$doy-flowerend$prior_visit)#all positive 
 
-save(flower, flowerend, file="data/Courtney/OTC_analysis/flowerdata.RData")
+save(flower, flowerend, file="Data/Phenology.data/flowerdata.RData")
 
 #FRUITING----
 fruit<-filter(pheno, phen_stage %in% (Fruit$phen_stage))
@@ -464,5 +464,5 @@ hist(disp$prior_visit)
 hist(disp$doy)
 hist(disp$doy-disp$prior_visit)#all positive 
 
-save(fruit, disp, file="data/Courtney/OTC_analysis/fruitdata.RData")
+save(fruit, disp, file="Data/Phenology.data/fruitdata.RData")
 
