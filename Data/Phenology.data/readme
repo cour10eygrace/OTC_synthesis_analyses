@@ -1,0 +1,1 @@
+This is the folder where all phenology data are stored. Files ending in phen.csv have phenology observations by day of year and files ending in .quality scores for each observtion. All files are organized by subsite 
