@@ -1,1 +1,4 @@
-This is where all scripts for OTC analyses are stored. Script workflow is as follows.....
+This is where all scripts for OTC analyses are stored. Script workflow is as follows:
+1. OTC_CTL_setup.R- pulls in all raw phenology data and does QA/QC. Writes out 'phenophase'.Rdata files to be used in brms models 
+2. Climate_setup.R pulls in daily climate (temperature) data for all sites. Clculates site level temp averages (siteT) and year anomalies (siteyeardeltaT) based on average phenology windows for each site x species across years. Writes out Climate_phenology.Rdata to be used in brms models  
+3. OTC_int_cens_reg_'pheophase'.R- Separate script for each phenophase (green, flower, flowerend, disp, sen). Call in 'phenophase'.Rdata, and runs two step (survreg,brms) hierarchical models. Saves model outputs as .Rdata for post processing.
