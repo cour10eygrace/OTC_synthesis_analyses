@@ -2,11 +2,11 @@ library(dplyr)
 library(tidyr)
 
 #read in daily climate data and phenology data 
-clim<-read.csv("data/Climate.data/ITEX_daily_climate_data.csv", colClasses = c("factor", "factor", "numeric", "numeric", "numeric", "numeric", "numeric", 
+clim<-read.csv("Data/Climate.data/ITEX_daily_climate_data.csv", colClasses = c("factor", "factor", "numeric", "numeric", "numeric", "numeric", "numeric", 
                                                                              "numeric", "numeric"))
-load("data/Courtney/OTC_analysis/flowerdata.RData")
-load("data/Courtney/OTC_analysis/greenupdata.RData")
-load("data/Courtney/OTC_analysis/fruitdata.RData")
+load("Data/Phenology.data/flowerdata.RData")
+load("Data/Phenology.data/greenupdata.RData")
+load("Data/Phenology.data/fruitdata.RData")
 #make siteyear variable for sorting 
 clim<-unite(clim, siteyear, site_name, year, remove=FALSE)
 flower<-unite(flower, siteyear, site_name, year, remove=FALSE)
@@ -38,7 +38,7 @@ clim_itex_OTC<-group_by(clim_itex_OTC, siteyear, doy)%>%mutate(n=n())
 dup<-filter(clim_itex_OTC, n>1)#should be zero now 
 
 #read and organize infilled data 
-clim_infilled<-read.csv("data/Climate.data/infilled_data/infilled_daily_climate_data.csv")
+clim_infilled<-read.csv("Data/Climate.data/infilled_data/infilled_daily_climate_data.csv")
 clim_infilled<-rename(clim_infilled, sub_name=subsite)%>%
   mutate(site_name=case_when(sub_name=="ALEXFIORD.DRYAS.GH"~"ALEXFIORD", 
                              sub_name=="TOOLIK.USTOOLIKMOIST.JW"~"TOOLIK",
@@ -225,4 +225,4 @@ infill_disp<-left_join(avg_disp, clim4)%>% rowwise()%>% group_by(site_name,spp, 
 avg_clim_disp<-left_join(avg_clim_disp, select(infill_disp, site_name, spp, year,infill))%>%filter(infill<6)
 
 save(avg_clim_flower, avg_clim_flowerend, avg_clim_disp, avg_clim_fruit, avg_clim_green, avg_clim_sen, 
-     file="data/Courtney/OTC_analysis/climate_phenology.Rdata")
+     file="Data/Climate.data/climate_phenology.Rdata")
