@@ -1,5 +1,5 @@
 ##load and organize data----
-load("Data/Climate.data/greenupdata.RData")
+load("Data/Phenology.data/greenupdata.RData")
 subsites<-read.csv("Data/LOOKUPS/subsites.csv") 
 
 library(brms)
