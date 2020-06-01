@@ -1,9 +1,9 @@
 
 #courtney infilling----
-source('scripts/Courtney/Climate_infill_scripts.R')
+source('Scripts/Climate_infill_scripts.R')
 #these should be the same for all sites 
-itex_clim_path='data/Climate.data/ITEX_daily_climate_data.csv'
-ERA_clim_path="C:/Users/court/Downloads/ERA_export_ITEX_phen_04_28_2020.csv" #new from Sarah 
+itex_clim_path='Data/Climate.data/ITEX_daily_climate_data.csv'
+ERA_clim_path="Data/Climate.data/ERA_export_ITEX_phen_04_28_2020.csv" 
 daymet_clim_path=NULL
 site_order=c("ERA", "ITEX")
 
@@ -191,7 +191,7 @@ imnavait_infill%>%select(-DTR, -r2_DTR, -pval_DTR, -n_obs_DTR,-equation_DTR, -pr
 latnja_infill%>%select(-DTR, -r2_DTR, -pval_DTR, -n_obs_DTR,-equation_DTR, -proj.tmax,-proj.tmin,-adj.tmax, -adj.tmin, -final_tmax, -final_tmin),
 valberc_infill%>%select(-DTR, -r2_DTR, -pval_DTR, -n_obs_DTR,-equation_DTR, -proj.tmax,-proj.tmin,-adj.tmax, -adj.tmin, -final_tmax, -final_tmin))
 
-write.csv(all_missing_infill, "data/Climate.data/infilled_daily_climate_data_missingdates.csv")
+write.csv(all_missing_infill, "Data/Climate.data/infilled_daily_climate_data_missingdates.csv")
 
 
 #combine infilled all dates for testing later 
@@ -208,4 +208,4 @@ valberc_infill_all%>%select(-DTR, -r2_DTR, -pval_DTR, -n_obs_DTR,-equation_DTR, 
 
 all_infill<-filter(all_infill, !is.na(subsite))
 
-write.csv(all_infill, "data/Climate.data/infilled_daily_climate_data.csv")
+write.csv(all_infill, "Data/Climate.data/infilled_daily_climate_data.csv")
