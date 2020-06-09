@@ -35,16 +35,17 @@ options(mc.cores = parallel::detectCores())
 
 ```{r load models,echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
 #takes a minute 
-load("~/Git/Tundra-Phenology/data/Courtney/CU_Summit_output/sigmaT/final_models/fit_m2x_flow.Rdata")
-load("~/Git/Tundra-Phenology/data/Courtney/CU_Summit_output/sigmaT/final_models/fit_m2x_flowend.Rdata")
-load("~/Git/Tundra-Phenology/data/Courtney/CU_Summit_output/sigmaT/final_models/fit_m2x_green.Rdata")
-load("~/Git/Tundra-Phenology/data/Courtney/CU_Summit_output/sigmaT/final_models/fit_m2x_disp.Rdata")
-load("~/Git/Tundra-Phenology/data/Courtney/CU_Summit_output/sigmaT/final_models/fit_m2x_fruit.Rdata")
-load("~/Git/Tundra-Phenology/data/Courtney/CU_Summit_output/sigmaT/final_models/fit_m2x_sen.Rdata")
-load("~/Git/Tundra-Phenology/data/Courtney/CU_Summit_output/sigmaT/final_models/fit_m3x_green.Rdata")
-load("~/Git/Tundra-Phenology/data/Courtney/CU_Summit_output/sigmaT/final_models/fit_m5x_flow.Rdata")
-load("~/Git/Tundra-Phenology/data/Courtney/CU_Summit_output/sigmaT/final_models/fit_m6x_disp.Rdata")
-load("~/Git/Tundra-Phenology/data/Courtney/CU_Summit_output/sigmaT/final_models/fit_m7x_disp.Rdata")
+#update path to wherever you have stored brms model outputs 
+load("fit_m2x_flow.Rdata")
+load("fit_m2x_flowend.Rdata")
+load("fit_m2x_green.Rdata")
+load("fit_m2x_disp.Rdata")
+load("fit_m2x_fruit.Rdata")
+load("fit_m2x_sen.Rdata")
+load("fit_m3x_green.Rdata")
+load("fit_m5x_flow.Rdata")
+load("fit_m6x_disp.Rdata")
+load("fit_m7x_disp.Rdata")
 
 ```
 
@@ -296,7 +297,7 @@ xx<-unite(dat, all,spp, site_name, subsite, year, remove=F)%>%select(site_name,s
   mutate(diff=(OTC-CTL))%>%filter(!is.na(diff))
 
 #join with soil moisture info 
-subsites<-read.csv("~/Git/Tundra-Phenology/data/LOOKUPS/subsites.csv") 
+subsites<-read.csv("Data/LOOKUPS/subsites.csv") 
 moist<-filter(subsites,subsite %in% dat$subsite)%>%group_by( subsite)%>%select(subsite, commtype)%>%distinct(.)
 #reorder groups and shorten subsite names for plotting 
 xxx<-left_join(xx, moist)%>%mutate(order=case_when(commtype=="DRY"~1,
@@ -345,7 +346,7 @@ xx<-unite(dat, all,spp, site_name, subsite, year, remove=F)%>%select(site_name,s
   mutate(diff=(OTC-CTL))%>%filter(!is.na(diff))
 
 #join with OTC removal info 
-subsites<-read.csv("~/Git/Tundra-Phenology/data/LOOKUPS/subsites.csv") 
+subsites<-read.csv("Data/LOOKUPS/subsites.csv") 
 rem<-filter(subsites, site_name %in% dat$site_name & OTCWinterRemoval!="")%>%
   group_by(site_name)%>%select(site_name, OTCWinterRemoval)%>%distinct(.)
 
