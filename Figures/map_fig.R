@@ -43,7 +43,7 @@ text(sites_map, c("ADVENTDALEN", "ALEXFIORD",
                    "FAROE", "FINSE" ,"GAVIAPASS", 
         "HEALY", "IMNAVAIT",  "JAKOBSHORN", "KANGER",
         "LATNJA", "NIWOT", "TOOLIK" , "VALBERCLA", "WHITEMTNS"),
-                    font = 2, cex = 0.5,
+                    font = 2, cex = 0.75,
      col = c("#1B9E77", "#D95F02" ,"#7570B3" ,"#E7298A" ,"#66A61E", "#E6AB02" ,"#A6761D" ,"#666666","#4575B4"),
       pos = c(1,4,4,2,1,2,1,4,4,4,4,3,4,4,1,2,2,1), offset = 0.5, halo = F)
 
