@@ -53,12 +53,12 @@ load("fit_m7x_disp.Rdata")
 
 ```{r main OTC effects,  echo=FALSE, warning=FALSE, error=FALSE, message=F}
 #pull out m2x posteriors for main OTC effect
-postflow2<- as_tibble(fixef(fit_m2x_flow, summary=F))%>%select(-Intercept)
-postflowend2<- as_tibble(fixef(fit_m2x_flowend, summary=F))%>%select(-Intercept)
-postfruit2<- as_tibble(fixef(fit_m2x_fruit, summary=F))%>%select(-Intercept)
-postdisp2<- as_tibble(fixef(fit_m2x_disp,summary=F))%>%select(-Intercept)
-postgreen2<- as_tibble(fixef(fit_m2x_green, summary=F))%>%select(-Intercept)
-postsen2<- as_tibble(fixef(fit_m2x_sen, summary=F))%>%select(-Intercept)
+postflow2<- as_tibble(fixef(fit_m2x_flow, summary=F))%>%dplyr::select(-Intercept)
+postflowend2<- as_tibble(fixef(fit_m2x_flowend, summary=F))%>%dplyr::select(-Intercept)
+postfruit2<- as_tibble(fixef(fit_m2x_fruit, summary=F))%>%dplyr::select(-Intercept)
+postdisp2<- as_tibble(fixef(fit_m2x_disp,summary=F))%>%dplyr::select(-Intercept)
+postgreen2<- as_tibble(fixef(fit_m2x_green, summary=F))%>%dplyr::select(-Intercept)
+postsen2<- as_tibble(fixef(fit_m2x_sen, summary=F))%>%dplyr::select(-Intercept)
 
 flow_eti <- ci(postflow2, method = "ETI", ci= c(0.9, 0.95))%>%mutate(phen='Flower')
 flowend_eti <- ci(postflowend2, method = "ETI", ci =c(0.9, 0.95))%>%mutate(phen='Flowerend')
@@ -72,12 +72,12 @@ etiw<-pivot_wider(eti, names_from = "CI", values_from = c("CI_low", "CI_high"))
 
 ```{r posteriors,  echo=FALSE,  warning=FALSE, error=FALSE, message=F}
 #scale added here is the std dev of the OTC-CTL estimates for each phenophase to unscale the mean-centered doy data (see OYC_int_cens_reg scripts)
-postflow2<- as_tibble(fixef(fit_m2x_flow, summary=F))%>%select(-Intercept)%>%mutate(phen="Flower", scale=15.82, order=5)
-postflowend2<- as_tibble(fixef(fit_m2x_flowend, summary=F))%>%select(-Intercept)%>%mutate(phen="Flowerend", scale=15.75, order=4)
-postfruit2<- as_tibble(fixef(fit_m2x_fruit, summary=F))%>%select(-Intercept)%>%mutate(phen="Fruit", scale=16.21, order=3)
-postdisp2<- as_tibble(fixef(fit_m2x_disp, summary=F))%>%select(-Intercept)%>%mutate(phen="Disp",scale=21.35, order=2)
-postgreen2<- as_tibble(fixef(fit_m2x_green, summary=F))%>%select(-Intercept)%>%mutate(phen="Green", scale=11.85, order=6)
-postsen2<- as_tibble(fixef(fit_m2x_sen, summary=F))%>%select(-Intercept)%>%mutate(phen="Sen", scale=12.88, order=1)
+postflow2<- as_tibble(fixef(fit_m2x_flow, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Flower", scale=15.82, order=5)
+postflowend2<- as_tibble(fixef(fit_m2x_flowend, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Flowerend", scale=15.75, order=4)
+postfruit2<- as_tibble(fixef(fit_m2x_fruit, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Fruit", scale=16.21, order=3)
+postdisp2<- as_tibble(fixef(fit_m2x_disp, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Disp",scale=21.35, order=2)
+postgreen2<- as_tibble(fixef(fit_m2x_green, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Green", scale=11.85, order=6)
+postsen2<- as_tibble(fixef(fit_m2x_sen, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Sen", scale=12.88, order=1)
 
 post2<-as_tibble(rbind(postflow2, postflowend2, postfruit2, postgreen2, postdisp2, postsen2))
   
@@ -87,7 +87,7 @@ post2<-group_by(post2,phen) %>%
 
 #unscale estimates and CIs for Table 3
 scales<-select(post2, phen, scale)%>%distinct(.)
-est<-dplyr::select(post2, treatmentOTC,phen)%>%group_by(phen)%>%summarise(Estimate=mean(treatmentOTC))
+est<-dplyr::select(post2, treatmentOTC,phen)%>%dplyr::group_by(phen)%>%summarise(Estimate=mean(treatmentOTC))
 etiw<-left_join(etiw, scales)
 etiw<-left_join(etiw, est)
 etiw$Estimate<-etiw$Estimate*etiw$scale
@@ -117,10 +117,10 @@ post2<-left_join(post2, eti)
 post3<-pivot_wider(post2, names_from = "CI", values_from = c("CI_low", "CI_high"))
 
 ggplot(post3, aes(x = treatmentOTC*scale, fill= facet)) + 
-geom_vline(data = ddply(post3, "facet"), aes(xintercept=CI_low_90*scale),color="red",lty=2,size=1)+
-geom_vline(data = ddply(post3, "facet"), aes(xintercept=CI_high_90*scale), color="red",lty=2,size=1)+
-geom_vline(data = ddply(post3, "facet"), aes(xintercept=CI_low_95*scale),color="grey",lty=2,size=1)+
-geom_vline(data = ddply(post3, "facet"), aes(xintercept=CI_high_95*scale),color="grey",lty=2,size=1)+
+geom_vline(data = plyr::ddply(post3, "facet"), aes(xintercept=CI_low_90*scale),color="red",lty=2,size=1)+
+geom_vline(data = plyr::ddply(post3, "facet"), aes(xintercept=CI_high_90*scale), color="red",lty=2,size=1)+
+geom_vline(data = plyr::ddply(post3, "facet"), aes(xintercept=CI_low_95*scale),color="grey",lty=2,size=1)+
+geom_vline(data = plyr::ddply(post3, "facet"), aes(xintercept=CI_high_95*scale),color="grey",lty=2,size=1)+
       facet_wrap(~facet,ncol=1, strip.position="right")+
   xlim(-6,4)+ theme_classic()+
   geom_density()+ 
