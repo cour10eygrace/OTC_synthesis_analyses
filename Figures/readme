@@ -1,1 +1,3 @@
 This is where code for manuscript figures is stored 
+map_fig.R makes map Figure 
+OTC_synthesis_results.Rmd-creates tables and figures with model outputs. 
