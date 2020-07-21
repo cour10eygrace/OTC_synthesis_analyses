@@ -18,6 +18,9 @@ disp=disp%>%
   mutate(prior_visit = (prior_visit-mn)/sd)%>%
   mutate(doy = (doy-mn)/sd)
 
+#make table of all scaling factors 
+greenscales<-data.frame(mean=mn, sd=sd, phen='Green')
+
 #subset to subsite-years with both CTL and OTC 
 disp<-unite(disp, all, spp, subsite, year, remove=F)
 check<-group_by(disp, spp, subsite, year)%>%summarise(n = n_distinct(treatment))%>%filter(n>1)%>%
@@ -120,3 +123,7 @@ regmodsx=regmodsx%>%
 m7x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*siteT + treatment*siteyear_deltaT + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m7x_disp<- brm(m7x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
 save(fit_m7x_disp, file="fit_m7x_disp.Rdata")
+
+#add years warm data to scales 
+greenscales<-add_row(greenscales, mean=mn, sd=sd, phen='Greenxyrswarm')
+save(greenscales, file="data/Courtney/OTC_analysis/greenscale.Rdata")
