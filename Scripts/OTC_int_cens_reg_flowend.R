@@ -18,6 +18,11 @@ flowerend=flowerend%>%
   mutate(prior_visit = (prior_visit-mn)/sd)%>%
   mutate(doy = (doy-mn)/sd)
 
+#make table of all scaling factors 
+flowendscales<-data.frame(mean=mn, sd=sd, phen='Flowerend')
+save(flowendscales, file="data/Courtney/OTC_analysis/flowendscale.Rdata")
+
+
 #subset to subsite-years with both CTL and OTC 
 flowerend<-unite(flowerend, all, spp, subsite, year, remove=F)
 check<-group_by(flowerend, spp, subsite, year)%>%summarise(n = n_distinct(treatment))%>%filter(n>1)%>%
