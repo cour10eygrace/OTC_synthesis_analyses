@@ -8,7 +8,6 @@ output: html_document
 library(tidybayes)
 library(magrittr)
 library(dplyr)
-library(plyr)#may interfere with dplyr group_by and summarise 
 library(purrr)
 library(forcats)
 library(tidyr)
@@ -34,8 +33,7 @@ options(mc.cores = parallel::detectCores())
 
 
 ```{r load models,echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-#takes a minute 
-#update path to wherever you have stored brms model outputs 
+#takes a minute--update path to wherever you have stored brms model outputs 
 load("fit_m2x_flow.Rdata")
 load("fit_m2x_flowend.Rdata")
 load("fit_m2x_green.Rdata")
@@ -46,8 +44,18 @@ load("fit_m3x_green.Rdata")
 load("fit_m5x_flow.Rdata")
 load("fit_m6x_disp.Rdata")
 load("fit_m7x_disp.Rdata")
-
+#load back-scaling constants for each phenophase 
+load("~/Git/Tundra-Phenology/data/Courtney/OTC_analysis/greenscale.Rdata")
+load("~/Git/Tundra-Phenology/data/Courtney/OTC_analysis/senscale.Rdata")
+load("~/Git/Tundra-Phenology/data/Courtney/OTC_analysis/flowscale.Rdata")
+load("~/Git/Tundra-Phenology/data/Courtney/OTC_analysis/flowendscale.Rdata")
+load("~/Git/Tundra-Phenology/data/Courtney/OTC_analysis/fruitscale.Rdata")
+load("~/Git/Tundra-Phenology/data/Courtney/OTC_analysis/dispscale.Rdata")
+scales<-rbind(flowscales, flowendscales, fruitscales, dispscales, senscales, greenscales)
 ```
+
+
+
 
 ###Main OTC effects 
 
@@ -68,16 +76,17 @@ green_eti <- ci(postgreen2, method = "ETI", ci = c(0.9, 0.95))%>%mutate(phen='Gr
 sen_eti <- ci(postsen2, method = "ETI", ci = c(0.9, 0.95))%>%mutate(phen='Sen')
 eti<-rbind(flow_eti, flowend_eti, fruit_eti, disp_eti, green_eti, sen_eti)
 etiw<-pivot_wider(eti, names_from = "CI", values_from = c("CI_low", "CI_high"))
+
 ```
 
 ```{r posteriors,  echo=FALSE,  warning=FALSE, error=FALSE, message=F}
-#scale added here is the std dev of the OTC-CTL estimates for each phenophase to unscale the mean-centered doy data (see OYC_int_cens_reg scripts)
-postflow2<- as_tibble(fixef(fit_m2x_flow, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Flower", scale=15.82, order=5)
-postflowend2<- as_tibble(fixef(fit_m2x_flowend, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Flowerend", scale=15.75, order=4)
-postfruit2<- as_tibble(fixef(fit_m2x_fruit, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Fruit", scale=16.21, order=3)
-postdisp2<- as_tibble(fixef(fit_m2x_disp, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Disp",scale=21.35, order=2)
-postgreen2<- as_tibble(fixef(fit_m2x_green, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Green", scale=11.85, order=6)
-postsen2<- as_tibble(fixef(fit_m2x_sen, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Sen", scale=12.88, order=1)
+#scale come from see OTC_int_cens_reg scripts
+postflow2<- as_tibble(fixef(fit_m2x_flow, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Flower", scale=flowscales$sd, order=5)
+postflowend2<- as_tibble(fixef(fit_m2x_flowend, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Flowerend", scale=flowendscales$sd, order=4)
+postfruit2<- as_tibble(fixef(fit_m2x_fruit, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Fruit", scale=fruitscales$sd, order=3)
+postdisp2<- as_tibble(fixef(fit_m2x_disp, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Disp",scale=dispscales[1,2], order=2)
+postgreen2<- as_tibble(fixef(fit_m2x_green, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Green", scale=greenscales[1,2], order=6)
+postsen2<- as_tibble(fixef(fit_m2x_sen, summary=F))%>%dplyr::select(-Intercept)%>%mutate(phen="Sen", scale=senscales$sd, order=1)
 
 post2<-as_tibble(rbind(postflow2, postflowend2, postfruit2, postgreen2, postdisp2, postsen2))
   
@@ -97,7 +106,6 @@ etiw$CI_high_90<-etiw$CI_high_90*etiw$scale
 etiw$CI_high_95<-etiw$CI_high_95*etiw$scale
 
 ```
-
 *Fig 3*  
 * Model 2x posteriors with bayestest eti intervals 
 
@@ -179,7 +187,7 @@ site_name=="TOOLIK"~8, site_name=="DARING"~9))%>%
 
 #plot main plot with raw data 
 #unscale siteT and diff estimates 
-A <-ggplot(data=xxx, aes(x = (siteT*2.25)+7.67, y=diff*21.35, 
+A <-ggplot(data=xxx, aes(x = (siteT*dispscales[2,2])+dispscales[2,1], y=diff*dispscales[1,2], 
                        color=reorder(site_name, order)))+
   geom_point(alpha=0.2, position="jitter")+
   geom_hline(yintercept = 0, lty=2)+labs(color="Site")+
@@ -191,6 +199,8 @@ A <-ggplot(data=xxx, aes(x = (siteT*2.25)+7.67, y=diff*21.35,
 
 #add model predline 
 #MAKE NEW DATA with OTC and CTL at 5 temps within actual ranges for site T, siteyr deltaT & stderr (values are mean centered)
+#hist(fit_m7x_disp$data$siteT)
+#summary(fit_m7x_disp)#siteT est error=0.09
 nd <- tibble(
   siteT = c(-2, -1, 0, 1, 2,-2, -1, 0, 1, 2),
    std.error=c(0.1,0.1,0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1), 
@@ -216,12 +226,13 @@ f<-group_by(f, siteT)%>%pivot_wider(names_from = treatment,
 
 #plot predline 
 f_plot<-
-  ggplot(data=f, aes(x = (siteT*2.25)+7.67, y = diff*21.35)) +
-  geom_ribbon(aes(ymin = diff.Q10*21.35, ymax = diff.Q90*21.35),
+  ggplot(data=f, aes(x = (siteT*dispscales[2,2])+dispscales[2,1], y = diff*dispscales[1,2])) +
+  geom_ribbon(aes(ymin = diff.Q10*dispscales[1,2], ymax = diff.Q90*dispscales[1,2]),
               fill = "grey", alpha=0.1) +
    xlim(3,13)+ geom_line()+
        theme(panel.background = element_blank())+
           ylim(-20, 17) + transparent_theme 
+
 
 # Create the external graphical elements called a 'grop' in Grid terminology
 p2_grob = ggplotGrob(f_plot)
@@ -243,7 +254,10 @@ xx<-  unite(dat, all,spp, site_name, subsite, year, remove=F)%>%
 
 #plot main plot with raw data 
 #unscale yearswarm and diff estimates 
-B<-ggplot(data=xx, aes(x = (years_warm*7.88)+11, y=diff*11.85, 
+#hist(fit_m3x_green$data$years_warm)
+#summary(fit_m3x_green)#years_warm est error=0.06
+
+B<-ggplot(data=xx, aes(x = (years_warm*greenscales[2,2])+greenscales[2,1], y=diff*greenscales[1,2], 
                  color=year))+ 
   scale_color_viridis_c(limits=c(1992, 2019), 
                         breaks=c(1992, 2000, 2010, 2019),
@@ -282,8 +296,8 @@ f<-group_by(f, years_warm)%>%pivot_wider(names_from = treatment,
 
 #plot predline 
 f_plot<-
-  ggplot(data=f, aes(x = (years_warm*7.88)+11.38 , y = diff*11.85)) +
-    geom_ribbon(aes(ymin = diff.Q10*11.85, ymax = diff.Q90*11.85),
+  ggplot(data=f, aes(x = (years_warm*greenscales[2,2])+greenscales[2,1] , y = diff*greenscales[1,2])) +
+    geom_ribbon(aes(ymin = diff.Q10*greenscales[1,2], ymax = diff.Q90*greenscales[1,2]),
               fill = "grey", alpha=1) +
   geom_line() +  
   transparent_theme+
@@ -339,7 +353,7 @@ postm5xflow<-select(postm5xflow, DRY, MOIST, WET)%>%
   pivot_longer(cols=c(DRY, MOIST, WET), names_to = "commtype", values_to = "value")
 
 #Density plots for calculated pairwise differences w transparent background 
-xdensity <- ggplot(postm5xflow, aes(x=value*15.82)) + geom_density(aes(fill=commtype), alpha=0.8) +
+xdensity <- ggplot(postm5xflow, aes(x=value*flowscales$sd)) + geom_density(aes(fill=commtype), alpha=0.8) +
   theme_classic()+ 
   transparent_theme+
   ggtitle(expression(Delta*"Days (OTC - CTL) Flowering"))+
@@ -372,7 +386,7 @@ xxx<-left_join(xx, rem)%>%mutate(order=case_when(OTCWinterRemoval=="Y"~2,
   mutate(xtra=ifelse(is.na(xtra),xtra,inits))%>%unite(sub_name, sub, xtra, na.rm=T)
 
 #ggplot of replicate OTC-CTL differences by subsite and winter removal 
-D<-ggplot(data=xxx, aes(x = reorder(sub_name,order), y=(diff*21.35), fill=OTCWinterRemoval, order=order)) + geom_boxplot()+theme_classic()+
+D<-ggplot(data=xxx, aes(x = reorder(sub_name,order), y=(diff*dispscales[1,2]), fill=OTCWinterRemoval, order=order)) + geom_boxplot()+theme_classic()+
   labs(fill="OTC winter removal")+ ylab(expression(Delta*"Days (OTC - CTL)"))+
   theme(axis.text.x = element_text(angle = 90, hjust = 1 ,size=8))+
   geom_hline(yintercept = 0, color='grey', lty=2)+ xlab(' ')+ ylim(-20,20)
@@ -388,7 +402,7 @@ postm6xdisp<-select(postm6xdisp, N,Y)%>%
   pivot_longer(cols=c(N,Y), names_to = "OTC_WinterRemoval", values_to = "value")
 
 #Density plots for calculated pairwise differences w transparent background 
-xdensity <- ggplot(postm6xdisp, aes(x=value*21.35)) + geom_density(aes(fill=OTC_WinterRemoval), alpha=0.8) +
+xdensity <- ggplot(postm6xdisp, aes(x=value*dispscales[1,2])) + geom_density(aes(fill=OTC_WinterRemoval), alpha=0.8) +
   theme_classic()+ 
   transparent_theme+
   ggtitle(expression(Delta*"Days (OTC - CTL) Dispersal"))+
@@ -405,6 +419,7 @@ d<-  D + annotation_custom(grob = p2_grob, ymin = 12, ymax = 22)
 gridExtra::grid.arrange(c, d, ncol=2)
 
 ```
+
 ```{r}
 #calculate posteriors and CIs for interactions-Table 3
 #categorical 
@@ -414,7 +429,7 @@ postm6xdisp<- as_tibble(posterior_samples(fit_m6x_disp, pars =
 #calculate pairwise difference 
 postm6xdisp$N<-postm6xdisp$b_treatmentOTC
 postm6xdisp$Y<-postm6xdisp$`b_treatmentOTC:OTCWinterRemovalY`+postm6xdisp$N
-postm6xdisp<-mutate(postm6xdisp, diff=Y-N, Estimate=mean(diff), scale=21.35, phen="disp")
+postm6xdisp<-mutate(postm6xdisp, diff=Y-N, Estimate=mean(diff), scale=dispscales[1,2], phen="disp")
 postm6xdisp_eti<-ci(dplyr::select(postm6xdisp,diff), method = "ETI", ci = c(0.9, 0.95))%>%mutate(phen="disp")
 postdisp<-left_join(postm6xdisp, postm6xdisp_eti)
  #combine and unscale for Table 3
@@ -448,12 +463,13 @@ postdisp2w<-pivot_wider(postdisp2, names_from = "CI", values_from = c("CI_low", 
 postm3xgreen<-as_tibble(posterior_samples(fit_m3x_green, pars = 
   c("b_treatmentOTC:years_warm")))
 postm3xgreen$Estimate<-mean(postm3xgreen$`b_treatmentOTC:years_warm`)
-postm3xgreen<-mutate(postm3xgreen, scale=11.85, phen="green")
+postm3xgreen<-mutate(postm3xgreen, scale=greenscales[1,2], phen="green")
 postm3xgreen_eti<-ci(postm3xgreen, method = "ETI", ci = c(0.9, 0.95))%>%mutate(phen="green")%>%filter(Parameter!="Estimate"& Parameter!="scale")
 postgreen<-left_join(postm3xgreen, postm3xgreen_eti)
  #combine and unscale for Table 3
 postgreenw<-pivot_wider(postgreen, names_from = "CI", values_from = c("CI_low", "CI_high"))%>%dplyr::select(Estimate, phen, scale, Parameter, grep("CI", colnames(.)))%>%distinct(.)%>%mutate(Estimate=Estimate*scale, CI_low_90=CI_low_90*scale, CI_high_90=CI_high_90*scale, CI_low_95=CI_low_95*scale, CI_high_95=CI_high_95*scale)
  
+
 
 #calculate differences between greenup and senescence intervals 
 postgreensen<-(postgreen2$treatmentOTC*11.85)-(postsen2$treatmentOTC*12.88)
