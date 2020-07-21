@@ -19,7 +19,7 @@ disp=disp%>%
   mutate(doy = (doy-mn)/sd)
 
 #make table of all scaling factors 
-greenscales<-data.frame(mean=mn, sd=sd, phen='Green')
+dispscales<-data.frame(mean=mn, sd=sd, phen='Disp')
 
 #subset to subsite-years with both CTL and OTC 
 disp<-unite(disp, all, spp, subsite, year, remove=F)
@@ -125,5 +125,5 @@ fit_m7x_disp<- brm(m7x, data = regmodsx, control = list(adapt_delta=0.99, max_tr
 save(fit_m7x_disp, file="fit_m7x_disp.Rdata")
 
 #add years warm data to scales 
-greenscales<-add_row(greenscales, mean=mn, sd=sd, phen='Greenxyrswarm')
-save(greenscales, file="data/Courtney/OTC_analysis/greenscale.Rdata")
+dispscales<-add_row(dispscales, mean=mn3, sd=sd3, phen='DispxSiteT')
+save(dispscales, file="data/Courtney/OTC_analysis/dispscale.Rdata")
