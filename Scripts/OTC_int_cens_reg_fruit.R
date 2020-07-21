@@ -24,6 +24,10 @@ check<-group_by(fruit, spp, subsite, year)%>%summarise(n = n_distinct(treatment)
   unite(all, spp, subsite, year)
 fruitcheck<-filter(fruit, all %in% check$all)
 
+#make table of all scaling factors 
+fruitscales<-data.frame(mean=mn, sd=sd, phen='Fruit')
+save(fruitscales, file="data/Courtney/OTC_analysis/fruitscale.Rdata")
+
 #subset to replicates with 2 or more observations 
 fruitcheck2<-group_by(fruitcheck, year, spp, site_name, subsite, treatment)%>% count()%>% filter(n>1)%>%
   unite(all, year, spp, site_name, subsite, treatment)
