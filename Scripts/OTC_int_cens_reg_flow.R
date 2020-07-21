@@ -18,6 +18,10 @@ flower=flower%>%
   mutate(prior_visit = (prior_visit-mn)/sd)%>%
   mutate(doy = (doy-mn)/sd)
 
+#make table of all scaling factors 
+flowscales<-data.frame(mean=mn, sd=sd, phen='Flower')
+save(flowscales, file="data/Courtney/OTC_analysis/flowscale.Rdata")
+
 #subset to subsite-years with both CTL and OTC 
 flower<-unite(flower, all, spp, subsite, year, remove=F)
 check<-group_by(flower, spp, subsite, year)%>%summarise(n = n_distinct(treatment))%>%filter(n>1)%>%
