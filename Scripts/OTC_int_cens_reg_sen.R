@@ -24,6 +24,10 @@ check<-group_by(sen, spp, subsite, year)%>%summarise(n = n_distinct(treatment))%
   unite(all, spp, subsite, year)
 sencheck<-filter(sen, all %in% check$all)
 
+#make table of all scaling factors 
+senscales<-data.frame(mean=mn, sd=sd, phen='Sen')
+save(senscales, file="data/Courtney/OTC_analysis/senscale.Rdata")
+
 #subset to replicates with 2 or more observations 
 sencheck2<-group_by(sencheck, year, spp, site_name, subsite, treatment)%>% count()%>% filter(n>1)%>%
   unite(all, year, spp, site_name, subsite, treatment)
