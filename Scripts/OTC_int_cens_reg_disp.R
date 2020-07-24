@@ -68,6 +68,17 @@ regmodsxx<-group_by(regmodsx, spp, subsite, year)%>%
   summarise(n_treat = n_distinct(treatment))%>%filter(n_treat>1)
 regmodsx<-left_join(regmodsx, regmodsxx)%>%filter(!is.na(n_treat))
 
+#Check for outliers (>4sd) in OTC-CTL diff within replicates 
+out<- unite(regmodsx, all,spp, site_name, subsite, year, remove=F)%>%
+  dplyr::select(site_name,spp, subsite, year, all, treatment, estimate)%>%
+  group_by(all)%>%
+  pivot_wider(names_from = treatment, values_from=estimate)%>%ungroup(.)%>%
+  mutate(diff=(OTC-CTL))
+meandiff<-mean(out$diff)
+sddiff<-sd(out$diff)
+out<-filter(out, diff>meandiff+4*sddiff| diff<meandiff-4*sddiff)
+regmodsx<-anti_join(regmodsx, out)
+
 #add in spatiotemporal info
 ecosys<-dplyr::select(subsites, site_name,subsite, OTCWinterRemoval, exstart, lat, commtype, Ecosystem)%>%distinct(.)
 regmodsx<-left_join(regmodsx, ecosys)
@@ -87,23 +98,23 @@ regmodsx=regmodsx%>%
 #brms model setup----
 m2x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m2x_disp<- brm(m2x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m2x_disp, file="fit_m2x_disp.Rdata")
+save(fit_m2x_disp, file="Data/brms_output/fit_m2x_disp.Rdata")
 
 m3x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*years_warm + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m3x_disp<- brm(m3x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m3x_disp, file="fit_m3x_disp.Rdata")
+save(fit_m3x_disp, file="Data/brms_output/fit_m3x_disp.Rdata")
 
 m4x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*lat + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m4x_disp<- brm(m4x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m4x_disp, file="fit_m4x_disp.Rdata")
+save(fit_m4x_disp, file="Data/brms_output/fit_m4x_disp.Rdata")
 
 m5x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*commtype + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m5x_disp<- brm(m5x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m5x_disp, file="fit_m5x_disp.Rdata")
+save(fit_m5x_disp, file="Data/brms_output/fit_m5x_disp.Rdata")
 
 m6x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*OTCWinterRemoval + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m6x_disp<- brm(m6x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m6x_disp, file="fit_m6x_disp.Rdata")
+save(fit_m6x_disp, file="Data/brms_output/fit_m6x_disp.Rdata")
 
 #add in climate info 
 load("Data/Climate.data/climate_phenology.Rdata")
@@ -122,8 +133,8 @@ regmodsx=regmodsx%>%
 
 m7x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*siteT + treatment*siteyear_deltaT + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m7x_disp<- brm(m7x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m7x_disp, file="fit_m7x_disp.Rdata")
+save(fit_m7x_disp, file="Data/brms_output/fit_m7x_disp.Rdata")
 
 #add years warm data to scales 
 dispscales<-add_row(dispscales, mean=mn3, sd=sd3, phen='DispxSiteT')
-save(dispscales, file="data/Courtney/OTC_analysis/dispscale.Rdata")
+save(dispscales, file="Data/brms_output/dispscale.Rdata")
