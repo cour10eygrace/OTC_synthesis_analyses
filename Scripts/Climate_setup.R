@@ -4,9 +4,11 @@ library(tidyr)
 #read in daily climate data and phenology data 
 clim<-read.csv("Data/Climate.data/ITEX_daily_climate_data.csv", colClasses = c("factor", "factor", "numeric", "numeric", "numeric", "numeric", "numeric", 
                                                                              "numeric", "numeric"))
+#output from OTC_CTL_setup.R
 load("Data/Phenology.data/flowerdata.RData")
 load("Data/Phenology.data/greenupdata.RData")
 load("Data/Phenology.data/fruitdata.RData")
+
 #make siteyear variable for sorting 
 clim<-unite(clim, siteyear, site_name, year, remove=FALSE)
 flower<-unite(flower, siteyear, site_name, year, remove=FALSE)
@@ -35,7 +37,7 @@ keep<-filter(clim_itex_OTC, keep=='keep')
 clim_itex_OTC<-filter(clim_itex_OTC, site_name!="BARROW" & site_name!="FINSE")%>%rbind(., keep)%>%select(-keep)
 
 clim_itex_OTC<-group_by(clim_itex_OTC, siteyear, doy)%>%mutate(n=n())
-dup<-filter(clim_itex_OTC, n>1)#should be zero now 
+dup<-filter(clim_itex_OTC, n>1)#should be zero now
 
 #read and organize infilled data 
 clim_infilled<-read.csv("Data/Climate.data/infilled_data/infilled_daily_climate_data.csv")

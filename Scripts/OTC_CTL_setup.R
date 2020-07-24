@@ -1,4 +1,3 @@
-
 library(lme4)
 library(lmerTest)
 library(lsmeans)
@@ -21,6 +20,7 @@ subsites=read.csv('Data/LOOKUPS/subsites.csv')
 #select subsites with OTCs
 subsites<- filter(subsites, grepl(pattern = "OTC", x = TRT))
 subsites<-subset(subsites, ready=="TRUE")
+subsites<-subset(subsites, site_name!="OZ")#need to remove OZ because issue with southern hemisphere congruence 
 
 # -- READ in all phen files ----
 all_phen=list()
@@ -31,15 +31,15 @@ for (i in 1:nrow(subsites)){
     s=subsites$subsite[i]
     cat(paste0("reading subsite ", s))
     cat ('\n')
-    all_phen[[s]]=read.csv(paste0('Data/Phenology.data', s, '/', s, '.phen.csv'))
-    all_qual[[s]]=read.csv(paste0('Data/Phenology.data', s, '/', s, '.qual.csv'))
+    all_phen[[s]]=read.csv(paste0('Data/Phenology.data/', s, '/', s, '.phen.csv'))
+    all_qual[[s]]=read.csv(paste0('Data/Phenology.data/', s, '/', s, '.qual.csv'))
     if (subsites$sf_available[i])
-      all_sf[[s]]=read.csv(paste0('Data/Phenology.data', s, '/', s, '.sf.csv'))
+      all_sf[[s]]=read.csv(paste0('Data/Phenology.data/', s, '/', s, '.sf.csv'))
   }
 }
 
 pheno<-rbindlist(all_phen, TRUE, TRUE) #combine into one df 
-pheno<-subset(pheno, spp!="SALROT"& subsite!="BARROW.NPN.ANWR") #throw out SALROT data from BARROW-lots of duplicates/issues 
+pheno<-subset(pheno, spp!="SALROT") #throw out SALROT data from BARROW-lots of duplicates/issues 
 pheno<-distinct(pheno) #remove other complete duplicates 
 pheno<-subset(pheno, treatment=="CTL"|treatment=="OTC")
 qual<-rbindlist(all_qual,  TRUE, TRUE)
@@ -287,7 +287,6 @@ flowerend<-subset(flowerend, censored!="remove")
 ##because it's arctic, we can
 # say things happened after doy 122 (May 1), and before doy 275 (oct 1)
 #OR one month earlier/later than the earliest/latest prior_visit/doy 
-flower<-subset(flower, site_name!="OZ")#need to remove OZ because dates are too early and not in greenup dataset
 min(na.omit(flower$prior_visit))#120
 max(flower$doy)#254
 
@@ -299,9 +298,8 @@ min(na.omit(flowerend$prior_visit))#46
 #take out weird doy 46 values from prior_visit 
 flowerend<-mutate(flowerend, prior_visit=ifelse(prior_visit<100, 120, prior_visit))
 min(na.omit(flowerend$prior_visit))#120
-max(na.omit(flowerend$doy))#268
+max(na.omit(flowerend$doy))#275
 
-flowerend<-subset(flowerend, site_name!="OZ")#need to remove OZ because dates are too early and not in greenup dataset
 flowerend<-mutate(flowerend,prior_visit=ifelse(is.na(prior_visit), 120, prior_visit))
 flowerend<-mutate(flowerend,doy=ifelse(is.na(doy), 300, doy))
 flowerend$censored<-"interval" #now they are all interval censored
@@ -406,7 +404,6 @@ disp<-mutate(disp,censored=
                         is.na(doy)&is.na(prior_visit) ~ "remove"))
 
 disp<-subset(disp, censored!="remove")
-disp<-subset(disp, site_name!="OZ")#need to remove OZ because dates are too early and not in greenup dataset
 
 #update left and right censored to have informed intervals--try with earliest doy for each phenophase and then set to 1 month before***
 ##because it's arctic, we can
