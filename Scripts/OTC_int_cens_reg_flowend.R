@@ -20,7 +20,7 @@ flowerend=flowerend%>%
 
 #make table of all scaling factors 
 flowendscales<-data.frame(mean=mn, sd=sd, phen='Flowerend')
-save(flowendscales, file="data/Courtney/OTC_analysis/flowendscale.Rdata")
+save(flowendscales, file="Data/brms_output/flowendscale.Rdata")
 
 
 #subset to subsite-years with both CTL and OTC 
@@ -66,19 +66,27 @@ regmodsz<-left_join(regmodsy, spp_se)%>%mutate(std.error=se)
 
 regmodsx<-as.data.frame(rbind(regmodsx, select(regmodsz, -doy, -prior_visit, -all, -se)))%>% 
   filter(std.error>0)
-
-
-#add in spatiotemporal info
-ecosys<-dplyr::select(subsites, site_name,subsite, OTCWinterRemoval, exstart, lat, commtype, Ecosystem)%>%distinct(.)
-
-regmodsx<-left_join(regmodsx, ecosys)
-regmodsx$years_warm<-regmodsx$year-as.numeric(as.character(regmodsx$exstart))
-regmodsx<-mutate(regmodsx, years_warm=ifelse(years_warm<1,1, years_warm)) #lowest value for years_warm is 1 
-
 #require that every replicate has paired OTC and CTL
 regmodsxx<-group_by(regmodsx, spp, subsite, year)%>%
   summarise(n_treat = n_distinct(treatment))%>%filter(n_treat>1)
 regmodsx<-left_join(regmodsx, regmodsxx)%>%filter(!is.na(n_treat))
+
+#Check for outliers (>4sd) in OTC-CTL diff within replicates 
+out<- unite(regmodsx, all,spp, site_name, subsite, year, remove=F)%>%
+  dplyr::select(site_name,spp, subsite, year, all, treatment, estimate)%>%
+  group_by(all)%>%
+  pivot_wider(names_from = treatment, values_from=estimate)%>%ungroup(.)%>%
+  mutate(diff=(OTC-CTL))
+meandiff<-mean(out$diff)
+sddiff<-sd(out$diff)
+out<-filter(out, diff>meandiff+4*sddiff| diff<meandiff-4*sddiff)
+regmodsx<-anti_join(regmodsx, out)
+
+#add in spatiotemporal info
+ecosys<-dplyr::select(subsites, site_name,subsite, OTCWinterRemoval, exstart, lat, commtype, Ecosystem)%>%distinct(.)
+regmodsx<-left_join(regmodsx, ecosys)
+regmodsx$years_warm<-regmodsx$year-as.numeric(as.character(regmodsx$exstart))
+regmodsx<-mutate(regmodsx, years_warm=ifelse(years_warm<1,1, years_warm)) #lowest value for years_warm is 1 
 
 #scale continuous predictors 
 mn=mean(regmodsx$years_warm)
@@ -93,23 +101,23 @@ regmodsx=regmodsx%>%
 #brms model setup----
 m2x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m2x_flowend<- brm(m2x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m2x_flowend, file="fit_m2x_flowend.Rdata")
+save(fit_m2x_flowend, file="Data/brms_output/fit_m2x_flowend.Rdata")
 
 m3x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*years_warm + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m3x_flowend<- brm(m3x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m3x_flowend, file="fit_m3x_flowend.Rdata")
+save(fit_m3x_flowend, file="Data/brms_output/fit_m3x_flowend.Rdata")
 
 m4x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*lat + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m4x_flowend<- brm(m4x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m4x_flowend, file="fit_m4x_flowend.Rdata")
+save(fit_m4x_flowend, file="Data/brms_output/fit_m4x_flowend.Rdata")
 
 m5x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*commtype + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m5x_flowend<- brm(m5x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m5x_flowend, file="fit_m5x_flowend.Rdata")
+save(fit_m5x_flowend, file="Data/brms_output/fit_m5x_flowend.Rdata")
 
 m6x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*OTCWinterRemoval + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m6x_flowend<- brm(m6x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m6x_flowend, file="fit_m6x_flowend.Rdata")
+save(fit_m6x_flowend, file="Data/brms_output/fit_m6x_flowend.Rdata")
 
 
 #add in climate info 
@@ -129,4 +137,4 @@ regmodsx=regmodsx%>%
 
 m7x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*siteT + treatment*siteyear_deltaT + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
 fit_m7x_flowend<- brm(m7x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
-save(fit_m7x_flowend, file="fit_m7x_flowend.Rdata")
+save(fit_m7x_flowend, file="Data/brms_output/fit_m7x_flowend.Rdata")
