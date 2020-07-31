@@ -274,6 +274,22 @@ gridExtra::grid.arrange(c, d, ncol=2)
 *Interaction between OTC and siteT for dispersal  
 
 ```{r plot interactions continuous , echo=FALSE, warning=FALSE, error=FALSE, message=F, results=FALSE,  fig.width=8, fig.height=6}
+#set custom plotting theme-grobs on y axis  
+transparent_theme <- theme( axis.title.y = element_blank(), axis.title.x = element_blank(),
+                            axis.text.x = element_blank(), 
+                            axis.text.y = element_blank(), 
+                            axis.ticks.x = element_blank(), 
+                            axis.ticks.y = element_blank(), 
+                            panel.grid = element_blank(), 
+                            axis.line = element_blank(), 
+                            panel.background = element_blank(), 
+                            plot.background = element_blank(), 
+                            panel.border = element_blank(), 
+                            panel.grid.major = element_blank(), 
+                            panel.grid.minor = element_blank(), 
+                            panel.grid.major.x = element_blank(),
+                            panel.grid.major.y = element_blank())
+
 #color pallette red and blue 
 br=c("#800026","#BD0026","#E31A1C","#FC4E2A","#FD8D3C","#FEB24C", "#FED976","#FFEDA0","#FFFFCC",
      "#F7FBFF" ,"#DEEBF7" ,"#C6DBEF" ,"#9ECAE1" ,"#6BAED6" ,"#4292C6" ,"#2171B5" ,"#08519C" ,"#08306B")
@@ -338,7 +354,7 @@ f<-group_by(f, siteT)%>%pivot_wider(names_from = treatment,
 f_plot<-
   ggplot(data=f, aes(x = (siteT*dispscales[2,2])+dispscales[2,1], y = diff*dispscales[1,2])) +
   geom_ribbon(aes(ymin = diff.Q10*dispscales[1,2], ymax = diff.Q90*dispscales[1,2]),
-              fill = "grey", alpha=0.1) +
+              fill = "grey", alpha=0.2) +
    xlim(3,13)+ geom_line()+
        theme(panel.background = element_blank())+
           ylim(-20, 17) + transparent_theme 
@@ -404,24 +420,31 @@ kable(table3, caption="Table 3 Model estimates with bayestest eti intervals")
 ```
 
 
+
 ```{r Calculate phenoperiod lengths, echo=FALSE,  warning=FALSE, error=FALSE, message=F}
-postgreensen<-(postsen2$treatmentOTC*senscales$sd)-(postgreen2$treatmentOTC*greenscales[1,2])
-postflowflowend<-(postflowend2$treatmentOTC*flowendscales$sd)-(postflow2$treatmentOTC*flowscales$sd)
-
-```
-*calculate length (days)  between greenup and senescence  
-```{r Growing season length, echo=TRUE,  warning=FALSE, error=FALSE, message=F}
-
-mean(postgreensen)
-sd(postgreensen)
-ci(postgreensen, method = "ETI", ci = c(0.9, 0.95))
-
+#calculate length (days) difference between greenup and senescence, flowering and end of flowering, end of flowering and seed dispersal 
+postgreensen<-as.data.frame(postsen2$treatmentOTC*senscales$sd)-(postgreen2$treatmentOTC*greenscales[1,2])
+postflowflowend<-as.data.frame(postflowend2$treatmentOTC*flowendscales$sd)-(postflow2$treatmentOTC*flowscales$sd)
+postflowenddisp<-(postdisp2$treatmentOTC*dispscales[1,2])-as.data.frame(postflowend2$treatmentOTC*flowendscales$sd)
 ```
 
-*calculate length (days) between flowering and end of flowering 
-```{r Flowering period length, echo=TRUE,  warning=FALSE, error=FALSE, message=F}
-mean(postflowflowend)
-sd(postflowflowend)
-ci(postflowflowend, method = "ETI", ci = c(0.9, 0.95))
+*Fig S1*
 
+*Plot difference greenup to senescence 
+```{r Growing season length, echo=FALSE,  warning=FALSE, error=FALSE, message=F}
+postgreensen$diff<-postgreensen$`postsen2$treatmentOTC * senscales$sd`
+postgreensen$`postsen2$treatmentOTC * senscales$sd`<-NULL
+
+mean(postgreensen$diff)
+sd(postgreensen$diff)
+etis<-ci(postgreensen, method = "ETI", ci = c(0.9, 0.95))
+etis<-t(etis)
+etis<-etis[c(3:4), ]%>%as.data.frame(.)
+
+x<-ggplot(postgreensen, aes(x=diff))+geom_density(fill="#52854C")+theme_classic()+
+  geom_vline(xintercept = 0, color="black")+ 
+  geom_vline(xintercept=as.numeric(as.character(etis$V1)),color="red",lty=2,size=1)+
+  geom_vline(xintercept=as.numeric(as.character(etis$V2)),color="grey",lty=2,size=1)+ 
+  xlab(expression(Delta*"Days GSL in OTCs"))
+x  
 ```
