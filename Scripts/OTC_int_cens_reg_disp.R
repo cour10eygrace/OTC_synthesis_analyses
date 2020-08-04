@@ -135,6 +135,6 @@ m7x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*siteT + treatment*s
 fit_m7x_disp<- brm(m7x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
 save(fit_m7x_disp, file="Data/brms_output/fit_m7x_disp.Rdata")
 
-#add years warm data to scales 
+#add site T to scales 
 dispscales<-add_row(dispscales, mean=mn3, sd=sd3, phen='DispxSiteT')
 save(dispscales, file="Data/brms_output/dispscale.Rdata")

@@ -403,7 +403,8 @@ postflow<-pivot_wider(postflow, names_from = "CI", values_from = c("CI_low", "CI
 #continuous 
 #Dispersal x SiteT 
 postm7xdisp<-as_tibble(posterior_samples(fit_m7x_disp, pars = 
-  c("b_treatmentOTC:siteT")))%>%mutate(scale=dispscales[1,2], phen="Disp")
+  c("b_treatmentOTC:siteT")))%>%mutate(scale1=dispscales[1,2], scale2=dispscales[2,2], phen="Disp")%>%
+  mutate(scale=scale1/scale2)#divide scales OTC/siteT
 
 postm7xdisp$Estimate<-mean(postm7xdisp$`b_treatmentOTC:siteT`)
 postm7xdisp$Err<-sd(postm7xdisp$`b_treatmentOTC:siteT`)
