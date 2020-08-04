@@ -20,6 +20,8 @@ green=green%>%
 
 #make table of all scaling factors 
 greenscales<-data.frame(mean=mn, sd=sd, phen='Green')
+save(greenscales, file="Data/brms_output/greenscale.Rdata")
+
 
 #subset to subsite-years with both CTL and OTC 
 green<-unite(green, all, spp, subsite, year, remove=F)
@@ -136,6 +138,3 @@ m7x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*siteT + treatment*s
 fit_m7x_green<- brm(m7x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
 save(fit_m7x_green, file="Data/brms_output/fit_m7x_green.Rdata")
 
-#add years warm data to scales 
-greenscales<-add_row(greenscales, mean=mn, sd=sd, phen='Greenxyrswarm')
-save(greenscales, file="Data/brms_output/greenscale.Rdata")
