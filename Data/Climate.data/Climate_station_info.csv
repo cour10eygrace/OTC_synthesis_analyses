@@ -1,0 +1,19 @@
+Site ,site_name,OTCdegC,Reference ,Weather station,Latitude,Longitude ,Source 
+"Alexandra Fiord, NU, Canada ",ALEXFIORD,1.9,Bjorkman et al. 2015,Alexandrafiord Field station ,78.83,-75.8,Anne Bjorkman/Greg Henry
+"Endalen, Svalbard",ENDALEN,1.8,I Jonsdottir pers. comm ,Svalbard Airport/Longyearbyen,78.25,15.47,The Norwegian Meteorological Institute 
+"Adventdalen, Svalbard  ",ADVENTDALEN,1,Gillespie et al 2016,Svalbard Lufthavn station # SN99840 ,78.25,15.49,The Norwegian Meteorological Institute https://seklima.met.no/observations/
+"Utqiagvik, AK, USA",BARROW,1.8,Hollister et al. 2006,Barrow Atmospheric Baseline Observatory,71.32,-156.61,NOAA ftp://aftp.cmdl.noaa.gov/data/barrow/meteorology
+"Atqasuk, AK,USA",ATQASUK,0.9,Hollister et al. 2006,Barrow Atmospheric Baseline Observatory,71.32,-156.61,NOAA ftp://aftp.cmdl.noaa.gov/data/barrow/meteorology
+"Toolik Lake, AK, USA",TOOLIK,1.5,Oberbauer et al. 2007,Toolik Lake Field Station ,68.63,-149.6,Arctic Data Center https://arcticdata.io/catalog/view/doi:10.18739/A2Z60C23T
+"Imnavait Creek, AK, USA",IMNAVAIT,1.6,Darrouzet-Nardi et al. 2019,Kuparuk River Watershed (TEON): Imnavait IB,68.61,-149.32,Water and Environmental Research Center http://ine.uaf.edu/werc/werc-projects/teon/current-stations/imnavait/
+"Latnjajaure, Sweden",LATNJA,1.7,Molau and Atalo 1998,Abisko Scientific Research Station,68.33,18.5,Swedish Polar Research Secretariat https://polar.se/en/research-in-abisko/research-data/
+"Kangerlussuaq, Greenland",KANGER,1.3,Pedersen and Post 2008,Station 4231  Kangerlussuaq/Søndre Strømfjord,67.02,-50.69,Danish Meteorological Institute https://www.isaaffik.org/kangerlussuaq-dmi-meteorological-office
+"Daring Lake, NT, Canada",DARING,0.5,"K. Clark, pers. comm",Daring Lake Met. Station,64.83,-111.63,Karin Clark (Karin_Clark@gov.nt.ca)
+"Healy, AK, USA",HEALY,1,Natali et al. 2012,Eight Mile Lake Research Watershed,63.88,-149.25,Bonanza Creek LTER https://portal.lternet.edu/nis/metadataviewer?packageid=knb-lter-bnz.453.23
+Faroe Islands,FAROE,0.8,Fosaa 2015,Torshavn met station 6011,62.01,-6.78, Danish Meteorological Institute https://www.dmi.dk/publikationer/
+"Finse, Norway",FINSE,2.3,Totland and Alatalo 2002,Dagali Ii Weather Station,60.43,8.4,The Norwegian Meteorological Institute https://seklima.met.no/observations/
+"Jakobshorn, Switzerland",JAKOBSHORN,1.2,"C. Chisholm, pers. comm",Stillberg meteorological station,46.78,9.87,WSL Institute for Snow and Avalanche Research SLF https://www.envidat.ch/dataset/stillberg-climate
+"Valbercla, Switzerland ",VALBERCLA,1,"J. Prevéy, pers. comm",PizMartegnasSchneestation (ENET),46.58,9.53,WSL Institute for Snow and Avalanche Research SLF 
+"Gavia Pass, Italy ",GAVIAPASS,1.7,Carbognani et al. 2018,T0065 Careser (Diga),46.42,10.7,Italian meteorological service http://storico.meteotrentino.it/web.htm?ppbm=T0065&rs&1&df
+"Niwot Ridge, CO, USA",NIWOT,1,Smith et al. 2012,Saddle met Station ,40.05,-105.59,Niwot Ridge LTER https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-nwt.405.3
+"White Mountains, CA, USA",WHITEMTNS,2.1,Kopp and Cleland 2015,Barcroft (WMRS) California,37.58,-118.24,Western Regional Data Center https://wrcc.dri.edu/cgi-bin/rawMAIN.pl?nvbarc
