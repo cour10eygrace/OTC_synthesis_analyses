@@ -3,7 +3,7 @@ title: "OTC_synthesis_results"
 author: "Courtney Collins"
 output: html_document
 ---
-
+#load libraries 
 ```{r setup, echo=FALSE, warning=FALSE, error=FALSE, message=F}
 library(tidybayes)
 library(magrittr)
