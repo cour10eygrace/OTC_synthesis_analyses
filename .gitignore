@@ -3,3 +3,32 @@
 .RData
 .Ruserdata
 Data/brms_output/
+
+# prevent users to commit their own RProject
+.Rproj
+.Rproj.user
+*.Rproj
+
+# prevent users to commit their own .RData and .Rhistory in mutual area
+.RData
+.Rhistory
+.Rapp.history
+workspace/.RData
+workspace/.Rhistory
+
+# prevent users to commit to heavy files
+*.zip
+*.tif
+*.shp
+
+# History files
+.Rhistory
+.Rapp.history
+
+# knitr and R markdown default cache directories
+/*_cache/
+/cache/
+
+# Temporary files created by R markdown
+*.utf8.md
+*.knit.md
