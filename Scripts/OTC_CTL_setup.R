@@ -33,9 +33,7 @@ for (i in 1:nrow(subsites)){
     cat ('\n')
     all_phen[[s]]=read.csv(paste0('Data/Phenology.data/', s, '/', s, '.phen.csv'))
     all_qual[[s]]=read.csv(paste0('Data/Phenology.data/', s, '/', s, '.qual.csv'))
-    if (subsites$sf_available[i])
-      all_sf[[s]]=read.csv(paste0('Data/Phenology.data/', s, '/', s, '.sf.csv'))
-  }
+      }
 }
 
 pheno<-rbindlist(all_phen, TRUE, TRUE) #combine into one df 
@@ -113,14 +111,12 @@ sen_list<-filter(sen, !is.na(doy)& !is.na(prior_visit))%>%
 sen<-left_join(sen, sen_list)%>%
   subset(., !is.na(ct)) %>% dplyr:: select(-ct)
 
-
 #censoring info 
 green<-mutate(green,censored=
                 case_when(is.na(doy)&!is.na(prior_visit) ~ "right", 
                           !is.na(doy)&is.na(prior_visit) ~ "left", 
                           !is.na(doy)&!is.na(prior_visit) ~ "interval", 
                           is.na(doy)&is.na(prior_visit) ~ "remove"))
-
 green<-subset(green, censored!="remove")
 
 
@@ -129,7 +125,6 @@ sen<-mutate(sen,censored=
                         !is.na(doy)&is.na(prior_visit) ~ "left", 
                         !is.na(doy)&!is.na(prior_visit) ~ "interval", 
                         is.na(doy)&is.na(prior_visit) ~ "remove"))
-
 sen<-subset(sen, censored!="remove")
 
 
@@ -145,30 +140,26 @@ senqual<-subset(senqual, ct_ratio<0.2)
 sen<- dplyr::select(senqual, -ct, -ct_na, -ct_ratio)
 
 
-#update left and right censored to have informed intervals--try with earliest doy for each phenophase and then set to 1 month before***
-## because it's arctic, we can
-# say things happened after doy 122 (May 1), and before doy 275 (oct 1)
-#OR one month earlier/later than the earliest/latest prior_visit/doy 
+#update left and right censored to have informed intervals
 min(na.omit(green$prior_visit))#124
 max(green$doy)#235'
  
 #infill prior_visit, doy w reasonable value
 #for each spp and phen_stage, find the min/max of doy, prior_visit
-# over all years, use that to bound the censored model by 3 weeks on
+#over all years, use that to bound the censored model by 3 weeks on
 #either side
 ranges=green%>%
-  group_by(site_name,subsite,spp, year)%>%
+  group_by(site_name,subsite, spp, year)%>%
   pivot_longer(cols=c(prior_visit, doy), names_to='what')%>%
   group_by(site_name,subsite,spp, .drop=TRUE)%>%
   summarize(min=min(value, na.rm=TRUE),
             max=max(value, na.rm=TRUE))%>%
   mutate(min=min-21, max=max+21)
 
-
 green=green%>%
   left_join(., ranges)%>%
   rowwise()%>%
-  #remove rows with nothing in them
+#remove rows with nothing in them
   filter(!(is.na(prior_visit)&&is.na(doy)))%>%
   mutate(prior_visit=ifelse(is.na(prior_visit), min, prior_visit),
          doy=ifelse(is.na(doy), max, doy))%>%
@@ -176,10 +167,11 @@ green=green%>%
 
 green$censored<-"interval" #now they are all interval censored
 
+#senescence 
 min(na.omit(sen$prior_visit))#175
 max(sen$doy)#270
 
-sen<-mutate(sen,prior_visit=ifelse(is.na(prior_visit), 145, prior_visit))
+sen<-mutate(sen,prior_visit=ifelse(is.na(prior_visit), 145, prior_visit)) 
 sen<-mutate(sen,doy=ifelse(is.na(doy), 300, doy))
 sen$censored<-"interval" #now they are all interval censored
 
@@ -303,7 +295,6 @@ max(na.omit(flowerend$doy))#275
 flowerend<-mutate(flowerend,prior_visit=ifelse(is.na(prior_visit), 120, prior_visit))
 flowerend<-mutate(flowerend,doy=ifelse(is.na(doy), 300, doy))
 flowerend$censored<-"interval" #now they are all interval censored
-
 
 #select true duplicate individuals from data    
 tst=flower%>% unite(., fullid, subsite, spp, year, treatment, plot_plant_id, 
