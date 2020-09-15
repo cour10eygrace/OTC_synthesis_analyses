@@ -1,0 +1,425 @@
+Genus,Species,Estimate_days,Error_days,CI_lower_days,CI_upper_days,Phenology ,n_obs
+Alopecurus,alpinus,-0.66354,0.586359,-1.92699,0.455734,Green up,136
+Alopecurus,alpinus,-2.26347,0.822589,-3.93235,-0.64289,Flowering,118
+Alopecurus,alpinus,-1.97364,0.664108,-3.32959,-0.6702,End of Flowering ,114
+Alopecurus,alpinus,-2.70865,1.972042,-6.83952,0.962689,Fruiting,20
+Alopecurus,alpinus,-2.86352,1.606962,-6.01768,0.385283,Seed Dispersal ,7
+Alopecurus,alpinus,0.789142,0.535498,-0.26558,1.891447,Leaf Senescence ,70
+Alopecurus,magellanicus,-0.74539,0.546565,-1.90784,0.252267,Green up,37
+Alopecurus,magellanicus,-2.65207,0.881618,-4.49842,-0.98841,Flowering,21
+Alopecurus,magellanicus,-2.86939,1.589687,-5.97978,0.31434,Seed Dispersal ,21
+Andromeda,polifolia,-0.74448,0.524882,-1.87076,0.209339,Green up,62
+Andromeda,polifolia,-2.00005,0.893185,-3.84145,-0.26572,Flowering,78
+Andromeda,polifolia,-1.99444,0.665557,-3.33899,-0.68977,End of Flowering ,77
+Andromeda,polifolia,-2.86121,1.762832,-6.36576,0.762494,Seed Dispersal,25
+Andromeda,polifolia,0.830828,0.579883,-0.31587,2.03652,Leaf Senescence ,71
+Antennaria,alpina,-3.09964,0.9976,-5.23358,-1.33912,Flowering,10
+Antennaria,alpina,-1.95759,0.664709,-3.30227,-0.63777,End of Flowering,6
+Antennaria,friesiana,-0.69331,0.558259,-1.9039,0.336771,Green up,97
+Antennaria,friesiana,-2.49971,0.869987,-4.26166,-0.76561,Flowering,49
+Antennaria,friesiana,-2.04165,0.694153,-3.46772,-0.70251,End of Flowering,17
+Antennaria,friesiana,-2.81478,1.599992,-5.99737,0.447488,Seed Dispersal,24
+Antennaria,friesiana,0.902016,0.68919,-0.41267,2.414683,Leaf Senescence,27
+Arctagrostis,latifolia,-0.69406,0.555964,-1.88484,0.330916,Green up,1029
+Arctagrostis,latifolia,-2.67866,0.807679,-4.38671,-1.17561,Flowering,381
+Arctagrostis,latifolia,-2.00655,0.72087,-3.47191,-0.596,End of Flowering,159
+Arctagrostis,latifolia,0.916322,0.550608,-0.07651,2.152626,Leaf Senescence,626
+Arctous,alpina,-0.74051,0.533154,-1.90311,0.237632,Green up,30
+Arctous,alpina,-2.16629,0.86174,-3.89766,-0.39219,Flowering,27
+Arctous,alpina,-1.89399,0.68675,-3.2232,-0.47691,End of Flowering,26
+Arctous,alpina,0.854883,0.570573,-0.20834,2.130883,Leaf Senescence,42
+Artemisia,scopulorum,-0.75509,0.541639,-1.93284,0.232354,Green up,33
+Artemisia,scopulorum,-2.14044,0.9028,-3.97344,-0.32364,Flowering,24
+Artemisia,scopulorum,-1.98448,0.692155,-3.38717,-0.61424,End of Flowering,24
+Artemisia,scopulorum,0.809747,0.616694,-0.45907,2.116276,Leaf Senescence,33
+Bartsia,alpina,-2.14532,0.887923,-3.9785,-0.40632,Flowering,9
+Bartsia,alpina,-1.96685,0.679739,-3.34091,-0.60571,End of Flowering,9
+Beckwithia,glacialis,-2.56233,0.920454,-4.52766,-0.84806,Flowering,75
+Betula,nana,-0.7538,0.525171,-1.89099,0.198728,Green up,304
+Betula,nana,-2.2534,0.827559,-3.97416,-0.60955,Flowering,56
+Betula,nana,-2.58088,1.932698,-6.65481,1.103447,Fruiting,19
+Betula,nana,0.835108,0.610613,-0.39915,2.120004,Leaf Senescence,276
+Bistorta,bistortoides,-2.55287,0.885018,-4.36565,-0.83738,Flowering,17
+Calamagrostis,holmii,-0.68213,0.593086,-1.92887,0.43536,Green up,44
+Calamagrostis,holmii,-3.18221,1.004502,-5.36165,-1.40741,Flowering,41
+Calamagrostis,holmii,0.772187,0.564955,-0.41809,1.914178,Leaf Senescence,23
+Caltha,leptosepala,-1.54791,1.021828,-3.45981,0.633211,Flowering,19
+Cardamine,bellidifolia,-1.89413,0.878462,-3.62105,-0.08596,Flowering,694
+Cardamine,bellidifolia,-2.35688,1.956273,-6.37626,1.382794,Fruiting,729
+Cardamine,bellidifolia,-3.0687,1.543849,-6.17872,-0.03378,Seed Dispersal,687
+Cardamine,pratensis,-0.72949,0.534335,-1.88821,0.22646,Green up,876
+Cardamine,pratensis,-2.62321,0.836341,-4.37193,-1.04351,Flowering,238
+Cardamine,pratensis,-2.0399,0.697055,-3.51251,-0.72214,End of Flowering,115
+Cardamine,pratensis,0.697191,0.525862,-0.45223,1.705802,Leaf Senescence,366
+Carex,aquatilis,-0.73239,0.527992,-1.85743,0.245194,Green up,598
+Carex,aquatilis,-2.53898,0.821883,-4.29169,-0.99743,Flowering,454
+Carex,aquatilis,-1.96866,0.659463,-3.30281,-0.67047,End of Flowering,565
+Carex,aquatilis,-2.67892,1.940717,-6.78254,0.990882,Fruiting,544
+Carex,aquatilis,-2.74079,1.576423,-5.83515,0.456457,Seed Dispersal,280
+Carex,aquatilis,0.829483,0.545462,-0.23748,2.014255,Leaf Senescence,397
+Carex,bigelowii,-0.74503,0.524738,-1.87711,0.211705,Green up,362
+Carex,bigelowii,-2.20681,0.795329,-3.83344,-0.65802,Flowering,214
+Carex,bigelowii,-1.92715,0.67442,-3.26496,-0.57185,End of Flowering,137
+Carex,bigelowii,-2.4657,1.93282,-6.59435,1.184135,Fruiting,126
+Carex,bigelowii,-2.68471,1.550749,-5.7838,0.492534,Seed Dispersal,185
+Carex,bigelowii,0.83341,0.513059,-0.15316,1.938138,Leaf Senescence,306
+Carex,curvula,-1.93253,0.894107,-3.70364,-0.07218,Flowering,16
+Carex,curvula,-1.97164,0.675335,-3.31295,-0.63989,End of Flowering,12
+Carex,microcarpa,-2.29803,0.785443,-3.95655,-0.80065,Flowering,826
+Carex,microcarpa,-2.13366,0.691247,-3.63346,-0.85216,End of Flowering,821
+Carex,microcarpa,-2.60533,1.925242,-6.65986,0.991531,Fruiting,478
+Carex,rariflora,-0.78,0.540738,-1.95649,0.201133,Green up,116
+Carex,rariflora,-2.21049,0.850342,-3.91816,-0.48866,Flowering,38
+Carex,rariflora,-1.92201,0.666253,-3.25015,-0.56899,End of Flowering,53
+Carex,rariflora,-2.54808,1.923998,-6.56609,1.097074,Fruiting,62
+Carex,rariflora,-2.89288,1.583912,-6.05996,0.308046,Seed Dispersal,36
+Carex,rariflora,0.711469,0.541719,-0.46673,1.750435,Leaf Senescence,71
+Carex,rotundata,-0.72606,0.532938,-1.87358,0.274136,Green up,59
+Carex,rotundata,-2.7232,1.955107,-6.77721,0.97066,Fruiting,9
+Carex,rotundata,0.904463,0.610722,-0.23199,2.26235,Leaf Senescence,40
+Carex,rupestris,-2.64552,0.859533,-4.47398,-1.06591,Flowering,34
+Carex,rupestris,-2.9753,1.594743,-6.19219,0.140322,Seed Dispersal,36
+Carex,scopulorum,-2.13052,0.882367,-3.87909,-0.37859,Flowering,6
+Carex,spp.,-0.70866,0.547169,-1.88529,0.294576,Green up,261
+Carex,spp.,-2.49451,0.873537,-4.29388,-0.7971,Flowering,31
+Carex,spp.,-1.99135,0.700719,-3.42017,-0.58854,End of Flowering,28
+Carex,spp.,0.871965,0.632801,-0.36626,2.227023,Leaf Senescence,218
+Carex,subspathacea,-0.65034,0.614924,-1.95077,0.553368,Green up,112
+Carex,subspathacea,-2.66351,0.858813,-4.44293,-0.96068,Flowering,91
+Carex,subspathacea,-1.96095,0.658068,-3.28879,-0.64846,End of Flowering,94
+Carex,subspathacea,-2.59043,1.930058,-6.68362,1.058593,Fruiting,34
+Carex,subspathacea,0.750975,0.55263,-0.39148,1.870542,Leaf Senescence,44
+Carex,supina,-2.31418,0.865415,-4.11198,-0.62121,Flowering,28
+Carex,supina,-2.55432,1.928217,-6.58104,1.117388,Fruiting,17
+Cassiope,tetragona,-0.75401,0.519731,-1.8996,0.181847,Green up,2416
+Cassiope,tetragona,-2.76692,0.776139,-4.44017,-1.38858,Flowering,2268
+Cassiope,tetragona,-2.0297,0.64793,-3.3585,-0.76526,End of Flowering,1695
+Cassiope,tetragona,-2.59594,1.910467,-6.68633,0.961922,Fruiting,1591
+Cassiope,tetragona,-3.00805,1.559813,-6.18427,0.067502,Seed Dispersal,330
+Cassiope,tetragona,0.706242,0.494724,-0.32596,1.67332,Leaf Senescence,940
+Castilleja,occidentalis,-1.97895,0.68955,-3.39553,-0.60889,End of Flowering,6
+Cerastium,alpinum,-0.78366,0.545958,-1.98937,0.231473,Green up,48
+Cerastium,alpinum,-2.321,0.838591,-4.06305,-0.70076,Flowering,29
+Cerastium,beeringianum,-0.72417,0.537363,-1.90948,0.236083,Green up,290
+Cerastium,beeringianum,-3.69008,1.162235,-6.21744,-1.70388,Flowering,77
+Cerastium,beeringianum,-2.03797,0.688746,-3.47221,-0.70711,End of Flowering,32
+Cerastium,beeringianum,0.792837,0.570357,-0.40722,1.980943,Leaf Senescence,96
+Chrysosplenium,tetrandrum,-0.71017,0.538963,-1.85723,0.288258,Green up,33
+Cochlearia,officinalis,-0.74285,0.524527,-1.87943,0.216315,Green up,350
+Cochlearia,officinalis,-2.04078,0.86655,-3.712,-0.23786,Flowering,73
+Cochlearia,officinalis,-1.90919,0.672006,-3.22952,-0.52271,End of Flowering,59
+Cochlearia,officinalis,-2.3944,1.940356,-6.45412,1.32998,Fruiting,71
+Cochlearia,officinalis,0.744374,0.526274,-0.35541,1.782364,Leaf Senescence,133
+Deschampsia,cespitosa,-2.65415,0.886225,-4.59832,-1.00644,Flowering,139
+Deschampsia,cespitosa,-2.06124,0.777605,-3.69631,-0.54053,End of Flowering,91
+Deschampsia,flexuosa,-1.95674,0.674097,-3.28312,-0.60928,End of Flowering,4
+Diapensia,lapponica,-0.73546,0.533278,-1.87741,0.231979,Green up,575
+Diapensia,lapponica,-2.24277,0.811611,-3.88909,-0.6658,Flowering,619
+Diapensia,lapponica,-1.91705,0.666117,-3.25344,-0.57421,End of Flowering,662
+Diapensia,lapponica,-2.48276,1.921147,-6.64486,1.105796,Fruiting,593
+Diapensia,lapponica,-2.871,1.584816,-6.03902,0.308317,Seed Dispersal,201
+Diapensia,lapponica,0.709255,0.525435,-0.41506,1.697967,Leaf Senescence,437
+Draba,lactea,-0.71586,0.530096,-1.86325,0.260948,Green up,358
+Draba,lactea,-1.88033,0.831807,-3.48504,-0.1372,Flowering,386
+Draba,lactea,-1.90695,0.679612,-3.23413,-0.51553,End of Flowering,286
+Draba,lactea,-2.42604,1.937064,-6.47205,1.234531,Fruiting,376
+Draba,lactea,-2.89735,1.574042,-6.04135,0.253767,Seed Dispersal,23
+Draba,lactea,0.746519,0.519859,-0.35563,1.767471,Leaf Senescence,171
+Draba,micropetala,-0.7476,0.529536,-1.9068,0.217269,Green up,165
+Draba,micropetala,-1.9361,0.891665,-3.72589,-0.13154,Flowering,118
+Draba,micropetala,-1.86378,0.720612,-3.27051,-0.36241,End of Flowering,58
+Draba,micropetala,-2.24507,2.010989,-6.36799,1.62232,Fruiting,114
+Draba,micropetala,-2.95495,1.553392,-6.16156,0.113697,Seed Dispersal,54
+Draba,micropetala,0.73795,0.555088,-0.45534,1.823587,Leaf Senescence,46
+Draba,spp.,-2.12119,0.87693,-3.88527,-0.31898,Flowering,31
+Draba,spp.,-2.59452,1.931692,-6.62664,1.035123,Fruiting,21
+Dryas,integrifolia,-0.80161,0.546848,-1.96948,0.217602,Green up,1780
+Dryas,integrifolia,-2.79326,0.796838,-4.52546,-1.37534,Flowering,1400
+Dryas,integrifolia,-2.05945,0.645026,-3.38898,-0.79747,End of Flowering,1384
+Dryas,integrifolia,-2.74217,1.934341,-6.84282,0.893483,Fruiting,1109
+Dryas,integrifolia,-2.97912,1.538687,-6.11159,0.048727,Seed Dispersal,428
+Dryas,integrifolia,0.802319,0.502105,-0.17805,1.873501,Leaf Senescence,1413
+Dryas,octopetala,-0.79713,0.552064,-1.98777,0.212283,Green up,143
+Dryas,octopetala,-2.64121,0.803175,-4.34728,-1.17431,Flowering,210
+Dryas,octopetala,-2.02594,0.658639,-3.37104,-0.74919,End of Flowering,196
+Dryas,octopetala,-3.08516,1.524942,-6.16081,-0.1021,Seed Dispersal,173
+Dryas,octopetala,0.730343,0.53747,-0.42847,1.77813,Leaf Senescence,140
+Dupontia,fisheri,-0.71012,0.528849,-1.83271,0.278097,Green up,1470
+Dupontia,fisheri,-2.32738,0.798235,-3.95822,-0.73413,Flowering,810
+Dupontia,fisheri,-1.99305,0.664111,-3.34033,-0.70625,End of Flowering,676
+Dupontia,fisheri,-2.81656,1.963874,-6.96032,0.832216,Fruiting,235
+Dupontia,fisheri,-2.89875,1.617737,-6.13024,0.365133,Seed Dispersal,42
+Dupontia,fisheri,0.957256,0.537191,0.021073,2.206268,Leaf Senescence,727
+Empetrum,nigrum,-0.74421,0.529535,-1.90782,0.219152,Green up,25
+Empetrum,nigrum,-1.83685,0.916456,-3.66124,-0.02091,Flowering,45
+Empetrum,nigrum,-2.87698,1.57304,-6.01274,0.262484,Seed Dispersal,13
+Empetrum,nigrum,0.770005,0.535332,-0.34141,1.858151,Leaf Senescence,35
+Eriophorum,angustifolium,-0.77092,0.53664,-1.93633,0.223016,Green up,438
+Eriophorum,angustifolium,-2.36314,0.802325,-4.08601,-0.8759,Flowering,553
+Eriophorum,angustifolium,-2.03598,0.655547,-3.38316,-0.77295,End of Flowering,592
+Eriophorum,angustifolium,-2.71706,1.926596,-6.80737,0.90239,Fruiting,483
+Eriophorum,angustifolium,-2.82691,1.54962,-5.89757,0.297171,Seed Dispersal,336
+Eriophorum,angustifolium,0.775441,0.512538,-0.25811,1.839624,Leaf Senescence,366
+Eriophorum,chamissonis,-2.39732,0.806342,-4.09476,-0.8565,Flowering,293
+Eriophorum,chamissonis,-1.90991,0.673624,-3.2506,-0.54586,End of Flowering,307
+Eriophorum,chamissonis,-2.57239,1.931744,-6.67367,0.978236,Fruiting,264
+Eriophorum,chamissonis,-2.98907,1.523784,-6.06233,0.020508,Seed Dispersal,147
+Eriophorum,scheuchzeri,-2.8269,0.925231,-4.81102,-1.07303,Flowering,6
+Eriophorum,vaginatum,-0.76069,0.537794,-1.9384,0.233193,Green up,215
+Eriophorum,vaginatum,-1.90543,0.813633,-3.52261,-0.28412,Flowering,615
+Eriophorum,vaginatum,-2.91263,1.580835,-6.06621,0.2164,Seed Dispersal,520
+Eriophorum,vaginatum,0.787681,0.502755,-0.2382,1.840978,Leaf Senescence,299
+Euphrasia,minima,-3.10489,0.997257,-5.22119,-1.32194,Flowering,8
+Festuca,brachyphylla,-2.80503,0.947246,-4.83525,-1.03188,Flowering,8
+Festuca,brachyphylla,-1.97796,0.691921,-3.37662,-0.60287,End of Flowering,8
+Gentiana,algida,-3.60013,1.22147,-6.1768,-1.44291,Flowering,11
+Gentianella,amarella,-3.38884,1.117222,-5.84452,-1.44509,Flowering,6
+Geum,rosii,-0.71775,0.545068,-1.90969,0.300094,Green up,161
+Geum,rosii,-2.21632,0.839231,-3.99936,-0.57694,Flowering,230
+Geum,rosii,-1.97102,0.657413,-3.32089,-0.67544,End of Flowering,286
+Geum,rosii,0.783564,0.543359,-0.3336,1.907173,Leaf Senescence,285
+Geum,rossii,-0.71775,0.545068,-1.90969,0.300094,Green up,161
+Geum,rossii,-2.21632,0.839231,-3.99936,-0.57694,Flowering,230
+Geum,rossii,-1.97102,0.657413,-3.32089,-0.67544,End of Flowering,286
+Geum,rossii,0.783564,0.543359,-0.3336,1.907173,Leaf Senescence,285
+Helictotrichon,versicolor,-2.63948,0.881699,-4.51461,-1.00788,Flowering,16
+Helictotrichon,versicolor,-1.98388,0.667819,-3.34047,-0.64413,End of Flowering,15
+Hieracium,bupleuroides,-2.82252,0.93316,-4.81347,-1.07668,Flowering,5
+Hierochloe,alpina,-0.729,0.532392,-1.89176,0.242844,Green up,386
+Hierochloe,alpina,-2.53853,0.826428,-4.26143,-0.98103,Flowering,451
+Hierochloe,alpina,-1.98506,0.650714,-3.30271,-0.70782,End of Flowering,472
+Hierochloe,alpina,-2.57292,1.929671,-6.64879,1.045192,Fruiting,185
+Hierochloe,alpina,-2.89056,1.534574,-5.99043,0.165163,Seed Dispersal,392
+Hierochloe,alpina,0.655683,0.568036,-0.67376,1.653222,Leaf Senescence,255
+Hierochloe,pauciflora,-0.73113,0.522031,-1.87101,0.204745,Green up,557
+Hierochloe,pauciflora,-2.66702,0.827463,-4.40237,-1.10234,Flowering,433
+Hierochloe,pauciflora,-1.9645,0.656156,-3.30759,-0.6746,End of Flowering,414
+Hierochloe,pauciflora,-2.63285,1.941605,-6.69241,1.025328,Fruiting,141
+Hierochloe,pauciflora,0.824375,0.52418,-0.22182,1.928444,Leaf Senescence,303
+Jacobaea,incana,-2.69028,0.892932,-4.58759,-0.99286,Flowering,7
+Juncus,biglumis,-0.65083,0.626256,-1.98964,0.565736,Green up,432
+Juncus,biglumis,-2.33485,0.850689,-4.0185,-0.53402,Flowering,221
+Juncus,biglumis,-1.94571,0.662411,-3.24944,-0.60838,End of Flowering,160
+Juncus,biglumis,-2.51142,1.925351,-6.56738,1.094781,Fruiting,225
+Juncus,biglumis,-2.90759,1.575423,-6.0901,0.204557,Seed Dispersal,21
+Juncus,biglumis,0.758062,0.553148,-0.41712,1.836198,Leaf Senescence,163
+Ledum,decumbens,-0.74012,0.530117,-1.87793,0.231417,Green up,78
+Ledum,decumbens,-2.25443,0.808222,-3.90097,-0.62095,Flowering,745
+Ledum,decumbens,-1.99031,0.654802,-3.33505,-0.72208,End of Flowering,703
+Ledum,decumbens,-2.6709,1.944415,-6.80009,0.925022,Fruiting,593
+Ledum,decumbens,0.824795,0.538667,-0.20793,1.98452,Leaf Senescence,100
+Ledum,palustre,-0.67077,0.59918,-1.94552,0.492371,Green up,674
+Ledum,palustre,-2.58778,0.817051,-4.31386,-1.09048,Flowering,632
+Ledum,palustre,-1.99647,0.653804,-3.34069,-0.69472,End of Flowering,605
+Ledum,palustre,-2.62087,1.924643,-6.71612,1.004082,Fruiting,591
+Ledum,palustre,-2.65599,1.649813,-5.84241,0.811004,Seed Dispersal,131
+Ledum,palustre,0.601132,0.580687,-0.80123,1.576633,Leaf Senescence,427
+Leucanthemopsis,alpina,-3.0623,0.917729,-5.05356,-1.39705,Flowering,714
+Leucanthemopsis,alpina,-1.97405,0.689513,-3.38006,-0.58762,End of Flowering,10
+Leucanthemopsis,alpina,-2.77017,1.974627,-6.82171,0.957493,Fruiting,519
+Leucanthemopsis,alpina,-2.89023,1.552527,-5.93858,0.272801,Seed Dispersal,631
+Leucanthemum,halleri,-2.63635,0.894383,-4.52524,-0.90072,Flowering,8
+Lewisia,pygmaea,-1.98104,0.683672,-3.3851,-0.63403,End of Flowering,7
+Loiseleuria,procumbens,-2.41529,0.840358,-4.14627,-0.75487,Flowering,38
+Loiseleuria,procumbens,-1.9497,0.663879,-3.28111,-0.59839,End of Flowering,31
+Loiseleuria,procumbens,-2.88284,2.224726,-7.32113,1.755524,Seed Dispersal,24
+Loiseleuria,procumbens,0.65274,0.574591,-0.64224,1.702809,Leaf Senescence,28
+Luzula,arcuata,-0.73277,0.532886,-1.89536,0.250365,Green up,46
+Luzula,arcuata,-2.19232,0.888857,-4.03933,-0.45414,Flowering,33
+Luzula,arcuata,-2.90436,1.680324,-6.27399,0.470692,Seed Dispersal,35
+Luzula,arcuata,0.750627,0.585815,-0.4842,1.932025,Leaf Senescence,26
+Luzula,confusa,-0.69225,0.536679,-1.82783,0.294327,Green up,1744
+Luzula,confusa,-2.62727,0.761779,-4.21109,-1.26092,Flowering,1475
+Luzula,confusa,-1.91745,0.645393,-3.2048,-0.60357,End of Flowering,1457
+Luzula,confusa,-2.51042,1.910953,-6.48801,1.044295,Fruiting,1302
+Luzula,confusa,-3.03359,1.511452,-6.12674,-0.14942,Seed Dispersal,642
+Luzula,confusa,0.943041,0.57481,-0.0598,2.286774,Leaf Senescence,1228
+Luzula,lutea,-2.38402,0.87848,-4.21357,-0.69928,Flowering,7
+Luzula,nivalis,-1.98865,0.792669,-3.62152,-0.46253,Flowering,769
+Luzula,nivalis,-1.83993,0.683185,-3.17983,-0.44999,End of Flowering,783
+Luzula,nivalis,-2.41482,1.93077,-6.52394,1.247584,Fruiting,664
+Luzula,nivalis,-2.81491,1.534864,-5.88598,0.274384,Seed Dispersal,372
+Luzula,wahlenbergii,-0.7294,0.521351,-1.86771,0.224002,Green up,210
+Luzula,wahlenbergii,-2.62108,0.880035,-4.53885,-0.9745,Flowering,13
+Luzula,wahlenbergii,-2.64915,1.947794,-6.79714,0.979065,Fruiting,19
+Luzula,wahlenbergii,0.80855,0.533914,-0.22932,1.944026,Leaf Senescence,126
+Minuartia,obtusiloba,-0.7458,0.527951,-1.90968,0.213634,Green up,160
+Minuartia,obtusiloba,-2.67584,0.859678,-4.50436,-1.11211,Flowering,145
+Minuartia,obtusiloba,-2.01356,0.661592,-3.38159,-0.73189,End of Flowering,148
+Minuartia,obtusiloba,-2.78557,1.956054,-6.9446,0.877281,Fruiting,76
+Minuartia,obtusiloba,0.841323,0.617753,-0.36617,2.175,Leaf Senescence,29
+Nardus,stricta,-2.92893,0.947291,-5.01109,-1.17953,Flowering,7
+Nardus,stricta,-1.97692,0.668763,-3.33415,-0.65855,End of Flowering,5
+Oxyria,digyna,-0.80198,0.559814,-2.01434,0.226845,Green up,837
+Oxyria,digyna,-2.3724,0.821358,-4.11732,-0.84372,Flowering,555
+Oxyria,digyna,-2.08151,0.742019,-3.62525,-0.65309,End of Flowering,197
+Oxyria,digyna,-2.39191,1.93634,-6.4768,1.227187,Fruiting,520
+Oxyria,digyna,-3.05021,1.538854,-6.20081,-0.03562,Seed Dispersal,464
+Oxyria,digyna,0.629128,0.592608,-0.67474,1.718523,Leaf Senescence,427
+Papaver,lapponicum,-1.88316,0.867466,-3.62548,-0.20172,Flowering,260
+Papaver,lapponicum,-2.04411,0.661073,-3.41338,-0.77777,End of Flowering,239
+Papaver,lapponicum,-2.49347,1.933449,-6.54157,1.14111,Fruiting,120
+Papaver,lapponicum,-2.8397,1.562045,-5.92653,0.345898,Seed Dispersal,86
+Papaver,radicatum,-0.81097,0.548656,-1.99817,0.192809,Green up,1059
+Papaver,radicatum,-2.53923,0.776879,-4.1651,-1.09957,Flowering,972
+Papaver,radicatum,-2.09021,0.657762,-3.48378,-0.81692,End of Flowering,779
+Papaver,radicatum,-2.66701,1.912696,-6.73571,0.909075,Fruiting,925
+Papaver,radicatum,0.54865,0.673566,-0.94649,1.755896,Leaf Senescence,653
+Pedicularis,hirsuta,-0.76804,0.537168,-1.93373,0.197599,Green up,32
+Pedicularis,hirsuta,-2.43793,0.87006,-4.22307,-0.75418,Flowering,29
+Pedicularis,hirsuta,-1.94839,0.670754,-3.28445,-0.58888,End of Flowering,33
+Pedicularis,hirsuta,-2.90213,1.594411,-6.06239,0.326396,Seed Dispersal,29
+Pedicularis,lanata,-2.02642,0.829874,-3.71694,-0.39869,Flowering,137
+Pedicularis,lanata,-1.84115,0.71982,-3.22153,-0.31384,End of Flowering,137
+Pedicularis,lanata,-2.55942,1.933214,-6.62745,1.06547,Fruiting,95
+Pedicularis,lanata,-2.85642,1.586493,-6.03151,0.386923,Seed Dispersal,31
+Pedicularis,sudetica,-0.74455,0.525731,-1.89266,0.214456,Green up,273
+Pedicularis,sudetica,-2.80351,0.872851,-4.70955,-1.24598,Flowering,124
+Pedicularis,sudetica,-2.04674,0.660753,-3.43942,-0.77511,End of Flowering,123
+Pedicularis,sudetica,-2.79507,1.955759,-6.93756,0.86762,Fruiting,82
+Pedicularis,sudetica,-2.93315,1.571183,-6.09653,0.151506,Seed Dispersal,34
+Pedicularis,sudetica,0.679674,0.570677,-0.60332,1.747153,Leaf Senescence,154
+Pedicularis,verticillata,-2.64371,0.892962,-4.56945,-0.97075,Flowering,8
+Pedicularis,verticillata,-2.05083,0.737597,-3.59697,-0.61254,End of Flowering,8
+Persicaria,bistorta,-2.66735,0.830134,-4.35926,-1.05329,Flowering,357
+Persicaria,bistorta,-1.96481,0.667639,-3.31204,-0.62894,End of Flowering,323
+Persicaria,bistorta,-2.78528,1.988644,-6.95586,0.877458,Fruiting,45
+Persicaria,bistorta,-3.0168,1.547291,-6.15299,0.031952,Seed Dispersal,36
+Persicaria,vivipara,-2.35744,0.834951,-3.97707,-0.6424,Flowering,321
+Persicaria,vivipara,-2.04891,0.735325,-3.57289,-0.62448,End of Flowering,75
+Persicaria,vivipara,-2.77115,2.000927,-6.89032,0.946466,Fruiting,43
+Persicaria,vivipara,-2.85921,1.56608,-5.98846,0.30895,Seed Dispersal,78
+Petasites,frigidus,-0.64028,0.63844,-2.01376,0.608298,Green up,201
+Petasites,frigidus,-2.0897,0.874552,-3.84693,-0.31828,Flowering,17
+Petasites,frigidus,0.877999,0.634008,-0.33612,2.264288,Leaf Senescence,60
+Poa,arctica,-0.69952,0.530569,-1.83214,0.259939,Green up,1212
+Poa,arctica,-2.48457,0.796941,-4.1263,-0.95849,Flowering,924
+Poa,arctica,-2.06151,0.698931,-3.52794,-0.728,End of Flowering,545
+Poa,arctica,-2.86532,2.03926,-7.11031,0.921619,Fruiting,63
+Poa,arctica,-2.87001,1.565334,-5.99457,0.243222,Seed Dispersal,35
+Poa,arctica,0.81634,0.53621,-0.25025,1.954557,Leaf Senescence,523
+Potentilla,diversifolia,-1.98464,0.694187,-3.40015,-0.57805,End of Flowering,6
+Potentilla,hyparctica,-0.75804,0.525632,-1.9077,0.20518,Green up,868
+Potentilla,hyparctica,-3.00904,0.986557,-5.2792,-1.41906,Flowering,776
+Potentilla,hyparctica,-2.05018,0.68989,-3.49253,-0.72599,End of Flowering,646
+Potentilla,hyparctica,-2.50661,1.926783,-6.62711,1.12675,Fruiting,489
+Potentilla,hyparctica,-2.83331,1.536484,-5.88057,0.226104,Seed Dispersal,335
+Potentilla,hyparctica,0.589193,0.582906,-0.73066,1.61226,Leaf Senescence,522
+Pyrola,grandiflora,-0.74201,0.529086,-1.88681,0.220661,Green up,49
+Pyrola,grandiflora,0.776533,0.534501,-0.33621,1.85039,Leaf Senescence,68
+Ranunculus,acris,-2.21579,0.894201,-4.03635,-0.42007,Flowering,66
+Ranunculus,acris,-1.94471,0.672628,-3.29561,-0.59558,End of Flowering,66
+Ranunculus,nivalis,-0.68874,0.538966,-1.83885,0.302914,Green up,104
+Ranunculus,nivalis,-1.7742,0.900556,-3.50013,0.046976,Flowering,111
+Ranunculus,nivalis,-1.88566,0.724577,-3.28408,-0.3605,End of Flowering,102
+Ranunculus,nivalis,-2.40526,1.950173,-6.50086,1.292953,Fruiting,54
+Ranunculus,nivalis,-2.83042,1.602325,-5.99189,0.404778,Seed Dispersal,78
+Ranunculus,nivalis,0.7524,0.553485,-0.42683,1.841073,Leaf Senescence,102
+Ranunculus,pygmaeus,-0.70108,0.540151,-1.85943,0.287267,Green up,49
+Ranunculus,pygmaeus,-2.30024,0.863034,-4.09423,-0.60775,Flowering,33
+Rubus,chamaemorus,-0.68189,0.590238,-1.95366,0.438664,Green up,174
+Rubus,chamaemorus,-2.5577,0.84431,-4.35155,-0.96897,Flowering,65
+Rubus,chamaemorus,-1.95082,0.656429,-3.23812,-0.65704,End of Flowering,65
+Rubus,chamaemorus,0.729777,0.549423,-0.41201,1.823506,Leaf Senescence,214
+Salix,arctica,-0.77753,0.541783,-1.92605,0.227735,Green up,1741
+Salix,arctica,-1.95555,0.828988,-3.56972,-0.22342,Flowering,684
+Salix,arctica,-1.85948,0.670153,-3.17696,-0.47068,End of Flowering,393
+Salix,arctica,-2.38301,1.948358,-6.48742,1.36503,Fruiting,334
+Salix,arctica,-2.73348,1.576827,-5.82589,0.523323,Seed Dispersal,129
+Salix,arctica,0.755437,0.555875,-0.41249,1.89485,Leaf Senescence,432
+Salix,glauca,-0.73419,0.546934,-1.91878,0.262988,Green up,32
+Salix,glauca,-2.48389,0.874798,-4.33558,-0.81613,Flowering,12
+Salix,phlebophylla,-0.74449,0.531372,-1.87116,0.233988,Green up,142
+Salix,phlebophylla,-2.50766,0.87613,-4.44278,-0.95411,Flowering,89
+Salix,phlebophylla,-1.92174,0.682749,-3.26571,-0.50757,End of Flowering,80
+Salix,phlebophylla,-2.51042,1.929874,-6.54867,1.188573,Fruiting,61
+Salix,phlebophylla,-2.97088,1.587046,-6.16173,0.202872,Seed Dispersal,47
+Salix,phlebophylla,0.628812,0.630885,-0.86398,1.724147,Leaf Senescence,86
+Salix,polaris,-0.74036,0.529486,-1.89376,0.218269,Green up,345
+Salix,polaris,-2.00373,0.809038,-3.61465,-0.39048,Flowering,377
+Salix,polaris,-1.90176,0.675249,-3.22969,-0.50786,End of Flowering,292
+Salix,polaris,-2.47443,1.925603,-6.55651,1.114315,Fruiting,233
+Salix,polaris,-3.18443,1.559778,-6.47942,-0.23577,Seed Dispersal,308
+Salix,polaris,0.690121,0.552757,-0.50447,1.756953,Leaf Senescence,302
+Salix,pulchra,-0.75035,0.525702,-1.86604,0.222032,Green up,631
+Salix,pulchra,-2.05946,0.889634,-3.85353,-0.23884,Flowering,36
+Salix,pulchra,-1.93005,0.675342,-3.28059,-0.56072,End of Flowering,23
+Salix,pulchra,-2.53868,1.934739,-6.60986,1.068363,Fruiting,18
+Salix,pulchra,-2.94969,1.589797,-6.16922,0.179164,Seed Dispersal,25
+Salix,pulchra,0.708183,0.514855,-0.36942,1.702605,Leaf Senescence,405
+Salix,reticulata,-2.26898,0.908908,-4.13672,-0.47128,Flowering,14
+Salix,retusa,-0.73433,0.533225,-1.89756,0.242836,Green up,73
+Salix,retusa,-2.26555,0.825007,-3.97996,-0.65057,Flowering,95
+Salix,retusa,-1.96312,0.680355,-3.33471,-0.60204,End of Flowering,23
+Salix,retusa,-2.86988,1.678077,-6.2827,0.512738,Seed Dispersal,23
+Salix,retusa,1.010623,0.814875,-0.48674,2.906795,Leaf Senescence,70
+Saxifraga,cernua,-0.64973,0.645634,-2.01337,0.597855,Green up,946
+Saxifraga,cernua,-1.89194,0.86006,-3.50014,-0.0932,Flowering,685
+Saxifraga,cernua,-1.96753,0.696462,-3.38568,-0.54986,End of Flowering,232
+Saxifraga,cernua,-2.14572,2.018616,-6.22585,1.74632,Fruiting,336
+Saxifraga,cernua,0.751162,0.515143,-0.3241,1.768896,Leaf Senescence,470
+Saxifraga,foliolosa,-0.72261,0.538412,-1.91695,0.248482,Green up,816
+Saxifraga,foliolosa,-1.86107,0.838869,-3.48874,-0.14738,Flowering,510
+Saxifraga,foliolosa,-2.00064,0.681774,-3.37817,-0.66135,End of Flowering,105
+Saxifraga,foliolosa,-2.48507,1.943893,-6.5544,1.183551,Fruiting,47
+Saxifraga,foliolosa,0.675425,0.529634,-0.51082,1.657314,Leaf Senescence,255
+Saxifraga,hieraciifolia,-0.77513,0.546094,-1.96281,0.229731,Green up,605
+Saxifraga,hieraciifolia,-2.85408,0.854892,-4.71616,-1.36443,Flowering,436
+Saxifraga,hieraciifolia,-1.96908,0.660086,-3.27453,-0.65489,End of Flowering,276
+Saxifraga,hieraciifolia,-2.6286,1.932445,-6.66722,1.004783,Fruiting,271
+Saxifraga,hieraciifolia,-2.88991,1.571592,-6.02095,0.298453,Seed Dispersal,20
+Saxifraga,hieraciifolia,0.724575,0.517989,-0.38442,1.721162,Leaf Senescence,219
+Saxifraga,hirculus,-0.71234,0.544586,-1.8953,0.290404,Green up,377
+Saxifraga,hirculus,-2.23843,0.818253,-3.95462,-0.66972,Flowering,319
+Saxifraga,hirculus,-1.98893,0.665575,-3.32566,-0.66205,End of Flowering,264
+Saxifraga,hirculus,-2.67057,1.934667,-6.71109,0.971331,Fruiting,160
+Saxifraga,hirculus,0.746935,0.521756,-0.37483,1.78801,Leaf Senescence,203
+Saxifraga,nivalis,-0.75456,0.527512,-1.89899,0.212018,Green up,28
+Saxifraga,oppositifolia,-0.8985,0.760519,-2.58642,0.528701,Green up,571
+Saxifraga,oppositifolia,-1.91921,0.905389,-3.75622,-0.15849,Flowering,491
+Saxifraga,oppositifolia,-1.88316,0.691673,-3.24144,-0.45666,End of Flowering,652
+Saxifraga,oppositifolia,-2.28736,1.956355,-6.35413,1.481048,Fruiting,287
+Saxifraga,oppositifolia,-2.89233,1.862369,-6.68136,0.966517,Seed Dispersal,32
+Saxifraga,punctata,-0.65905,0.606069,-1.96075,0.497132,Green up,690
+Saxifraga,punctata,-2.50187,0.804258,-4.18057,-0.9664,Flowering,678
+Saxifraga,punctata,-1.94821,0.656348,-3.25943,-0.64335,End of Flowering,621
+Saxifraga,punctata,-2.53145,1.919665,-6.63173,1.079062,Fruiting,484
+Saxifraga,punctata,-2.937,1.554302,-6.0431,0.204862,Seed Dispersal,101
+Saxifraga,punctata,0.683179,0.526991,-0.49119,1.667028,Leaf Senescence,427
+Scorzoneroides,autumnalis,-3.13817,1.063198,-5.43888,-1.2542,Flowering,21
+Scorzoneroides,autumnalis,-2.07196,0.76569,-3.6887,-0.6084,End of Flowering,19
+Scorzoneroides,helvetica,-2.54578,0.887103,-4.42587,-0.85708,Flowering,13
+Scorzoneroides,helvetica,-1.99325,0.666756,-3.35222,-0.67415,End of Flowering,9
+Silene,acaulis,-2.33743,0.874132,-4.1712,-0.63082,Flowering,117
+Silene,acaulis,-1.97246,0.659813,-3.31157,-0.67616,End of Flowering,117
+Silene,uralensis,-2.90155,0.958454,-4.89375,-1.11546,Flowering,16
+Silene,uralensis,-1.9997,0.674913,-3.41869,-0.66937,End of Flowering,8
+Stellaria,crassipes,-0.73431,0.538705,-1.90141,0.25793,Green up,47
+Stellaria,crassipes,-2.84846,0.910464,-4.77793,-1.15432,Flowering,33
+Stellaria,crassipes,-2.00811,0.703094,-3.42949,-0.60585,End of Flowering,33
+Stellaria,Humifusa,-0.66465,0.599441,-1.93664,0.491537,Green up,14
+Stellaria,longipes,-0.72983,0.542358,-1.91523,0.257028,Green up,16
+Stellaria,longipes,-2.54576,0.77766,-4.17519,-1.05773,Flowering,993
+Stellaria,longipes,-2.04837,0.681047,-3.44231,-0.71706,End of Flowering,768
+Stellaria,longipes,-2.75012,1.979741,-6.9077,0.903575,Fruiting,73
+Tephroseris,integrifolia,-1.72914,0.922883,-3.45031,0.251776,Flowering,153
+Tephroseris,integrifolia,-2.02785,0.714675,-3.49745,-0.62528,End of Flowering,106
+Trifolium,andersonii,-2.17873,0.954913,-4.09203,-0.22819,Flowering,18
+Trisetum,spicatum,-0.71336,0.536776,-1.86813,0.258879,Green up,446
+Trisetum,spicatum,-3.08568,1.030444,-5.29424,-1.21239,Flowering,12
+Trisetum,spicatum,0.748845,0.520039,-0.31528,1.811781,Leaf Senescence,196
+Vaccinium,myrtillus,-0.72517,0.557673,-1.92006,0.324934,Green up,14
+Vaccinium,myrtillus,-2.08591,0.883426,-3.86526,-0.28157,Flowering,13
+Vaccinium,myrtillus,-2.01326,0.687898,-3.41494,-0.70004,End of Flowering,9
+Vaccinium,myrtillus,0.753084,0.567071,-0.42062,1.884318,Leaf Senescence,14
+Vaccinium,uliginosum,-0.71977,0.537379,-1.89936,0.249907,Green up,152
+Vaccinium,uliginosum,0.760086,0.526489,-0.33884,1.84451,Leaf Senescence,181
+Vaccinium,vitis-idaea,-0.7228,0.527106,-1.87037,0.24272,Green up,851
+Vaccinium,vitis-idaea,-2.35278,0.788493,-3.95237,-0.77522,Flowering,1450
+Vaccinium,vitis-idaea,-1.99382,0.659223,-3.34217,-0.6855,End of Flowering,1219
+Vaccinium,vitis-idaea,-2.72159,1.949975,-6.76811,0.899107,Fruiting,644
+Vaccinium,vitis-idaea,-2.74572,1.665807,-6.02346,0.700613,Seed Dispersal,39
+Vaccinium,vitis-idaea,0.700402,0.559157,-0.54241,1.720519,Leaf Senescence,666
+Veronica,alpina,-2.39204,0.833816,-4.14876,-0.78231,Flowering,600
+Veronica,alpina,-2.83836,1.967246,-6.94576,0.882094,Fruiting,615
+Veronica,alpina,-3.02569,1.593191,-6.26046,0.095372,Seed Dispersal,478

@@ -1,0 +1,66 @@
+Site,Estimate_days,Error_days,CI_lower_days,CI_upper_days,Phenology ,n_obs
+Adventdalen,-0.85301,0.82332,-2.87067,0.532611,Green up ,276
+Adventdalen,-2.54435,1.271237,-5.16185,-0.06328,Flowering ,279
+Adventdalen,-1.83802,1.094908,-4.05186,0.496585,End of Flowering ,206
+Adventdalen,-3.63991,2.203037,-8.25467,0.557609,Seed Dispersal ,208
+Adventdalen,0.702899,0.630702,-0.7176,1.866726,Leaf Senescence ,107
+Alexandra Fiord,-0.88161,0.544204,-2.04236,0.089628,Green up ,7407
+Alexandra Fiord,-2.11927,0.541129,-3.1802,-1.04147,Flowering ,4816
+Alexandra Fiord,-2.37525,0.528455,-3.4358,-1.3864,End of Flowering ,3547
+Alexandra Fiord,-2.77485,0.739449,-4.21734,-1.30538,Fruiting ,3678
+Alexandra Fiord,-2.7619,1.343319,-5.41195,-0.15038,Seed Dispersal ,1047
+Alexandra Fiord,0.709495,0.47023,-0.31851,1.593478,Leaf Senescence ,3204
+Atqasuk,-0.33325,0.527344,-1.29579,0.805455,Green up,7201
+Atqasuk,-0.99036,0.579027,-2.20533,0.108,Flowering,5713
+Atqasuk,-1.10317,0.575335,-2.26998,-0.0262,End of Flowering,5882
+Atqasuk,-0.48348,0.882885,-2.54752,1.042857,Fruiting ,4711
+Atqasuk,-0.89618,1.096458,-3.18904,1.124238,Seed Dispersal,2799
+Atqasuk,0.73378,0.385082,-0.06209,1.472315,Leaf Senescence,4787
+Utqiagvik,-0.37538,0.455513,-1.27034,0.539824,Green up,12781
+Utqiagvik,-2.45276,0.466009,-3.38878,-1.52635,Flowering,12487
+Utqiagvik,-2.33013,0.447034,-3.22033,-1.42707,End of Flowering,9656
+Utqiagvik,-2.27729,0.729829,-3.76665,-0.8676,Fruiting,6080
+Utqiagvik,-1.6724,1.303144,-4.26759,0.837882,Seed Dispersal,1402
+Utqiagvik,0.807163,0.374753,0.065215,1.547225,Leaf Senescence,6134
+Daring Lake,-0.15056,0.996104,-2.11522,1.781178,Flowering,1831
+Daring Lake,-1.00369,1.011101,-2.70429,1.174756,End of Flowering,1088
+Daring Lake,-0.28376,1.533516,-3.24414,2.777642,Fruiting,880
+Daring Lake,-0.52427,1.962999,-4.1313,3.631468,Seed Dispersal,436
+Endalen,-3.47429,1.107505,-5.78839,-1.48049,Flowering,344
+Endalen,-2.4892,1.303174,-5.59713,-0.26071,End of Flowering,117
+Endalen,-3.06825,2.222604,-7.82157,1.013353,Seed Dispersal,139
+Faroe Islands ,-3.14831,1.913316,-7.48036,0.143661,Flowering,58
+Faroe Islands,-2.10726,1.31398,-5.12688,0.522474,End of Flowering,58
+Finse,-2.69082,1.411972,-5.61817,0.085401,Flowering,200
+Finse,-1.87077,1.362934,-4.55787,1.076006,End of Flowering,123
+Gavia Pass,-2.10274,0.999668,-4.02926,-0.09939,Flowering,1996
+Gavia Pass,-5.81321,1.619977,-8.89527,-2.47031,Fruiting,1863
+Gavia Pass,-7.44596,1.937976,-11.147,-3.42051,Seed Dispersal,1796
+Healy,-0.98863,0.925938,-3.30477,0.446858,Green up,493
+Healy,0.722039,0.528461,-0.43521,1.746771,Leaf Senescence,668
+Imnavait,-0.7354,0.707355,-2.31811,0.590293,Green up,816
+Imnavait,0.880765,0.555039,-0.14405,2.164804,Leaf Senescence,519
+Jakobshorn,-0.66775,0.944213,-2.7125,1.203394,Green up,26
+Jakobshorn,-3.52759,1.430489,-6.64752,-1.06912,Flowering,168
+Jakobshorn,-1.67918,1.316695,-4.09724,1.270151,End of Flowering,88
+Jakobshorn,0.808979,0.614763,-0.41086,2.098712,Leaf Senescence,30
+Kangerlussuaq,-1.02286,0.936569,-3.39366,0.382206,Green up,96
+Kangerlussuaq,-2.83202,1.234161,-5.40236,-0.49501,Flowering,136
+Kangerlussuaq,-3.87475,2.77979,-9.68801,1.123415,Fruiting,62
+Latnjajaure,-0.82514,0.93379,-3.01465,0.77269,Green up,50
+Latnjajaure,-4.56471,1.333259,-7.29888,-2.13652,Flowering,239
+Latnjajaure,-3.29622,1.448296,-6.70325,-1.24179,End of Flowering,127
+Latnjajaure,-5.31673,1.990943,-9.5269,-1.75763,Seed Dispersal,118
+Latnjajaure,0.679184,0.579318,-0.68641,1.693293,Leaf Senescence,100
+Niwot Ridge,-0.60354,0.842962,-2.37045,1.20751,Green up,311
+Niwot Ridge,-1.07054,1.05012,-2.95314,1.104861,Flowering,635
+Niwot Ridge,-1.32038,1.047241,-3.05867,1.124711,End of Flowering,593
+Niwot Ridge,0.735505,0.545353,-0.46651,1.79187,Leaf Senescence,406
+Toolik Lake  ,-0.72582,0.554983,-1.92879,0.281344,Green up,865
+Toolik Lake ,-2.2531,0.65471,-3.5529,-0.99255,Flowering,933
+Toolik Lake ,-2.1409,0.730004,-3.64382,-0.74292,End of Flowering,602
+Toolik Lake ,-1.04511,1.473912,-3.95332,1.81857,Seed Dispersal,347
+Toolik Lake ,0.875264,0.447587,0.01229,1.820534,Leaf Senescence,1083
+Val Bercla,-2.48381,1.503281,-5.64742,0.459433,Flowering,158
+Val Bercla,-2.15054,1.324403,-5.0192,0.581401,End of Flowering,127
+White Mts,-2.60021,1.976551,-6.87302,1.105788,Flowering,18
