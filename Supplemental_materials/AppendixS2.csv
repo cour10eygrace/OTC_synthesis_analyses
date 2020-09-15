@@ -372,9 +372,9 @@ Kangerlussuaq,BETNAN,Betula,nana,Fruiting,Fruit set,plot
 Kangerlussuaq,CARSUP,Carex,supina,Fruiting,Fruit set,plot
 Kangerlussuaq,DRAXXX,Draba,spp.,Fruiting,Fruit set,plot
 Kangerlussuaq,SALGLA,Salix,glauca,Fruiting,Fruit set,plot
-Kangerlussuaq,CERALP,Cerastium,alpinum,Green up,"Emergence (new green leaf tissue in the case of graminoids and forbs,  Leaf bud opening was determined on the basis of observation of green leaf tissue extending from within open bud scales in the case of deciduous shrubs)",plot
-Kangerlussuaq,STELON,Stellaria,longipes,Green up,"Emergence (new green leaf tissue in the case of graminoids and forbs,  Leaf bud opening was determined on the basis of observation of green leaf tissue extending from within open bud scales in the case of deciduous shrubs)",plot
-Kangerlussuaq,STELON,Stellaria,longipes,Green up,"Emergence (new green leaf tissue in the case of graminoids and forbs,  Leaf bud opening was determined on the basis of observation of green leaf tissue extending from within open bud scales in the case of deciduous shrubs)",plot
+Kangerlussuaq,CERALP,Cerastium,alpinum,Green up,"Emergence (new green leaf tissue for graminoids and forbs,  Green leaf tissue extending from within open bud scales for deciduous shrubs)",plot
+Kangerlussuaq,STELON,Stellaria,longipes,Green up,"Emergence (new green leaf tissue for graminoids and forbs,  Green leaf tissue extending from within open bud scales for deciduous shrubs)",plot
+Kangerlussuaq,STELON,Stellaria,longipes,Green up,"Emergence (new green leaf tissue for graminoids and forbs,  Green leaf tissue extending from within open bud scales for deciduous shrubs)",plot
 Kangerlussuaq,SALGLA,Salix,glauca,Green up,leaf opening,plot
 Latnjajaure,DRYOCT,Dryas,octopetala,Seed Dispersal,first seed dispersal,plot
 Latnjajaure,ERIVAG,Eriophorum,vaginatum,Seed Dispersal,first seed dispersal,plot
