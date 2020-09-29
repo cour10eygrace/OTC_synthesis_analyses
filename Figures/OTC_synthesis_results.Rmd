@@ -136,6 +136,7 @@ geom_vline(data = plyr::ddply(post3, "facet"), aes(xintercept=CI_high_95*scale),
   scale_y_continuous(limits = c(0,1.5))+
   theme(legend.position="none")+
     scale_fill_manual(values=c( "#52854C", "#9A7B4F","#E069C6", "#D05A45",  "#4E84C4", "#293352"))+
+  #d99694-salmon red 
  geom_vline(xintercept = 0, color='black')+
 xlab(expression(Delta*"Days (OTC - CTL)")) + ylab("Density") 
 
@@ -169,24 +170,25 @@ transparent_theme <- theme( axis.title.y = element_blank(), axis.title.x = eleme
 
 ###Calculate OTC-CTL differences for all model replicates  
 dat<-as_tibble(fit_m5x_flow$data)
-xx<-unite(dat, all,spp, site_name, subsite, year, remove=F)%>%select(site_name,spp, subsite, year, all, treatment, estimate)%>%group_by(all)%>%
+xx<-unite(dat, all,spp, site_name, subsite, year, remove=F)%>%dplyr::select(site_name,spp, subsite, year, all, treatment, estimate)%>%group_by(all)%>%
   pivot_wider(names_from = treatment, values_from=estimate)%>%
   mutate(diff=(OTC-CTL))%>%filter(!is.na(diff))
 
 #join with soil moisture info 
 subsites<-read.csv("~/Git/OTC_synthesis_analyses/Data/LOOKUPS/subsites.csv") 
-moist<-filter(subsites,subsite %in% dat$subsite)%>%group_by( subsite)%>%select(subsite, commtype)%>%distinct(.)
+moist<-filter(subsites,subsite %in% dat$subsite)%>%group_by( subsite)%>%dplyr::select(subsite, commtype)%>%distinct(.)
 #reorder groups and shorten subsite names for plotting 
 xxx<-left_join(xx, moist)%>%mutate(order=case_when(commtype=="DRY"~1,
                                                    commtype=="MOIST"~3,
                                                 commtype=="WET"~2))%>%
   separate(subsite, c("site_name", 'sub_name', 'inits', 'xtra',remove=F))%>% 
   unite(sub, site_name, sub_name)%>%  
-  mutate(xtra=ifelse(is.na(xtra),xtra,inits))%>%unite(sub_name, sub, xtra, na.rm=T)
+  mutate(xtra=ifelse(is.na(xtra),xtra,inits))%>%unite(sub_name, sub, xtra, na.rm=T)%>%mutate(sub_name=tolower(sub_name))
+  
 
 #ggplot of replicate OTC-CTL differences by subsite and soil moisture 
 C<-ggplot(data=xxx, aes(x = reorder(sub_name,order), y=(diff*15.82), fill=commtype)) + geom_boxplot()+theme_classic()+
-   ylab(expression(Delta*"Days (OTC - CTL)"))+ 
+   ylab(expression(Delta*"Days (OTC - CTL)"))+ scale_fill_brewer("Blues")+
   theme(axis.text.x = element_text(angle = 90, hjust = 1, size=8))+
   geom_hline(yintercept = 0, color='grey', lty=2)+ xlab(' ') + ylim(-20,20)+
   labs(fill="Soil moisture")
@@ -198,13 +200,12 @@ postm5xflow$DRY<-postm5xflow$b_treatmentOTC
 postm5xflow$MOIST<-postm5xflow$`b_treatmentOTC:commtypeMOIST`+postm5xflow$DRY 
 postm5xflow$WET<-postm5xflow$`b_treatmentOTC:commtypeWET`+postm5xflow$DRY 
 
-postm5xflow<-select(postm5xflow, DRY, MOIST, WET)%>%
+postm5xflow<-dplyr::select(postm5xflow, DRY, MOIST, WET)%>%
   pivot_longer(cols=c(DRY, MOIST, WET), names_to = "commtype", values_to = "value")
 
 #Density plots for calculated pairwise differences w transparent background 
 xdensity <- ggplot(postm5xflow, aes(x=value*flowscales$sd)) + geom_density(aes(fill=commtype), alpha=0.8) +
-  theme_classic()+ 
-  transparent_theme+
+   scale_fill_brewer("Blues")+ transparent_theme+
   ggtitle(expression(Delta*"Days (OTC - CTL) Flowering"))+
 theme(legend.position = "none", 
       plot.title = element_text(size = 10, hjust = 1, vjust=1.5))
@@ -218,27 +219,29 @@ c<-C + annotation_custom(grob = p2_grob, ymin = 12, ymax = 22)
 #dispersal x otc removal----
 ###Calculate OTC-CTL differences for all model replicates 
 dat<-as_tibble(fit_m6x_disp$data)
-xx<-unite(dat, all,spp, site_name, subsite, year, remove=F)%>%select(site_name,spp, subsite, year, all, treatment, estimate)%>%group_by(all)%>%
+xx<-unite(dat, all,spp, site_name, subsite, year, remove=F)%>%dplyr::select(site_name,spp, subsite, year, all, treatment, estimate)%>%group_by(all)%>%
   pivot_wider(names_from = treatment, values_from=estimate)%>%
   mutate(diff=(OTC-CTL))%>%filter(!is.na(diff))
 
 #join with OTC removal info 
 rem<-filter(subsites, site_name %in% dat$site_name & OTCWinterRemoval!="")%>%
-  group_by(site_name)%>%select(site_name, OTCWinterRemoval)%>%distinct(.)
+  group_by(site_name)%>%dplyr::select(site_name, OTCWinterRemoval)%>%distinct(.)
 
 #reorder groups and shorten subsite names for plotting 
 xxx<-left_join(xx, rem)%>%mutate(order=case_when(OTCWinterRemoval=="Y"~2,
                              OTCWinterRemoval=="N"~1))%>%
   separate(subsite, c("site_name", 'sub_name', 'inits', 'xtra',remove=F))%>% 
   unite(sub, site_name, sub_name)%>% 
-  mutate(xtra=ifelse(is.na(xtra),xtra,inits))%>%unite(sub_name, sub, xtra, na.rm=T)
+  mutate(xtra=ifelse(is.na(xtra),xtra,inits))%>%unite(sub_name, sub, xtra, na.rm=T)%>%mutate(sub_name=tolower(sub_name))
+  
 
 #ggplot of replicate OTC-CTL differences by subsite and winter removal 
 D<-ggplot(data=xxx, aes(x = reorder(sub_name,order), y=(diff*dispscales[1,2]), fill=OTCWinterRemoval, order=order)) + geom_boxplot()+theme_classic()+
-  labs(fill="OTC winter removal")+ ylab(expression(Delta*"Days (OTC - CTL)"))+
+  scale_fill_manual(values=c("#899DA4", "#FAEFD1"))+
+  ylab(expression(Delta*"Days (OTC - CTL)"))+
   theme(axis.text.x = element_text(angle = 90, hjust = 1 ,size=8))+
   geom_hline(yintercept = 0, color='grey', lty=2)+ xlab(' ')+ ylim(-20,20)
-
+  
 ###Calculate pairwise differences between moisture types from model posteriors  
 postm6xdisp<- as_tibble(posterior_samples(fit_m6x_disp, pars = 
   c("b_treatmentOTC","b_treatmentOTC:OTC_WinterRemovalY")))
@@ -246,13 +249,14 @@ postm6xdisp<- as_tibble(posterior_samples(fit_m6x_disp, pars =
 postm6xdisp$N<-postm6xdisp$b_treatmentOTC
 postm6xdisp$Y<-postm6xdisp$`b_treatmentOTC:OTCWinterRemovalY`+postm6xdisp$N
 
-postm6xdisp<-select(postm6xdisp, N,Y)%>%
+postm6xdisp<-dplyr::select(postm6xdisp, N,Y)%>%
   pivot_longer(cols=c(N,Y), names_to = "OTC_WinterRemoval", values_to = "value")
 
 #Density plots for calculated pairwise differences w transparent background 
 xdensity <- ggplot(postm6xdisp, aes(x=value*dispscales[1,2])) + geom_density(aes(fill=OTC_WinterRemoval), alpha=0.8) +
   theme_classic()+ 
   transparent_theme+
+  scale_fill_manual(values=c("#899DA4", "#FAEFD1"))+
   ggtitle(expression(Delta*"Days (OTC - CTL) Dispersal"))+
   theme(legend.position = "none", 
         plot.title = element_text(size = 10, hjust = 1, vjust=1.5))
@@ -266,10 +270,11 @@ d<-  D + annotation_custom(grob = p2_grob, ymin = 12, ymax = 22)
 #combine plots c and d 
 gridExtra::grid.arrange(c, d, ncol=2)
 
+
 ```
 
 
-*Fig 5*
+*Fig S2*
 
 *Interaction between OTC and siteT for dispersal  
 
@@ -379,7 +384,7 @@ postm6xdisp$Estimate<-mean(postm6xdisp$`b_treatmentOTC:OTCWinterRemovalY`)
 postm6xdisp$Err<-sd(postm6xdisp$`b_treatmentOTC:OTCWinterRemovalY`)
 
 postm6xdisp_eti<-ci(postm6xdisp, method = "ETI", ci = c(0.9, 0.95))%>%mutate(phen="Disp")%>%filter(Parameter=="b_treatmentOTC:OTCWinterRemovalY")
-postm6xdisp<-select(postm6xdisp, phen, scale, Estimate, Err)%>%distinct(.)
+postm6xdisp<-dplyr::select(postm6xdisp, phen, scale, Estimate, Err)%>%distinct(.)
 postdisp<-left_join(postm6xdisp, postm6xdisp_eti)
 
 #combine and unscale for Table 3
@@ -393,7 +398,7 @@ postm5xflow$Estimate<-mean(postm5xflow$`b_treatmentOTC:commtypeMOIST`)
 postm5xflow$Err<-sd(postm5xflow$`b_treatmentOTC:commtypeMOIST`)
 
 postm5xflow_eti<-ci(postm5xflow, method = "ETI", ci = c(0.9, 0.95))%>%mutate(phen="Flower")%>%filter(Parameter=="b_treatmentOTC:commtypeMOIST")
-postm5xflow<-select(postm5xflow, phen, scale, Estimate, Err)%>%distinct(.)
+postm5xflow<-dplyr::select(postm5xflow, phen, scale, Estimate, Err)%>%distinct(.)
 postflow<-left_join(postm5xflow, postm5xflow_eti)
 
  #combine and unscale for Table 3
