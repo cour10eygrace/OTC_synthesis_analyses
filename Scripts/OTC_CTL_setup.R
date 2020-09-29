@@ -73,17 +73,9 @@ green<-subset(green, !is.na(simple_phen))%>%
   distinct(.)%>%
   unite(., plot_plant_id, plot, plant_id,  na.rm = FALSE, remove = FALSE)
 
-#subset for individuals only
-#filter(., !grepl("TP", phen_stage))%>%
-#filter(., !grepl("plot", individual_or_plot))%>%
-
 sen<-subset(sen, !is.na(simple_phen))%>%
   distinct(.)%>%
   unite(., plot_plant_id, plot, plant_id,  na.rm = FALSE, remove = FALSE)
-
-#subset for individuals only
-#filter(., !grepl("TP", phen_stage))%>%
-#filter(., !grepl("plot", individual_or_plot))%>%
 
 
 #look at how many measurements per site for diff flowering phenophases
@@ -220,18 +212,10 @@ flower<-subset(flower, !is.na(simple_phen))%>%
   distinct(.)%>%
   unite(., plot_plant_id, plot, plant_id,  na.rm = FALSE, remove = FALSE)
 
-#subset for individuals only
-#filter(., !grepl("TP", phen_stage))%>%
-#filter(., !grepl("plot", individual_or_plot))%>%
-  
+
 flowerend<-subset(flowerend, !is.na(simple_phen))%>%
   distinct(.)%>%
   unite(., plot_plant_id, plot, plant_id,  na.rm = FALSE, remove = FALSE)
-
-#subset for individuals only
-#filter(., !grepl("TP", phen_stage))%>%
-#filter(., !grepl("plot", individual_or_plot))%>%
-  
 
 #look at how many measurements per site for diff flowering phenophases
 #select max measured phases and remove duplicates 
@@ -342,17 +326,9 @@ fruit<-subset(fruit, !is.na(simple_phen))%>%
   distinct(.)%>%
   unite(., plot_plant_id, plot, plant_id,  na.rm = FALSE, remove = FALSE)
 
-#subset for individuals only
-#filter(., !grepl("TP", phen_stage))%>%
-#filter(., !grepl("plot", individual_or_plot))%>%
-
 disp<-subset(disp, !is.na(simple_phen))%>%
   distinct(.)%>%
   unite(., plot_plant_id, plot, plant_id,  na.rm = FALSE, remove = FALSE)
-
-#subset for individuals only
-#filter(., !grepl("TP", phen_stage))%>%
-#filter(., !grepl("plot", individual_or_plot))%>%
 
 #look at how many measurements per site for diff flowering phenophases
 #select max measured phases and remove duplicates 
