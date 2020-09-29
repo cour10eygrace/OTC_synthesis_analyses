@@ -31,8 +31,8 @@ for (i in 1:nrow(subsites)){
     s=subsites$subsite[i]
     cat(paste0("reading subsite ", s))
     cat ('\n')
-    all_phen[[s]]=read.csv(paste0('Data/Phenology.data/', s, '/', s, '.phen.csv'))
-    all_qual[[s]]=read.csv(paste0('Data/Phenology.data/', s, '/', s, '.qual.csv'))
+    all_phen[[s]]=read.csv(paste0('Data/rawdata/Phenology.data/', s, '/', s, '.phen.csv'))
+    all_qual[[s]]=read.csv(paste0('Data/rawdata/Phenology.data/', s, '/', s, '.qual.csv'))
       }
 }
 
