@@ -409,12 +409,6 @@ siteyr_table<-mutate(siteyr_table, phen=case_when(phen=="Green"~"Green",
 siteyr_table<-left_join(siteyr_table, obs_siteyr)
 
 
-#save outputs 
-#write.csv(spp_table, "Data/brms_output/ranef_spp.csv")
-#write.csv(site_table, "Data/brms_output/ranef_site.csv")
-#write.csv(sub_table, "Data/brms_output/ranef_subite.csv")
-#write.csv(siteyr_table, "Data/brms_output/ranef_siteyear.csv")
-
 ##plot results site
 site_table$phen<-as.factor(site_table$phen)
 site_table<-mutate(site_table, phen = fct_relevel(phen, "Green", "Flower", "Flowerend",
