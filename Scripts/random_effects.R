@@ -163,9 +163,6 @@ dispm2x<-as.data.frame(dispm2x)
 dispm2x$phen<-"Disp"
 dispm2x$site<-row.names(dispm2x)
 
-dispm2xint<-dispm2x$site_name[,,'Intercept']
-
-
 all_site<-as.data.frame(rbind(dispm2x, flowm2x, flowendm2x, senm2x, greenm2x, fruitm2x))
 all_site<-left_join(all_site, scales)
 
@@ -417,5 +414,39 @@ siteyr_table<-left_join(siteyr_table, obs_siteyr)
 #write.csv(site_table, "Data/brms_output/ranef_site.csv")
 #write.csv(sub_table, "Data/brms_output/ranef_subite.csv")
 #write.csv(siteyr_table, "Data/brms_output/ranef_siteyear.csv")
+
+##plot results site
+site_table$phen<-as.factor(site_table$phen)
+site_table<-mutate(site_table, phen = fct_relevel(phen, "Green", "Flower", "Flowerend",
+                                            "Fruit", "Disp", "Sen"))
+sites_table<-mutate(site_table, site=case_when(site=="ADVENTDALEN"~"ADVENTDALEN", 
+                                                site=="ALEXFIORD"~"ALEXANDRA FIORD", 
+                                                site=="ATQASUK"~"ATQASUK",
+                                                site=="BARROW"~"UTQIAGVIK",
+                                                site=="DARING"~"DARING LAKE",
+                                                site=="ENDALEN"~"ENDALEN",
+                                                site=="FAROE"~"FAROE ISLANDS",
+                                                site=="FINSE"~"FINSE",
+                                                site=="GAVIAPASS"~"GAVIA PASS",
+                                                site=="HEALY"~"HEALY",
+                                                site=="TOOLIK"~"TOOLIK LAKE",
+                                                site=="IMNAVAIT"~"IMNAVAIT CREEK",
+                                                site=="JAKOBSHORN"~"JAKOBSHORN",
+                                                site=="KANGER"~"KANGERLUSSUAQ",
+                                                site=="KANGER"~"KANGERLUSSUAQ",
+                                                site=="LATNJA"~"LATNJAJAUARE",
+                                                site=="NIWOT"~"NIWOT RIDGE",
+                                                site=="VALBERCLA"~"VAL BERCLA",
+                                                site=="WHITEMTNS"~"WHITE MTNS"))
+
+#plot 
+ggplot(data=site_table, 
+       aes(x=phen, y=Estimate_days, color=site))+
+  geom_point(position = position_dodge(width = .4))+
+  geom_errorbar(aes(ymax=CI_upper_days, ymin=CI_lower_days),
+                position = position_dodge(width = .4))+
+  theme_bw()+ geom_hline(aes(yintercept=0), linetype='dotted')+
+  ylab(expression(Delta*"Days (OTC - CTL)"))+ 
+  ggtitle('Site level responses to experimental warming')
 
 
