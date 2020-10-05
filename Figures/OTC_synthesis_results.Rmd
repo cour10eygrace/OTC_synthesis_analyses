@@ -125,7 +125,7 @@ names <- c(
 post2<-left_join(post2, eti)
 post3<-pivot_wider(post2, names_from = "CI", values_from = c("CI_low", "CI_high"))
 
-ggplot(post3, aes(x = treatmentOTC*scale, fill= facet)) + 
+plot<-ggplot(post3, aes(x = treatmentOTC*scale, fill= facet)) + 
 geom_vline(data = plyr::ddply(post3, "facet"), aes(xintercept=CI_low_90*scale),color="red",lty=2,size=1)+
 geom_vline(data = plyr::ddply(post3, "facet"), aes(xintercept=CI_high_90*scale), color="red",lty=2,size=1)+
 geom_vline(data = plyr::ddply(post3, "facet"), aes(xintercept=CI_low_95*scale),color="grey",lty=2,size=1)+
@@ -135,12 +135,12 @@ geom_vline(data = plyr::ddply(post3, "facet"), aes(xintercept=CI_high_95*scale),
   geom_density()+ 
   scale_y_continuous(limits = c(0,1.5))+
   theme(legend.position="none")+
-    scale_fill_manual(values=c( "#52854C", "#9A7B4F","#E069C6", "#D05A45",  "#4E84C4", "#293352"))+
+    scale_fill_manual(values=c( "#52854C", "#D05A45", "#FAEFD1", "#F3DF6C", "#E069C6", "#9A7B4F"))+
   #d99694-salmon red 
  geom_vline(xintercept = 0, color='black')+
 xlab(expression(Delta*"Days (OTC - CTL)")) + ylab("Density") 
 
-
+plot
 ```
 
 
