@@ -1,716 +1,905 @@
-Site_name,Species_code,Genus ,Species ,Phenology,Site definition,Measurement_level
-Adventdalen,ALOMAG,Alopecurus,magellanicus,Flowering,flower_plot_first,plot
-Adventdalen,ALOMAG,Alopecurus,magellanicus,Green up,greenleaf_plot_first,plot
-Adventdalen,ALOMAG,Alopecurus,magellanicus,Seed Dispersal,dispersal_plot_first,plot
-Adventdalen,CASTET,Cassiope,tetragona,End of Flowering,endflower_plot_first,plot
-Adventdalen,CASTET,Cassiope,tetragona,Flowering,flower_plot_first,plot
-Adventdalen,DRYOCT,Dryas,octopetala,End of Flowering,endflower_plot_first,plot
-Adventdalen,DRYOCT,Dryas,octopetala,Flowering,flower_plot_first,plot
-Adventdalen,DRYOCT,Dryas,octopetala,Green up,greenleaf_plot_first,plot
-Adventdalen,DRYOCT,Dryas,octopetala,Leaf Senescence,senescence50_plot_first,plot
-Adventdalen,DRYOCT,Dryas,octopetala,Seed Dispersal,dispersal_plot_first,plot
-Adventdalen,LUZARCUATCON,Luzula,arcuata,Flowering,flower_plot_first,plot
-Adventdalen,LUZARCUATCON,Luzula,arcuata,Green up,greenleaf_plot_first,plot
-Adventdalen,LUZARCUATCON,Luzula,arcuata,Leaf Senescence,senescence50_plot_first,plot
-Adventdalen,LUZARCUATCON,Luzula,arcuata,Seed Dispersal,dispersal_plot_first,plot
-Adventdalen,PEDHIR,Pedicularis,hirsuta,End of Flowering,endflower_plot_first,plot
-Adventdalen,PEDHIR,Pedicularis,hirsuta,Flowering,flower_plot_first,plot
-Adventdalen,PEDHIR,Pedicularis,hirsuta,Green up,greenleaf_plot_first,plot
-Adventdalen,PEDHIR,Pedicularis,hirsuta,Seed Dispersal,dispersal_plot_first,plot
-Adventdalen,PERVIV,Persicaria,vivipara,End of Flowering,endflower_plot_first,plot
-Adventdalen,PERVIV,Persicaria,vivipara,Flowering,flower_plot_first,plot
-Adventdalen,PERVIV,Persicaria,vivipara,Seed Dispersal,dispersal_plot_first,plot
-Adventdalen,SALPOL,Salix,polaris,End of Flowering,endflower_plot_first,plot
-Adventdalen,SALPOL,Salix,polaris,Flowering,flower_plot_first,plot
-Adventdalen,SALPOL,Salix,polaris,Green up,greenleaf_plot_first,plot
-Adventdalen,SALPOL,Salix,polaris,Leaf Senescence,senescence50_plot_first,plot
-Adventdalen,SALPOL,Salix,polaris,Seed Dispersal,dispersal_plot_first,plot
-Adventdalen,STECRA,Stellaria,crassipes,End of Flowering,endflower_plot_first,plot
-Adventdalen,STECRA,Stellaria,crassipes,Flowering,flower_plot_first,plot
-Adventdalen,STECRA,Stellaria,crassipes,Green up,greenleaf_plot_first,plot
-Alexandra Fiord,ARCLAT,Arctagrostis,latifolia,End of Flowering,first day a senescing flower was observed,individual
-Alexandra Fiord,ARCLAT,Arctagrostis,latifolia,Flowering,first day a flower bud was observed,individual
-Alexandra Fiord,ARCLAT,Arctagrostis,latifolia,Green up,first day a mature leaf was observed,individual
-Alexandra Fiord,ARCLAT,Arctagrostis,latifolia,Green up,first day an expanded leaf was observed,individual
-Alexandra Fiord,ARCLAT,Arctagrostis,latifolia,Leaf Senescence,first day a senesced leaf was observed,individual
-Alexandra Fiord,CASTET,Cassiope,tetragona,End of Flowering,last day a mature flower was observed,individual
-Alexandra Fiord,CASTET,Cassiope,tetragona,End of Flowering,last day flower buds were observed,individual
-Alexandra Fiord,CASTET,Cassiope,tetragona,Flowering, first day a mature flower was observed,individual
-Alexandra Fiord,CASTET,Cassiope,tetragona,Flowering,first day a flower bud was observed,individual
-Alexandra Fiord,CASTET,Cassiope,tetragona,Flowering,first day pedicel elongation was observed,individual
-Alexandra Fiord,CASTET,Cassiope,tetragona,Fruiting,first day an immature fruit was observed,individual
-Alexandra Fiord,CASTET,Cassiope,tetragona,Green up,first day a green leaf was observed,individual
-Alexandra Fiord,DRYINT,Dryas,integrifolia,End of Flowering, first day a senescing petal was observed ,individual
-Alexandra Fiord,DRYINT,Dryas,integrifolia,Flowering, first day a mature flower was observed,individual
-Alexandra Fiord,DRYINT,Dryas,integrifolia,Fruiting,first day that a capsule was observed,individual
-Alexandra Fiord,DRYINT,Dryas,integrifolia,Green up, first day a new leaf was observed,individual
-Alexandra Fiord,DRYINT,Dryas,integrifolia,Green up,first day a mature leaf was observed,individual
-Alexandra Fiord,DRYINT,Dryas,integrifolia,Leaf Senescence,first day a senesced leaf was observed,individual
-Alexandra Fiord,DRYINT,Dryas,integrifolia,Seed Dispersal,first day that seed dispersal was observed,individual
-Alexandra Fiord,OXYDIG,Oxyria,digyna,End of Flowering, first day a senescing petal was observed ,individual
-Alexandra Fiord,OXYDIG,Oxyria,digyna,Flowering,first day stalk elongation is observed,individual
-Alexandra Fiord,OXYDIG,Oxyria,digyna,Fruiting,first day developed seeds are observed,individual
-Alexandra Fiord,OXYDIG,Oxyria,digyna,Green up, first day a new leaf was observed,individual
-Alexandra Fiord,OXYDIG,Oxyria,digyna,Leaf Senescence,first day a senesced leaf was observed,individual
-Alexandra Fiord,OXYDIG,Oxyria,digyna,Seed Dispersal,first day seeds begin to fall from the inflorencence,individual
-Alexandra Fiord,PAPRAD,Papaver,radicatum,End of Flowering, first day a senescing petal was observed ,individual
-Alexandra Fiord,PAPRAD,Papaver,radicatum,Flowering, first day a mature flower was observed,individual
-Alexandra Fiord,PAPRAD,Papaver,radicatum,Flowering,first day an elongating bud was observed,individual
-Alexandra Fiord,PAPRAD,Papaver,radicatum,Fruiting,first day an immature capsule was observed,individual
-Alexandra Fiord,PAPRAD,Papaver,radicatum,Green up, first day a new leaf was observed,individual
-Alexandra Fiord,PAPRAD,Papaver,radicatum,Leaf Senescence,first day a senesced leaf was observed,individual
-Alexandra Fiord,SALARC,Salix,arctica,End of Flowering,First day male catkins are senescing; pollen is dried up.,individual
-Alexandra Fiord,SALARC,Salix,arctica,Flowering,first day a mature flower was observed,individual
-Alexandra Fiord,SALARC,Salix,arctica,Fruiting,First day female catkins are swelling,individual
-Alexandra Fiord,SALARC,Salix,arctica,Green up,first day a leaf bud break was observed,individual
-Alexandra Fiord,SALARC,Salix,arctica,Green up,first day a mature leaf was observed,individual
-Alexandra Fiord,SALARC,Salix,arctica,Leaf Senescence,first day a senesced leaf was observed,individual
-Alexandra Fiord,SALARC,Salix,arctica,Seed Dispersal,first day that seed dispersal was observed,individual
-Alexandra Fiord,SAXOPP,Saxifraga,oppositifolia,End of Flowering, first day a senescing petal was observed ,individual
-Alexandra Fiord,SAXOPP,Saxifraga,oppositifolia,Flowering,first day flower bud break was observed,individual
-Alexandra Fiord,SAXOPP,Saxifraga,oppositifolia,Fruiting,first day that a mature capsule was observed,individual
-Alexandra Fiord,SAXOPP,Saxifraga,oppositifolia,Green up,first day vegetative bud break (green) was observed ,individual
-Alexandra Fiord,SAXOPP,Saxifraga,oppositifolia,Seed Dispersal,first day a dehiscing capsule was observed,individual
-Atqasuk,ANTFRI,Antennaria,friesiana,End of Flowering,first flower withering (total plot),plot
-Atqasuk,ANTFRI,Antennaria,friesiana,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,ANTFRI,Antennaria,friesiana,Green up,Leaf bud burst (total plot first),plot
-Atqasuk,ANTFRI,Antennaria,friesiana,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,ANTFRI,Antennaria,friesiana,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,ARCLAT,Arctagrostis,latifolia,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,ARCLAT,Arctagrostis,latifolia,Leaf Senescence,first visible Leaf Senescence (individual),individual
-Atqasuk,ARTCAMBOR,Artemisia,campestris,End of Flowering,first flower withering (total plot),plot
-Atqasuk,ARTCAMBOR,Artemisia,campestris,Flowering,flower bud visible (total plot),plot
-Atqasuk,ARTCAMBOR,Artemisia,campestris,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,BETNAN,Betula,nana,Green up,Leaf bud burst (total plot first),plot
-Atqasuk,BETNAN,Betula,nana,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,CARAQU,Carex,aquatilis,End of Flowering,first flower withering (total plot),plot
-Atqasuk,CARAQU,Carex,aquatilis,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,CARAQU,Carex,aquatilis,Fruiting,first seed development (total plot),plot
-Atqasuk,CARAQU,Carex,aquatilis,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,CARAQU,Carex,aquatilis,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,CARAQU,Carex,aquatilis,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,CARBIG,Carex,bigelowii,End of Flowering,first flower withering (total plot),plot
-Atqasuk,CARBIG,Carex,bigelowii,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,CARBIG,Carex,bigelowii,Fruiting,first seed development (total plot),plot
-Atqasuk,CARBIG,Carex,bigelowii,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,CARBIG,Carex,bigelowii,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,CARBIG,Carex,bigelowii,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,CARRAR,Carex,rariflora,End of Flowering,first flower withering (total plot),plot
-Atqasuk,CARRAR,Carex,rariflora,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,CARRAR,Carex,rariflora,Fruiting,first seed development (total plot),plot
-Atqasuk,CARRAR,Carex,rariflora,Green up,Leaf bud burst (total plot first),plot
-Atqasuk,CARRAR,Carex,rariflora,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,CARRAR,Carex,rariflora,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,CARROT,Carex,rotundata,End of Flowering,first flower withering (total plot),plot
-Atqasuk,CARROT,Carex,rotundata,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,CARROT,Carex,rotundata,Fruiting,first seed development (total plot),plot
-Atqasuk,CARROT,Carex,rotundata,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,CARROT,Carex,rotundata,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,CASTET,Cassiope,tetragona,End of Flowering,first flower withering (total plot),plot
-Atqasuk,CASTET,Cassiope,tetragona,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,CASTET,Cassiope,tetragona,Fruiting,first seed development (total plot),plot
-Atqasuk,CASTET,Cassiope,tetragona,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,CASTET,Cassiope,tetragona,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,CASTET,Cassiope,tetragona,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,DIALAP,Diapensia,lapponica,End of Flowering,first flower withering (total plot),plot
-Atqasuk,DIALAP,Diapensia,lapponica,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,DIALAP,Diapensia,lapponica,Fruiting,first seed development (total plot),plot
-Atqasuk,DIALAP,Diapensia,lapponica,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,DIALAP,Diapensia,lapponica,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,DIALAP,Diapensia,lapponica,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,DUPFIS,Dupontia,fisheri,End of Flowering,first flower withering (total plot),plot
-Atqasuk,DUPFIS,Dupontia,fisheri,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,DUPFIS,Dupontia,fisheri,Fruiting,first seed development (total plot),plot
-Atqasuk,DUPFIS,Dupontia,fisheri,Green up,Leaf bud burst (total plot first),plot
-Atqasuk,DUPFIS,Dupontia,fisheri,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,DUPFIS,Dupontia,fisheri,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,ERIANG,Eriophorum,angustifolium,End of Flowering,first flower withering (total plot),plot
-Atqasuk,ERIANG,Eriophorum,angustifolium,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,ERIANG,Eriophorum,angustifolium,Fruiting,first seed development (total plot),plot
-Atqasuk,ERIANG,Eriophorum,angustifolium,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,ERIANG,Eriophorum,angustifolium,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,ERIANG,Eriophorum,angustifolium,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,ERICHA,Eriophorum,chamissonis,End of Flowering,first flower withering (total plot),plot
-Atqasuk,ERICHA,Eriophorum,chamissonis,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,ERICHA,Eriophorum,chamissonis,Fruiting,first seed development (total plot),plot
-Atqasuk,ERICHA,Eriophorum,chamissonis,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,HIEALPINA,Hierochloe,alpina,End of Flowering,first flower withering (total plot),plot
-Atqasuk,HIEALPINA,Hierochloe,alpina,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,HIEALPINA,Hierochloe,alpina,Fruiting,first seed development (total plot),plot
-Atqasuk,HIEALPINA,Hierochloe,alpina,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,HIEALPINA,Hierochloe,alpina,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,HIEALPINA,Hierochloe,alpina,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,LEDPAL,Ledum,palustre,End of Flowering,first flower withering (total plot),plot
-Atqasuk,LEDPAL,Ledum,palustre,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,LEDPAL,Ledum,palustre,Fruiting,first seed development (total plot),plot
-Atqasuk,LEDPAL,Ledum,palustre,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,LEDPAL,Ledum,palustre,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,LEDPAL,Ledum,palustre,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,LUZCON,Luzula,confusa,End of Flowering,first flower withering (total plot),plot
-Atqasuk,LUZCON,Luzula,confusa,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,LUZCON,Luzula,confusa,Fruiting,first seed development (total plot),plot
-Atqasuk,LUZCON,Luzula,confusa,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,LUZCON,Luzula,confusa,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,LUZCON,Luzula,confusa,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,LUZNIV,Luzula,nivalis,End of Flowering,first flower withering (total plot),plot
-Atqasuk,LUZNIV,Luzula,nivalis,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,LUZNIV,Luzula,nivalis,Fruiting,first seed development (total plot),plot
-Atqasuk,LUZNIV,Luzula,nivalis,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,LUZWAH,Luzula,wahlenbergii,End of Flowering,first flower withering (total plot),plot
-Atqasuk,LUZWAH,Luzula,wahlenbergii,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,LUZWAH,Luzula,wahlenbergii,Fruiting,first seed development (total plot),plot
-Atqasuk,LUZWAH,Luzula,wahlenbergii,Green up,Leaf bud burst (total plot first),plot
-Atqasuk,LUZWAH,Luzula,wahlenbergii,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,LUZWAH,Luzula,wahlenbergii,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,MINOBT,Minuartia,obtusiloba,End of Flowering,first flower withering (total plot),plot
-Atqasuk,MINOBT,Minuartia,obtusiloba,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,MINOBT,Minuartia,obtusiloba,Fruiting,first seed development (total plot),plot
-Atqasuk,MINOBT,Minuartia,obtusiloba,Green up,Leaf bud burst (total plot first),plot
-Atqasuk,MINOBT,Minuartia,obtusiloba,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,MINOBT,Minuartia,obtusiloba,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,PEDSUD,Pedicularis,sudetica,End of Flowering,first flower withering (total plot),plot
-Atqasuk,PEDSUD,Pedicularis,sudetica,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,PEDSUD,Pedicularis,sudetica,Fruiting,first seed development (total plot),plot
-Atqasuk,PEDSUD,Pedicularis,sudetica,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,PEDSUD,Pedicularis,sudetica,Leaf Senescence,first visible Leaf Senescence (individual),individual
-Atqasuk,PEDSUD,Pedicularis,sudetica,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,PERBIS,Persicaria,bistorta,End of Flowering,first flower withering (total plot),plot
-Atqasuk,PERBIS,Persicaria,bistorta,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,PERBIS,Persicaria,bistorta,Fruiting,first seed development (total plot),plot
-Atqasuk,PERBIS,Persicaria,bistorta,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,PERVIV,Persicaria,vivipara,End of Flowering,first flower withering (total plot),plot
-Atqasuk,PERVIV,Persicaria,vivipara,Flowering,Inflorescence emergence (total plot first),plot
-Atqasuk,PERVIV,Persicaria,vivipara,Fruiting,first seed development (total plot),plot
-Atqasuk,PERVIV,Persicaria,vivipara,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,SALPHL,Salix,phlebophylla,End of Flowering,first female flower withering (total plot),plot
-Atqasuk,SALPHL,Salix,phlebophylla,Flowering,female flower open (plot),plot
-Atqasuk,SALPHL,Salix,phlebophylla,Fruiting,first seed development (plot),plot
-Atqasuk,SALPHL,Salix,phlebophylla,Green up,Female plant Leaf bud burst (total plot first),plot
-Atqasuk,SALPHL,Salix,phlebophylla,Leaf Senescence,first visible Leaf Senescence (total plot  female),plot
-Atqasuk,SALPHL,Salix,phlebophylla,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,SALPOL,Salix,polaris,End of Flowering,first female flower withering (total plot),plot
-Atqasuk,SALPOL,Salix,polaris,Flowering,female flower open (plot),plot
-Atqasuk,SALPOL,Salix,polaris,Fruiting,first seed development (plot),plot
-Atqasuk,SALPOL,Salix,polaris,Green up,Female plant Leaf bud burst (total plot first),plot
-Atqasuk,SALPOL,Salix,polaris,Leaf Senescence,first visible Leaf Senescence (total plot  female),plot
-Atqasuk,SALPOL,Salix,polaris,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,SALPUL,Salix,pulchra,End of Flowering,first female flower withering (total plot),plot
-Atqasuk,SALPUL,Salix,pulchra,Flowering,female flower open (plot),plot
-Atqasuk,SALPUL,Salix,pulchra,Fruiting,first seed development (plot),plot
-Atqasuk,SALPUL,Salix,pulchra,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,SALPUL,Salix,pulchra,Leaf Senescence,first visible Leaf Senescence (total plot  female),plot
-Atqasuk,SALPUL,Salix,pulchra,Seed Dispersal,first seed dispersal (total plot),plot
-Atqasuk,SAXFOL,Saxifraga,foliolosa,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,SAXFOL,Saxifraga,foliolosa,Leaf Senescence,first visible Leaf Senescence (individual),individual
-Atqasuk,TRISPI,Trisetum,spicatum,End of Flowering,first flower withering (total plot),plot
-Atqasuk,TRISPI,Trisetum,spicatum,Flowering,Inflorescence emergence (total plot first),plot
-Atqasuk,TRISPI,Trisetum,spicatum,Green up,Leaf bud burst (total plot first),plot
-Atqasuk,TRISPI,Trisetum,spicatum,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,VACVIT,Vaccinium,vitis-idaea,End of Flowering,first flower withering (total plot),plot
-Atqasuk,VACVIT,Vaccinium,vitis-idaea,Flowering,flower open (plot); anthers visible if graminoid,plot
-Atqasuk,VACVIT,Vaccinium,vitis-idaea,Fruiting,first seed development (total plot),plot
-Atqasuk,VACVIT,Vaccinium,vitis-idaea,Green up,Leaf bud burst (individual plant),individual
-Atqasuk,VACVIT,Vaccinium,vitis-idaea,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Atqasuk,VACVIT,Vaccinium,vitis-idaea,Seed Dispersal,first seed dispersal (total plot),plot
-Daring Lake,ERIVAG,Eriophorum,vaginatum,Flowering,first anther visible,individual
-Daring Lake,ERIVAG,Eriophorum,vaginatum,Seed Dispersal,seed shed,individual
-Daring Lake,LEDDEC,Ledum,decumbens,End of Flowering,first flower shed,individual
-Daring Lake,LEDDEC,Ledum,decumbens,Flowering,First flower bud visible,individual
-Daring Lake,LEDDEC,Ledum,decumbens,Fruiting,first fruit visible,individual
-Daring Lake,VACVIT,Vaccinium,vitis-idaea,End of Flowering,first flower shed,individual
-Daring Lake,VACVIT,Vaccinium,vitis-idaea,Flowering,First flower bud visible,individual
-Daring Lake,VACVIT,Vaccinium,vitis-idaea,Fruiting,first fruit visible,individual
-Endalen,CARRUP,Carex,rupestris,Flowering,first anther,plot
-Endalen,CARRUP,Carex,rupestris,Seed Dispersal,first seed dispersal,plot
-Endalen,CASTET,Cassiope,tetragona,End of Flowering,first petal drop,plot
-Endalen,CASTET,Cassiope,tetragona,Flowering,First flower open,plot
-Endalen,DRYOCT,Dryas,octopetala,End of Flowering,last petal drop,plot
-Endalen,DRYOCT,Dryas,octopetala,Flowering,First flower bud visible,plot
-Endalen,DRYOCT,Dryas,octopetala,Flowering,First flower open,plot
-Endalen,DRYOCT,Dryas,octopetala,Leaf Senescence,first color change,plot
-Endalen,DRYOCT,Dryas,octopetala,Seed Dispersal,seed twist ,plot
-Endalen,PERVIV,Persicaria,vivipara,Flowering,First flower open,plot
-Endalen,SALPOL,Salix,polaris,Flowering,First flower bud visible,plot
-Endalen,SALPOL,Salix,polaris,Leaf Senescence,first color change,plot
-Endalen,SALPOL,Salix,polaris,Seed Dispersal,first seed dispersal,plot
-Endalen,SAXOPP,Saxifraga,oppositifolia,End of Flowering,first petal drop,plot
-Endalen,SAXOPP,Saxifraga,oppositifolia,Flowering,First flower open,plot
-Endalen,SAXOPP,Saxifraga,oppositifolia,Seed Dispersal,first seed dispersal,plot
-Faroe Islands,SILACA,Silene,acaulis,End of Flowering,last petal drop,plot
-Faroe Islands,SILACA,Silene,acaulis,Flowering,First flower open,plot
-Finse,BECGLA,Beckwithia,glacialis,Flowering,First flower open,plot
-Finse,RANACR,Ranunculus,acris,End of Flowering,last petal drop,plot
-Finse,RANACR,Ranunculus,acris,Flowering,First flower open,plot
-Finse,SCOAUT,Scorzoneroides,autumnalis,End of Flowering,last petal drop,plot
-Finse,SCOAUT,Scorzoneroides,autumnalis,Flowering,First flower open,plot
-Finse,SILACA,Silene,acaulis,End of Flowering,last petal drop,plot
-Finse,SILACA,Silene,acaulis,Flowering,First flower open,plot
-Gavia Pass,CARBELALP,Cardamine,bellidifolia,Flowering,unopened buds visible,individual
-Gavia Pass,CARBELALP,Cardamine,bellidifolia,Fruiting,expanding fruits,individual
-Gavia Pass,CARBELALP,Cardamine,bellidifolia,Seed Dispersal,seed dispersal,individual
-Gavia Pass,LEUALP,Leucanthemopsis,alpina,Flowering,anthesis,individual
-Gavia Pass,LEUALP,Leucanthemopsis,alpina,Fruiting,expanding fruits,individual
-Gavia Pass,LEUALP,Leucanthemopsis,alpina,Seed Dispersal,seed dispersal,individual
-Gavia Pass,VERALP,Veronica,alpina,Flowering,unopened buds visible,individual
-Gavia Pass,VERALP,Veronica,alpina,Fruiting,expanding fruits,individual
-Gavia Pass,VERALP,Veronica,alpina,Seed Dispersal,seed dispersal,individual
-Healy,BETNAN,Betula,nana,Green up,bud burst,plot
-Healy,BETNAN,Betula,nana,Leaf Senescence,at least one leaf with no green (turning red or yellow),plot
-Healy,CARXXX,Carex,spp.,Green up,bud burst,plot
-Healy,CARXXX,Carex,spp.,Leaf Senescence,at least one leaf with no green (turning red or yellow),plot
-Healy,ERIVAG,Eriophorum,vaginatum,Leaf Senescence,at least one leaf with no green (turning red or yellow),plot
-Healy,RUBCHA,Rubus,chamaemorus,Green up,bud burst,plot
-Healy,RUBCHA,Rubus,chamaemorus,Leaf Senescence,at least one leaf with no green (turning red or yellow),plot
-Healy,VACULI,Vaccinium,uliginosum,Green up,bud burst,plot
-Healy,VACULI,Vaccinium,uliginosum,Leaf Senescence,at least one leaf with no green (turning red or yellow),plot
-Imnavait,BETNAN,Betula,nana,Green up,full leaf expansion,individual
-Imnavait,BETNAN,Betula,nana,Leaf Senescence,one leaf wholly colored,individual
-Imnavait,CARBIG,Carex,bigelowii,Green up,first leaf bud,individual
-Imnavait,CARBIG,Carex,bigelowii,Leaf Senescence,first leaf color change,individual
-Imnavait,CASTET,Cassiope,tetragona,Green up,first leaf bud,individual
-Imnavait,CASTET,Cassiope,tetragona,Leaf Senescence,first leaf color change,individual
-Imnavait,ERIVAG,Eriophorum,vaginatum,Green up,first leaf bud,individual
-Imnavait,ERIVAG,Eriophorum,vaginatum,Leaf Senescence,first leaf color change,individual
-Imnavait,LEDPAL,Ledum,palustre,Green up,full leaf expansion,individual
-Imnavait,LEDPAL,Ledum,palustre,Leaf Senescence,first leaf color change,individual
-Imnavait,SALPUL,Salix,pulchra,Green up,first leaf bud,individual
-Imnavait,SALPUL,Salix,pulchra,Leaf Senescence,first leaf color change,individual
-Imnavait,VACVIT,Vaccinium,vitis-idaea,Green up,full leaf expansion,individual
-Imnavait,VACVIT,Vaccinium,vitis-idaea,Leaf Senescence,first leaf color change,individual
-Jakobshorn,ANTALP,Antennaria,alpina,End of Flowering,first senesced flower,plot
-Jakobshorn,ANTALP,Antennaria,alpina,Flowering,first open flower,plot
-Jakobshorn,ARNMON,Arnica,montana,Flowering,first open flower,plot
-Jakobshorn,CAMROT,Campanula,rotundifolia,Flowering,first open flower,plot
-Jakobshorn,CAMROT,Campanula,rotundifolia,Leaf Senescence,first colored leaf,plot
-Jakobshorn,CARCUR,Carex,curvula,End of Flowering,first senesced flower,plot
-Jakobshorn,CARCUR,Carex,curvula,Flowering,first open flower,plot
-Jakobshorn,DESFLE,Deschampsia,flexuosa,End of Flowering,first senesced flower,plot
-Jakobshorn,DESFLE,Deschampsia,flexuosa,Flowering,first open flower,plot
-Jakobshorn,EMPNIG,Empetrum,nigrum,End of Flowering,first senesced flower,plot
-Jakobshorn,EMPNIG,Empetrum,nigrum,Flowering,first open flower,plot
-Jakobshorn,EUPMIN,Euphrasia,minima,Flowering,first open flower,plot
-Jakobshorn,GENACA,Gentiana,acaulis,Flowering,first open flower,plot
-Jakobshorn,HELVER,Helictotrichon,versicolor,End of Flowering,first senesced flower,plot
-Jakobshorn,HELVER,Helictotrichon,versicolor,Flowering,first open flower,plot
-Jakobshorn,HIEBUP,Hieracium,bupleuroides,Flowering,first open flower,plot
-Jakobshorn,HOMALP,Homogyne,alpina,End of Flowering,first senesced flower,plot
-Jakobshorn,HOMALP,Homogyne,alpina,Flowering,first open flower,plot
-Jakobshorn,JACINC,Jacobaea,incana,End of Flowering,first senesced flower,plot
-Jakobshorn,JACINC,Jacobaea,incana,Flowering,first open flower,plot
-Jakobshorn,LEUALP,Leucanthemopsis,alpina,Flowering,first open flower,plot
-Jakobshorn,LOIPRO,Loiseleuria,procumbens,End of Flowering,first senesced flower,plot
-Jakobshorn,LOIPRO,Loiseleuria,procumbens,Flowering,first open flower,plot
-Jakobshorn,LUZALP,Luzula,alpinopilosa,End of Flowering,first senesced flower,plot
-Jakobshorn,LUZALP,Luzula,alpinopilosa,Flowering,first open flower,plot
-Jakobshorn,LUZLUT,Luzula,lutea,Flowering,first open flower,plot
-Jakobshorn,NARSTR,Nardus,stricta,End of Flowering,first senesced flower,plot
-Jakobshorn,NARSTR,Nardus,stricta,Flowering,first open flower,plot
-Jakobshorn,PHYHEM,Phyteuma, hemisphaericum,Flowering,first open flower,plot
-Jakobshorn,RANVIL,Ranunculus,villarsii,Flowering,first open flower,plot
-Jakobshorn,SCOHEL,Scorzoneroides,helvetica,End of Flowering,first senesced flower,plot
-Jakobshorn,SCOHEL,Scorzoneroides,helvetica,Flowering,first open flower,plot
-Jakobshorn,VACMYR,Vaccinium,myrtillus,End of Flowering,first senesced flower,plot
-Jakobshorn,VACMYR,Vaccinium,myrtillus,Flowering,first open flower,plot
-Jakobshorn,VACMYR,Vaccinium,myrtillus,Green up,first green leaf visible,plot
-Jakobshorn,VACMYR,Vaccinium,myrtillus,Leaf Senescence,first colored leaf,plot
-Jakobshorn,VACULI,Vaccinium,uliginosum,End of Flowering,first senesced flower,plot
-Jakobshorn,VACULI,Vaccinium,uliginosum,Flowering,first open flower,plot
-Jakobshorn,VACULI,Vaccinium,uliginosum,Green up,first green leaf visible,plot
-Jakobshorn,VACULI,Vaccinium,uliginosum,Leaf Senescence,first colored leaf,plot
-Kangerlussuaq,BETNAN,Betula,nana,Flowering,bloom,plot
-Kangerlussuaq,BETNAN,Betula,nana,Flowering,Flower set,plot
-Kangerlussuaq,BETNAN,Betula,nana,Fruiting,Fruit set,plot
-Kangerlussuaq,CARSUP,Carex,supina,Flowering,bloom,plot
-Kangerlussuaq,CARSUP,Carex,supina,Fruiting,Fruit set,plot
-Kangerlussuaq,CERALP,Cerastium,alpinum,Flowering,bloom,plot
-Kangerlussuaq,CERALP,Cerastium,alpinum,Green up,New green leaf tissue ,plot
-Kangerlussuaq,DRAXXX,Draba,spp.,Flowering,bloom,plot
-Kangerlussuaq,DRAXXX,Draba,spp.,Fruiting,Fruit set,plot
-Kangerlussuaq,POTPAL,Comarum,palustre,Flowering,bloom,plot
-Kangerlussuaq,SALGLA,Salix,glauca,Flowering,bloom,plot
-Kangerlussuaq,SALGLA,Salix,glauca,Fruiting,Fruit set,plot
-Kangerlussuaq,SALGLA,Salix,glauca,Green up,leaf opening,plot
-Kangerlussuaq,STELON,Stellaria,longipes,Flowering,Flower set,plot
-Kangerlussuaq,STELON,Stellaria,longipes,Green up,New green leaf tissue ,plot
-Latnjajaure,CASTET,Cassiope,tetragona,End of Flowering,first petal drop,plot
-Latnjajaure,CASTET,Cassiope,tetragona,Flowering,First flower open,plot
-Latnjajaure,DRYOCT,Dryas,octopetala,End of Flowering,first petal drop,plot
-Latnjajaure,DRYOCT,Dryas,octopetala,Flowering,First flower open,plot
-Latnjajaure,DRYOCT,Dryas,octopetala,Green up,first leaf expanded,plot
-Latnjajaure,DRYOCT,Dryas,octopetala,Leaf Senescence,first color change,plot
-Latnjajaure,DRYOCT,Dryas,octopetala,Seed Dispersal,first seed dispersal,plot
-Latnjajaure,ERIVAG,Eriophorum,vaginatum,Flowering,first anther ,plot
-Latnjajaure,ERIVAG,Eriophorum,vaginatum,Seed Dispersal,first seed dispersal,plot
-Latnjajaure,PERVIV,Persicaria,vivipara,Flowering,First flower open,plot
-Latnjajaure,RANNIV,Ranunculus,nivalis,End of Flowering,first petal drop,plot
-Latnjajaure,RANNIV,Ranunculus,nivalis,Flowering,First flower open,plot
-Latnjajaure,RANNIV,Ranunculus,nivalis,Leaf Senescence,first color change,plot
-Latnjajaure,RANNIV,Ranunculus,nivalis,Seed Dispersal,first seed dispersal,plot
-Niwot Ridge,ARTSCO,Artemisia,scopulorum,End of Flowering,Flower senescent ,individual
-Niwot Ridge,ARTSCO,Artemisia,scopulorum,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,ARTSCO,Artemisia,scopulorum,Flowering,Flower open,individual
-Niwot Ridge,ARTSCO,Artemisia,scopulorum,Flowering,first visible flower in plot,plot
-Niwot Ridge,ARTSCO,Artemisia,scopulorum,Green up,Start of vegetative growth (start of shoot elongation),individual
-Niwot Ridge,ARTSCO,Artemisia,scopulorum,Leaf Senescence,50% senescence,individual
-Niwot Ridge,BISBIS,Bistorta,bistortoides,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,BISBIS,Bistorta,bistortoides,Flowering,first visible flower in plot,plot
-Niwot Ridge,CALLEP,Caltha,leptosepala,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,CALLEP,Caltha,leptosepala,Flowering,first visible flower in plot,plot
-Niwot Ridge,CARSCO,Carex,scopulorum,Flowering,first visible flower in plot,plot
-Niwot Ridge,CARXXX,Carex,spp.,End of Flowering,Flower senescent ,individual
-Niwot Ridge,CARXXX,Carex,spp.,Flowering,Flower open,individual
-Niwot Ridge,CARXXX,Carex,spp.,Green up,Start of vegetative growth (start of shoot elongation),individual
-Niwot Ridge,CARXXX,Carex,spp.,Leaf Senescence,50% senescence,individual
-Niwot Ridge,CASOCC,Castilleja,occidentalis,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,CASOCC,Castilleja,occidentalis,Flowering,first visible flower in plot,plot
-Niwot Ridge,CHIJAM,Chionophila,jamesii,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,CHIJAM,Chionophila,jamesii,Flowering,first visible flower in plot,plot
-Niwot Ridge,DESCES,Deschampsia,cespitosa,End of Flowering,Flower senescent ,individual
-Niwot Ridge,DESCES,Deschampsia,cespitosa,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,DESCES,Deschampsia,cespitosa,Flowering,Flower open,individual
-Niwot Ridge,DESCES,Deschampsia,cespitosa,Flowering,first visible flower in plot,plot
-Niwot Ridge,FESBRA,Festuca,brachyphylla,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,FESBRA,Festuca,brachyphylla,Flowering,first visible flower in plot,plot
-Niwot Ridge,GENALG,Gentiana,algida,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,GENALG,Gentiana,algida,Flowering,first visible flower in plot,plot
-Niwot Ridge,GENAMA,Gentianella,amarella,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,GENAMA,Gentianella,amarella,Flowering,first visible flower in plot,plot
-Niwot Ridge,GEUROS,Geum,rosii,End of Flowering,Flower senescent ,individual
-Niwot Ridge,GEUROS,Geum,rossii,End of Flowering,Flower senescent ,individual
-Niwot Ridge,GEUROS,Geum,rosii,End of Flowering,last petal shed,individual
-Niwot Ridge,GEUROS,Geum,rossii,End of Flowering,last petal shed,individual
-Niwot Ridge,GEUROS,Geum,rosii,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,GEUROS,Geum,rossii,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,GEUROS,Geum,rosii,Flowering,first flower or inflorescence open,individual
-Niwot Ridge,GEUROS,Geum,rossii,Flowering,first flower or inflorescence open,individual
-Niwot Ridge,GEUROS,Geum,rosii,Flowering,Flower open,individual
-Niwot Ridge,GEUROS,Geum,rossii,Flowering,Flower open,individual
-Niwot Ridge,GEUROS,Geum,rosii,Flowering,first visible flower in plot,plot
-Niwot Ridge,GEUROS,Geum,rossii,Flowering,first visible flower in plot,plot
-Niwot Ridge,GEUROS,Geum,rosii,Green up,Start of vegetative growth (start of shoot elongation),individual
-Niwot Ridge,GEUROS,Geum,rossii,Green up,Start of vegetative growth (start of shoot elongation),individual
-Niwot Ridge,GEUROS,Geum,rosii,Leaf Senescence,leaves turning red,individual
-Niwot Ridge,GEUROS,Geum,rossii,Leaf Senescence,leaves turning red,individual
-Niwot Ridge,LEWPYG,Lewisia,pygmaea,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,LEWPYG,Lewisia,pygmaea,Flowering,first visible flower in plot,plot
-Niwot Ridge,LUZSPI,Luzula,spicata,Flowering,first visible flower in plot,plot
-Niwot Ridge,MERLAN,Mertensia,lanceolata,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,MERLAN,Mertensia,lanceolata,Flowering,first visible flower in plot,plot
-Niwot Ridge,PERBIS,Persicaria,bistorta,End of Flowering,first petal shed,individual
-Niwot Ridge,PERBIS,Persicaria,bistorta,Flowering,first flower or inflorescence open,individual
-Niwot Ridge,PERBIS,Persicaria,bistorta,Flowering,Flower buds swelling/bud burst,individual
-Niwot Ridge,PERVIV,Persicaria,vivipara,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,PERVIV,Persicaria,vivipara,Flowering,first visible flower in plot,plot
-Niwot Ridge,POTDIV,Potentilla,diversifolia,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,POTDIV,Potentilla,diversifolia,Flowering,first visible flower in plot,plot
-Niwot Ridge,STELON,Stellaria,longipes,End of Flowering,last visible flower in plot,plot
-Niwot Ridge,STELON,Stellaria,longipes,Flowering,first visible flower in plot,plot
-Toolik Lake,ANDPOL,Andromeda,polifolia,End of Flowering,last petal drop,individual
-Toolik Lake,ANDPOL,Andromeda,polifolia,Flowering,First flower bud visible,individual
-Toolik Lake,ANDPOL,Andromeda,polifolia,Flowering,First flower open,individual
-Toolik Lake,ANDPOL,Andromeda,polifolia,Green up,first leaf visible,individual
-Toolik Lake,ANDPOL,Andromeda,polifolia,Leaf Senescence,first color change,individual
-Toolik Lake,ANDPOL,Andromeda,polifolia,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,ARCALP,Arctous,alpina,End of Flowering,first petal drop,individual
-Toolik Lake,ARCALP,Arctous,alpina,Flowering,First flower bud visible,individual
-Toolik Lake,ARCALP,Arctous,alpina,Green up,first leaf visible,individual
-Toolik Lake,ARCALP,Arctous,alpina,Leaf Senescence,first color change,individual
-Toolik Lake,BETNAN,Betula,nana,End of Flowering,first petal drop,individual
-Toolik Lake,BETNAN,Betula,nana,Flowering,First flower open,individual
-Toolik Lake,BETNAN,Betula,nana,Green up,first leaf visible,individual
-Toolik Lake,BETNAN,Betula,nana,Leaf Senescence,first color change,individual
-Toolik Lake,BETNAN,Betula,nana,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,CARBIG,Carex,bigelowii,Flowering,First flower open,individual
-Toolik Lake,CARBIG,Carex,bigelowii,Green up,first leaf visible,individual
-Toolik Lake,CARBIG,Carex,bigelowii,Leaf Senescence,first color change,individual
-Toolik Lake,CARBIG,Carex,bigelowii,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,CASTET,Cassiope,tetragona,End of Flowering,first petal drop,individual
-Toolik Lake,CASTET,Cassiope,tetragona,Flowering,First flower open,individual
-Toolik Lake,CASTET,Cassiope,tetragona,Green up,first leaf visible,individual
-Toolik Lake,CASTET,Cassiope,tetragona,Leaf Senescence,first color change,individual
-Toolik Lake,CASTET,Cassiope,tetragona,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,DRYOCT,Dryas,octopetala,End of Flowering,first petal drop,individual
-Toolik Lake,DRYOCT,Dryas,octopetala,Flowering,First flower open,individual
-Toolik Lake,DRYOCT,Dryas,octopetala,Green up,first leaf visible,individual
-Toolik Lake,DRYOCT,Dryas,octopetala,Leaf Senescence,first color change,individual
-Toolik Lake,DRYOCT,Dryas,octopetala,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,EMPNIG,Empetrum,nigrum,End of Flowering,first petal drop,individual
-Toolik Lake,EMPNIG,Empetrum,nigrum,Flowering,First flower bud visible,individual
-Toolik Lake,EMPNIG,Empetrum,nigrum,Green up,first leaf visible,individual
-Toolik Lake,EMPNIG,Empetrum,nigrum,Leaf Senescence,first color change,individual
-Toolik Lake,EMPNIG,Empetrum,nigrum,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,ERIVAG,Eriophorum,vaginatum,End of Flowering,first petal drop,individual
-Toolik Lake,ERIVAG,Eriophorum,vaginatum,Flowering,First flower open,individual
-Toolik Lake,ERIVAG,Eriophorum,vaginatum,Green up,first leaf visible,individual
-Toolik Lake,ERIVAG,Eriophorum,vaginatum,Leaf Senescence,first color change,individual
-Toolik Lake,ERIVAG,Eriophorum,vaginatum,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,LEDDEC,Ledum,decumbens,End of Flowering,first petal drop,individual
-Toolik Lake,LEDDEC,Ledum,decumbens,End of Flowering,last petal drop,individual
-Toolik Lake,LEDDEC,Ledum,decumbens,Flowering,First flower bud visible,individual
-Toolik Lake,LEDDEC,Ledum,decumbens,Green up,first leaf visible,individual
-Toolik Lake,LEDDEC,Ledum,decumbens,Leaf Senescence,first color change,individual
-Toolik Lake,LEDDEC,Ledum,decumbens,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,LOIPRO,Loiseleuria,procumbens,End of Flowering,first petal drop,individual
-Toolik Lake,LOIPRO,Loiseleuria,procumbens,Flowering,First flower open,individual
-Toolik Lake,LOIPRO,Loiseleuria,procumbens,Green up,first leaf visible,individual
-Toolik Lake,LOIPRO,Loiseleuria,procumbens,Leaf Senescence,first color change,individual
-Toolik Lake,LOIPRO,Loiseleuria,procumbens,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,PERBIS,Persicaria,bistorta,End of Flowering,first petal drop,individual
-Toolik Lake,PERBIS,Persicaria,bistorta,Flowering,First flower open,individual
-Toolik Lake,PERBIS,Persicaria,bistorta,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,PERVIV,Persicaria,vivipara,Flowering,First flower bud visible,individual
-Toolik Lake,PYRGRA,Pyrola,grandiflora,Flowering,First flower bud visible,individual
-Toolik Lake,PYRGRA,Pyrola,grandiflora,Green up,first leaf visible,individual
-Toolik Lake,PYRGRA,Pyrola,grandiflora,Leaf Senescence,first color change,individual
-Toolik Lake,RUBCHA,Rubus,chamaemorus,End of Flowering,first petal drop,individual
-Toolik Lake,RUBCHA,Rubus,chamaemorus,End of Flowering,last petal drop,individual
-Toolik Lake,RUBCHA,Rubus,chamaemorus,Flowering,First flower bud visible,individual
-Toolik Lake,RUBCHA,Rubus,chamaemorus,Flowering,First flower open,individual
-Toolik Lake,RUBCHA,Rubus,chamaemorus,Green up,first leaf visible,individual
-Toolik Lake,RUBCHA,Rubus,chamaemorus,Leaf Senescence,first color change,individual
-Toolik Lake,SALPHL,Salix,phlebophylla,Flowering,First flower open,individual
-Toolik Lake,SALPHL,Salix,phlebophylla,Green up,first leaf visible,individual
-Toolik Lake,SALPHL,Salix,phlebophylla,Leaf Senescence,first color change,individual
-Toolik Lake,SALPHL,Salix,phlebophylla,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,SALPUL,Salix,pulchra,Flowering,First flower bud visible,individual
-Toolik Lake,SALPUL,Salix,pulchra,Green up,first leaf visible,individual
-Toolik Lake,SALPUL,Salix,pulchra,Leaf Senescence,first color change,individual
-Toolik Lake,SALPUL,Salix,pulchra,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,SALRET,Salix,retusa,End of Flowering,first petal drop,individual
-Toolik Lake,SALRET,Salix,retusa,Flowering,First flower open,individual
-Toolik Lake,SALRET,Salix,retusa,Green up,first leaf visible,individual
-Toolik Lake,SALRET,Salix,retusa,Leaf Senescence,first color change,individual
-Toolik Lake,SALRET,Salix,retusa,Seed Dispersal,first seed dispersal,individual
-Toolik Lake,VACULI,Vaccinium,uliginosum,End of Flowering,last petal drop,individual
-Toolik Lake,VACULI,Vaccinium,uliginosum,Flowering,First flower bud visible,individual
-Toolik Lake,VACULI,Vaccinium,uliginosum,Green up,first leaf visible,individual
-Toolik Lake,VACULI,Vaccinium,uliginosum,Leaf Senescence,first color change,individual
-Toolik Lake,VACVIT,Vaccinium,vitis-idaea,End of Flowering,first petal drop,individual
-Toolik Lake,VACVIT,Vaccinium,vitis-idaea,End of Flowering,last petal drop,individual
-Toolik Lake,VACVIT,Vaccinium,vitis-idaea,Flowering,First flower bud visible,individual
-Toolik Lake,VACVIT,Vaccinium,vitis-idaea,Flowering,First flower open,individual
-Toolik Lake,VACVIT,Vaccinium,vitis-idaea,Green up,first leaf visible,individual
-Toolik Lake,VACVIT,Vaccinium,vitis-idaea,Leaf Senescence,first color change,individual
-Toolik Lake,VACVIT,Vaccinium,vitis-idaea,Seed Dispersal,first seed dispersal,individual
-Utqiagvik,ALOALP,Alopecurus,alpinus,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,ALOALP,Alopecurus,alpinus,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,ALOALP,Alopecurus,alpinus,Fruiting,first seed development (total plot),plot
-Utqiagvik,ALOALP,Alopecurus,alpinus,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,ALOALP,Alopecurus,alpinus,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,ALOALP,Alopecurus,alpinus,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,ARCLAT,Arctagrostis,latifolia,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,ARCLAT,Arctagrostis,latifolia,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,ARCLAT,Arctagrostis,latifolia,Fruiting,first seed development (total plot),plot
-Utqiagvik,ARCLAT,Arctagrostis,latifolia,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,ARCLAT,Arctagrostis,latifolia,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,CALHOL,Calamagrostis,holmii,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,CALHOL,Calamagrostis,holmii,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,CALHOL,Calamagrostis,holmii,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,CARMIC,Carex,microcarpa,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,CARMIC,Carex,microcarpa,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,CARMIC,Carex,microcarpa,Fruiting,first seed development (total plot),plot
-Utqiagvik,CARPRA,Cardamine,pratensis,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,CARPRA,Cardamine,pratensis,Flowering,flower bud visible (total plot),plot
-Utqiagvik,CARPRA,Cardamine,pratensis,Fruiting,first seed development (total plot),plot
-Utqiagvik,CARPRA,Cardamine,pratensis,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,CARPRA,Cardamine,pratensis,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,CARSUB,Carex,subspathacea,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,CARSUB,Carex,subspathacea,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,CARSUB,Carex,subspathacea,Fruiting,first seed development (total plot),plot
-Utqiagvik,CARSUB,Carex,subspathacea,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,CARSUB,Carex,subspathacea,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,CASTET,Cassiope,tetragona,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,CASTET,Cassiope,tetragona,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,CASTET,Cassiope,tetragona,Fruiting,first seed development (total plot),plot
-Utqiagvik,CASTET,Cassiope,tetragona,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,CASTET,Cassiope,tetragona,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,CASTET,Cassiope,tetragona,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,CERBEE,Cerastium,beeringianum,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,CERBEE,Cerastium,beeringianum,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,CERBEE,Cerastium,beeringianum,Fruiting,first seed development (total plot),plot
-Utqiagvik,CERBEE,Cerastium,beeringianum,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,CERBEE,Cerastium,beeringianum,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,CHRTET,Chrysosplenium,tetrandrum,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,CHRTET,Chrysosplenium,tetrandrum,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,CHRTET,Chrysosplenium,tetrandrum,Fruiting,first seed development (total plot),plot
-Utqiagvik,CHRTET,Chrysosplenium,tetrandrum,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,CHRTET,Chrysosplenium,tetrandrum,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,CHRTET,Chrysosplenium,tetrandrum,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,COCOFF,Cochlearia,officinalis,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,COCOFF,Cochlearia,officinalis,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,COCOFF,Cochlearia,officinalis,Fruiting,first seed development (total plot),plot
-Utqiagvik,COCOFF,Cochlearia,officinalis,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,COCOFF,Cochlearia,officinalis,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,COCOFF,Cochlearia,officinalis,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,DRALAC,Draba,lactea,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,DRALAC,Draba,lactea,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,DRALAC,Draba,lactea,Fruiting,first seed development (total plot),plot
-Utqiagvik,DRALAC,Draba,lactea,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,DRALAC,Draba,lactea,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,DRALAC,Draba,lactea,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,DRALAC,Draba,lactea,Seed Dispersal,first seed dispersal (individual),individual
-Utqiagvik,DRALAC,Draba,lactea,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,DRAMIC,Draba,micropetala,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,DRAMIC,Draba,micropetala,Flowering,flower open (individual); anthers visible if graminoid,individual
-Utqiagvik,DRAMIC,Draba,micropetala,Fruiting,first seed development (total plot),plot
-Utqiagvik,DRAMIC,Draba,micropetala,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,DRAMIC,Draba,micropetala,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,DRAMIC,Draba,micropetala,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,DRAMIC,Draba,micropetala,Seed Dispersal,first seed dispersal (individual),individual
-Utqiagvik,DUPFIS,Dupontia,fisheri,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,DUPFIS,Dupontia,fisheri,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,DUPFIS,Dupontia,fisheri,Fruiting,first seed development (total plot),plot
-Utqiagvik,DUPFIS,Dupontia,fisheri,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,DUPFIS,Dupontia,fisheri,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,DUPFIS,Dupontia,fisheri,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,DUPFIS,Dupontia,fisheri,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,ERIANG,Eriophorum,angustifolium,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,ERIANG,Eriophorum,angustifolium,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,ERIANG,Eriophorum,angustifolium,Fruiting,first seed development (total plot),plot
-Utqiagvik,ERIANG,Eriophorum,angustifolium,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,ERICHA,Eriophorum,chamissonis,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,ERICHA,Eriophorum,chamissonis,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,ERICHA,Eriophorum,chamissonis,Fruiting,first seed development (total plot),plot
-Utqiagvik,ERICHA,Eriophorum,chamissonis,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,ERISCH,Eriophorum,scheuchzeri,Flowering,flower open (individual); anthers visible if graminoid,individual
-Utqiagvik,ERISCH,Eriophorum,scheuchzeri,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,ERISCH,Eriophorum,scheuchzeri,Leaf Senescence,first visible Leaf Senescence (individual),individual
-Utqiagvik,FESBRA,Festuca,brachyphylla,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,FESBRA,Festuca,brachyphylla,Leaf Senescence,first visible Leaf Senescence (individual),individual
-Utqiagvik,HIEPAU,Hierochloe,pauciflora,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,HIEPAU,Hierochloe,pauciflora,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,HIEPAU,Hierochloe,pauciflora,Fruiting,first seed development (total plot),plot
-Utqiagvik,HIEPAU,Hierochloe,pauciflora,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,HIEPAU,Hierochloe,pauciflora,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,HIEPAU,Hierochloe,pauciflora,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,JUNBIG,Juncus,biglumis,End of Flowering,first flower withering (individual),individual
-Utqiagvik,JUNBIG,Juncus,biglumis,Flowering,flower open (individual); anthers visible if graminoid,individual
-Utqiagvik,JUNBIG,Juncus,biglumis,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,JUNBIG,Juncus,biglumis,Fruiting,first seed development (individual),individual
-Utqiagvik,JUNBIG,Juncus,biglumis,Fruiting,first seed development (total plot),plot
-Utqiagvik,JUNBIG,Juncus,biglumis,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,JUNBIG,Juncus,biglumis,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,JUNBIG,Juncus,biglumis,Leaf Senescence,first visible Leaf Senescence (individual),individual
-Utqiagvik,JUNBIG,Juncus,biglumis,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,JUNBIG,Juncus,biglumis,Seed Dispersal,first seed dispersal (individual),individual
-Utqiagvik,JUNBIG,Juncus,biglumis,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,LUZCON,Luzula,confusa,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,LUZCON,Luzula,confusa,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,LUZCON,Luzula,confusa,Fruiting,first seed development (total plot),plot
-Utqiagvik,LUZCON,Luzula,confusa,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,LUZCON,Luzula,confusa,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,LUZCON,Luzula,confusa,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,LUZNIV,Luzula,nivalis,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,LUZNIV,Luzula,nivalis,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,LUZNIV,Luzula,nivalis,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,LUZNIV,Luzula,nivalis,Fruiting,first seed development (total plot),plot
-Utqiagvik,LUZNIV,Luzula,nivalis,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,PAPLAP,Papaver,lapponicum,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,PAPLAP,Papaver,lapponicum,Flowering,flower bud visible (total plot),plot
-Utqiagvik,PAPLAP,Papaver,lapponicum,Fruiting,first seed development (total plot),plot
-Utqiagvik,PAPLAP,Papaver,lapponicum,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,PEDLAN,Pedicularis,lanata,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,PEDLAN,Pedicularis,lanata,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,PEDLAN,Pedicularis,lanata,Fruiting,first seed development (total plot),plot
-Utqiagvik,PEDLAN,Pedicularis,lanata,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,PERVIV,Persicaria,vivipara,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,PETFRI,Petasites,frigidus,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,PETFRI,Petasites,frigidus,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,PETFRI,Petasites,frigidus,Fruiting,first seed development (total plot),plot
-Utqiagvik,PETFRI,Petasites,frigidus,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,PETFRI,Petasites,frigidus,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,POAARC,Poa,arctica,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,POAARC,Poa,arctica,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,POAARC,Poa,arctica,Fruiting,first seed development (total plot),plot
-Utqiagvik,POAARC,Poa,arctica,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,POAARC,Poa,arctica,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,POAARC,Poa,arctica,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,POTHYP,Potentilla,hyparctica,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,POTHYP,Potentilla,hyparctica,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,POTHYP,Potentilla,hyparctica,Fruiting,first seed development (total plot),plot
-Utqiagvik,POTHYP,Potentilla,hyparctica,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,POTHYP,Potentilla,hyparctica,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,POTHYP,Potentilla,hyparctica,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,RANNIV,Ranunculus,nivalis,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,RANNIV,Ranunculus,nivalis,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,RANNIV,Ranunculus,nivalis,Fruiting,first seed development (total plot),plot
-Utqiagvik,RANNIV,Ranunculus,nivalis,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,RANNIV,Ranunculus,nivalis,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,RANNIV,Ranunculus,nivalis,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,RANPYG,Ranunculus,pygmaeus,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,RANPYG,Ranunculus,pygmaeus,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,RANPYG,Ranunculus,pygmaeus,Fruiting,first seed development (total plot),plot
-Utqiagvik,RANPYG,Ranunculus,pygmaeus,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,RANPYG,Ranunculus,pygmaeus,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,RANPYG,Ranunculus,pygmaeus,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,SAXCER,Saxifraga,cernua,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,SAXCER,Saxifraga,cernua,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,SAXCER,Saxifraga,cernua,Fruiting,Bulbil visible,plot
-Utqiagvik,SAXCER,Saxifraga,cernua,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,SAXCER,Saxifraga,cernua,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,SAXCER,Saxifraga,cernua,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,SAXFOL,Saxifraga,foliolosa,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,SAXFOL,Saxifraga,foliolosa,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,SAXFOL,Saxifraga,foliolosa,Fruiting,Bulbil visible,plot
-Utqiagvik,SAXFOL,Saxifraga,foliolosa,Fruiting,first seed development (total plot),plot
-Utqiagvik,SAXFOL,Saxifraga,foliolosa,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,SAXFOL,Saxifraga,foliolosa,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,SAXFOL,Saxifraga,foliolosa,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,SAXHIE,Saxifraga,hieraciifolia,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,SAXHIE,Saxifraga,hieraciifolia,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,SAXHIE,Saxifraga,hieraciifolia,Fruiting,first seed development (total plot),plot
-Utqiagvik,SAXHIE,Saxifraga,hieraciifolia,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,SAXHIE,Saxifraga,hieraciifolia,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,SAXHIE,Saxifraga,hieraciifolia,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,SAXHIR,Saxifraga,hirculus,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,SAXHIR,Saxifraga,hirculus,Flowering,flower bud visible (total plot),plot
-Utqiagvik,SAXHIR,Saxifraga,hirculus,Fruiting,first seed development (total plot),plot
-Utqiagvik,SAXHIR,Saxifraga,hirculus,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,SAXHIR,Saxifraga,hirculus,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,SAXNIV,Saxifraga,nivalis,Flowering,flower bud visible (total plot),plot
-Utqiagvik,SAXNIV,Saxifraga,nivalis,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,SAXNIV,Saxifraga,nivalis,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,SAXPUN,Saxifraga,punctata,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,SAXPUN,Saxifraga,punctata,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,SAXPUN,Saxifraga,punctata,Fruiting,first seed development (total plot),plot
-Utqiagvik,SAXPUN,Saxifraga,punctata,Green up,Leaf bud burst (total plot first),plot
-Utqiagvik,SAXPUN,Saxifraga,punctata,Leaf Senescence,first visible Leaf Senescence (plot),plot
-Utqiagvik,SAXPUN,Saxifraga,punctata,Seed Dispersal,first seed dispersal (total plot),plot
-Utqiagvik,SILURA,Silene,uralensis,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,SILURA,Silene,uralensis,Flowering,flower open (plot); anthers visible if graminoid,plot
-Utqiagvik,SILURA,Silene,uralensis,Fruiting,first seed development (total plot),plot
-Utqiagvik,STEHUM,Stellaria,humifusa,Green up,Leaf bud burst (individual plant),individual
-Utqiagvik,STEHUM,Stellaria,humifusa,Leaf Senescence,first visible Leaf Senescence (individual),individual
-Utqiagvik,STELON,Stellaria,longipes,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,STELON,Stellaria,longipes,Flowering,flower bud visible (total plot),plot
-Utqiagvik,STELON,Stellaria,longipes,Fruiting,first seed development (total plot),plot
-Utqiagvik,TEPINT,Tephroseris,integrifolia,End of Flowering,first flower withering (total plot),plot
-Utqiagvik,TEPINT,Tephroseris,integrifolia,Flowering,Inflorescence emergence (total plot first),plot
-Utqiagvik,TEPINT,Tephroseris,integrifolia,Fruiting,first seed development (total plot),plot
-Val Bercla,BARALP,Bartsia,alpina,End of Flowering,First flower senesced,plot
-Val Bercla,BARALP,Bartsia,alpina,Flowering,First flower open,plot
-Val Bercla,LEUALP,Leucanthemopsis,alpina,End of Flowering,First flower senesced,plot
-Val Bercla,LEUALP,Leucanthemopsis,alpina,Flowering,First flower open,plot
-Val Bercla,LEUHAL,Leucanthemum,halleri,End of Flowering,First flower senesced,plot
-Val Bercla,LEUHAL,Leucanthemum,halleri,Flowering,First flower open,plot
-Val Bercla,PEDVER,Pedicularis,verticillata,End of Flowering,First flower senesced,plot
-Val Bercla,PEDVER,Pedicularis,verticillata,Flowering,First flower open,plot
-Val Bercla,PERVIV,Persicaria,vivipara,Flowering,First flower open,plot
-Val Bercla,PRIINT,Primula,integrifolia,End of Flowering,First flower senesced,plot
-Val Bercla,PRIINT,Primula,integrifolia,Flowering,First flower open,plot
-Val Bercla,PRIINT,Primula,integrifolia,Green up,first green visible,plot
-Val Bercla,SALRET,Salix,retusa,End of Flowering,First flower senesced,plot
-Val Bercla,SALRET,Salix,retusa,Flowering,First flower open,plot
-Val Bercla,SALRET,Salix,retusa,Green up,first green visible,plot
-Val Bercla,SALRETI,Salix,reticulata,End of Flowering,First flower senesced,plot
-Val Bercla,SALRETI,Salix,reticulata,Flowering,First flower open,plot
-Val Bercla,SALRETI,Salix,reticulata,Green up,first green visible,plot
-Val Bercla,SAXOPP,Saxifraga,oppositifolia,End of Flowering,First flower senesced,plot
-Val Bercla,SAXOPP,Saxifraga,oppositifolia,Flowering,First flower open,plot
-Val Bercla,SESCAE,Sesleria,caerulea,End of Flowering,First flower senesced,plot
-Val Bercla,SESCAE,Sesleria,caerulea,Flowering,First flower open,plot
-Val Bercla,SILACA,Silene,acaulis,End of Flowering,First flower senesced,plot
-Val Bercla,SILACA,Silene,acaulis,Flowering,First flower open,plot
-Val Bercla,SILACA,Silene,acaulis,Green up,first green visible,plot
-Val Bercla,SOLALP,Soldanella,alpina,End of Flowering,First flower senesced,plot
-White Mts,TRIAND,Trifolium,andersonii,Flowering,First anthers visible,plot
+Site_name,Subsite ,Species_code,Genus ,Species ,Phenology,Site definition,Measurement_level
+Alexandra Fiord,Willow,OXYDIG,Oxyria,digyna,End of Flowering, first day a senescing flower was observed ,individual
+Alexandra Fiord,Cassiope ,DRYINT,Dryas,integrifolia,End of Flowering, first day a senescing petal was observed ,individual
+Alexandra Fiord,Dryas,DRYINT,Dryas,integrifolia,End of Flowering, first day a senescing petal was observed ,individual
+Alexandra Fiord,Fert,DRYINT,Dryas,integrifolia,End of Flowering, first day a senescing petal was observed ,individual
+Alexandra Fiord,Meadow ,DRYINT,Dryas,integrifolia,End of Flowering, first day a senescing petal was observed ,individual
+Alexandra Fiord,Willow,DRYINT,Dryas,integrifolia,End of Flowering, first day a senescing petal was observed ,individual
+Alexandra Fiord,Cassiope ,PAPRAD,Papaver,radicatum,End of Flowering, first day a senescing petal was observed ,individual
+Alexandra Fiord,Dryas,PAPRAD,Papaver,radicatum,End of Flowering, first day a senescing petal was observed ,individual
+Alexandra Fiord,Willow,PAPRAD,Papaver,radicatum,End of Flowering, first day a senescing petal was observed ,individual
+Alexandra Fiord,Dome Dolomite ,SAXOPP,Saxifraga,oppositifolia,End of Flowering, first day a senescing petal was observed ,individual
+Alexandra Fiord,Dome Granite,SAXOPP,Saxifraga,oppositifolia,End of Flowering, first day a senescing petal was observed ,individual
+Alexandra Fiord,Saxopp,SAXOPP,Saxifraga,oppositifolia,End of Flowering, first day a senescing petal was observed ,individual
+Adventdalen,Heath,CASTET,Cassiope,tetragona,End of Flowering,endflower_plot_first,plot
+Adventdalen,Heath,DRYOCT,Dryas,octopetala,End of Flowering,endflower_plot_first,plot
+Adventdalen,Meadow ,DRYOCT,Dryas,octopetala,End of Flowering,endflower_plot_first,plot
+Adventdalen,Heath,PEDHIR,Pedicularis,hirsuta,End of Flowering,endflower_plot_first,plot
+Adventdalen,Meadow ,PEDHIR,Pedicularis,hirsuta,End of Flowering,endflower_plot_first,plot
+Adventdalen,Heath,PERVIV,Persicaria,vivipara,End of Flowering,endflower_plot_first,plot
+Adventdalen,Meadow ,PERVIV,Persicaria,vivipara,End of Flowering,endflower_plot_first,plot
+Adventdalen,Heath,SALPOL,Salix,polaris,End of Flowering,endflower_plot_first,plot
+Adventdalen,Meadow ,SALPOL,Salix,polaris,End of Flowering,endflower_plot_first,plot
+Adventdalen,Heath,STECRA,Stellaria,crassipes,End of Flowering,endflower_plot_first,plot
+Adventdalen,Meadow ,STECRA,Stellaria,crassipes,End of Flowering,endflower_plot_first,plot
+Alexandra Fiord,Dryas,ARCLAT,Arctagrostis,latifolia,End of Flowering,first day a senescing flower was observed,individual
+Alexandra Fiord,Fert,ARCLAT,Arctagrostis,latifolia,End of Flowering,first day a senescing flower was observed,individual
+Alexandra Fiord,Dome Dolomite ,SALARC,Salix,arctica,End of Flowering,First day male catkins are senescing; pollen is dried up.,individual
+Alexandra Fiord,Granite ,SALARC,Salix,arctica,End of Flowering,First day male catkins are senescing; pollen is dried up.,individual
+Alexandra Fiord,Meadow ,SALARC,Salix,arctica,End of Flowering,First day male catkins are senescing; pollen is dried up.,individual
+Alexandra Fiord,Willow,SALARC,Salix,arctica,End of Flowering,First day male catkins are senescing; pollen is dried up.,individual
+Atqasuk,Dry,SALPHL,Salix,phlebophylla,End of Flowering,first female flower withering (total plot),plot
+Atqasuk,Wet,SALPOL,Salix,polaris,End of Flowering,first female flower withering (total plot),plot
+Atqasuk,Wet,SALPUL,Salix,pulchra,End of Flowering,first female flower withering (total plot),plot
+Val Bercla,Itex,BARALP,Bartsia,alpina,End of Flowering,First flower senesced,plot
+Val Bercla,Itex,LEUALP,Leucanthemopsis,alpina,End of Flowering,First flower senesced,plot
+Val Bercla,Itex,LEUHAL,Leucanthemum,halleri,End of Flowering,First flower senesced,plot
+Val Bercla,Itex,PEDVER,Pedicularis,verticillata,End of Flowering,First flower senesced,plot
+Val Bercla,Itex,PRIINT,Primula,integrifolia,End of Flowering,First flower senesced,plot
+Val Bercla,Itex,SALRET,Salix,retusa,End of Flowering,First flower senesced,plot
+Val Bercla,Itex,SALRETI,Salix,reticulata,End of Flowering,First flower senesced,plot
+Val Bercla,Itex,SAXOPP,Saxifraga,oppositifolia,End of Flowering,First flower senesced,plot
+Val Bercla,Itex,SESCAE,Sesleria,caerulea,End of Flowering,First flower senesced,plot
+Val Bercla,Itex,SILACA,Silene,acaulis,End of Flowering,First flower senesced,plot
+Val Bercla,Itex,SOLALP,Soldanella,alpina,End of Flowering,First flower senesced,plot
+Daring Lake,Ternplot B,LEDDEC,Ledum,decumbens,End of Flowering,first flower shed,individual
+Daring Lake,Ternplot B,VACVIT,Vaccinium,vitis-idaea,End of Flowering,first flower shed,individual
+Utqiagvik,Dry,JUNBIG,Juncus,biglumis,End of Flowering,first flower withering (individual),individual
+Utqiagvik,Wet,JUNBIG,Juncus,biglumis,End of Flowering,first flower withering (individual),individual
+Utqiagvik,Dry ,ALOALP,Alopecurus,alpinus,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,ANTFRI,Antennaria,friesiana,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,ARCLAT,Arctagrostis,latifolia,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,ARTCAMBOR,Artemisia,campestris,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Wet,CARAQU,Carex,aquatilis,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,CARBIG,Carex,bigelowii,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,CARMIC,Carex,microcarpa,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,CARMIC,Carex,microcarpa,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,CARPRA,Cardamine,pratensis,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Wet,CARRAR,Carex,rariflora,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Wet,CARROT,Carex,rotundata,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,CARSUB,Carex,subspathacea,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,CASTET,Cassiope,tetragona,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,CASTET,Cassiope,tetragona,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,CERBEE,Cerastium,beeringianum,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,CHRTET,Chrysosplenium,tetrandrum,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,COCOFF,Cochlearia,officinalis,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,DIALAP,Diapensia,lapponica,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,DRALAC,Draba,lactea,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,DRALAC,Draba,lactea,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,DRAMIC,Draba,micropetala,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Wet,DUPFIS,Dupontia,fisheri,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,DUPFIS,Dupontia,fisheri,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Wet,ERIANG,Eriophorum,angustifolium,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,ERIANG,Eriophorum,angustifolium,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Wet,ERICHA,Eriophorum,chamissonis,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,ERICHA,Eriophorum,chamissonis,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,HIEALPINA,Hierochloe,alpina,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,HIEPAU,Hierochloe,pauciflora,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,LEDPAL,Ledum,palustre,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,LUZCON,Luzula,confusa,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,LUZCON,Luzula,confusa,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,LUZCON,Luzula,confusa,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,LUZNIV,Luzula,nivalis,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,LUZNIV,Luzula,nivalis,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,LUZNIV,Luzula,nivalis,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Wet,LUZWAH,Luzula,wahlenbergii,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,MINOBT,Minuartia,obtusiloba,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,PAPLAP,Papaver,lapponicum,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,PEDLAN,Pedicularis,lanata,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Wet,PEDSUD,Pedicularis,sudetica,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,PERBIS,Persicaria,bistorta,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Wet,PERVIV,Persicaria,vivipara,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,PETFRI,Petasites,frigidus,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,POAARC,Poa,arctica,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,POAARC,Poa,arctica,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,POTHYP,Potentilla,hyparctica,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,RANNIV,Ranunculus,nivalis,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,RANPYG,Ranunculus,pygmaeus,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,SAXCER,Saxifraga,cernua,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,SAXFOL,Saxifraga,foliolosa,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,SAXFOL,Saxifraga,foliolosa,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,SAXHIE,Saxifraga,hieraciifolia,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,SAXHIR,Saxifraga,hirculus,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,SAXPUN,Saxifraga,punctata,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,SILURA,Silene,uralensis,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,STELON,Stellaria,longipes,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Wet,STELON,Stellaria,longipes,End of Flowering,first flower withering (total plot),plot
+Utqiagvik,Dry,TEPINT,Tephroseris,integrifolia,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,TRISPI,Trisetum,spicatum,End of Flowering,first flower withering (total plot),plot
+Atqasuk,Dry,VACVIT,Vaccinium,vitis-idaea,End of Flowering,first flower withering (total plot),plot
+Toolik Lake,Dry,ARCALP,Arctous,alpina,End of Flowering,first petal drop,individual
+Toolik Lake,Moist ,BETNAN,Betula,nana,End of Flowering,first petal drop,individual
+Endalen,Cassiope ,CASTET,Cassiope,tetragona,End of Flowering,first petal drop,plot
+Latnjajaure,Dry Heath,CASTET,Cassiope,tetragona,End of Flowering,first petal drop,plot
+Toolik Lake,Snowfield,CASTET,Cassiope,tetragona,End of Flowering,first petal drop,individual
+Latnjajaure,Dry Meadow ,DRYOCT,Dryas,octopetala,End of Flowering,first petal drop,plot
+Toolik Lake,Dry,DRYOCT,Dryas,octopetala,End of Flowering,first petal drop,individual
+Toolik Lake,Warmrem,EMPNIG,Empetrum,nigrum,End of Flowering,first petal drop,individual
+Toolik Lake,Moist ,ERIVAG,Eriophorum,vaginatum,End of Flowering,first petal drop,individual
+Toolik Lake,Moist ,LEDDEC,Ledum,decumbens,End of Flowering,first petal drop,individual
+Toolik Lake,Dry,LOIPRO,Loiseleuria,procumbens,End of Flowering,first petal drop,individual
+Toolik Lake,Snowfield,PERBIS,Persicaria,bistorta,End of Flowering,first petal drop,individual
+Toolik Lake,Moist ,RUBCHA,Rubus,chamaemorus,End of Flowering,first petal drop,individual
+Toolik Lake,Snowfield,SALRET,Salix,retusa,End of Flowering,first petal drop,individual
+Endalen,Dryas Heath,SAXOPP,Saxifraga,oppositifolia,End of Flowering,first petal drop,plot
+Toolik Lake,Dry,VACVIT,Vaccinium,vitis-idaea,End of Flowering,first petal drop,individual
+Toolik Lake,Moist ,VACVIT,Vaccinium,vitis-idaea,End of Flowering,first petal drop,individual
+Niwot Ridge,Sadsnfc,PERBIS,Persicaria,bistorta,End of Flowering,first petal shed,individual
+Jakobshorn,Warmrem,ANTALP,Antennaria,alpina,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,CARCUR,Carex,curvula,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,DESFLE,Deschampsia,flexuosa,End of Flowering,first senesced flower,plot
+Jakobshorn,Snowfield,EMPNIG,Empetrum,nigrum,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,HELVER,Helictotrichon,versicolor,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,HOMALP,Homogyne,alpina,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,JACINC,Jacobaea,incana,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,LOIPRO,Loiseleuria,procumbens,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,LUZALP,Luzula,alpinopilosa,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,NARSTR,Nardus,stricta,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,SCOHEL,Scorzoneroides,helvetica,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,VACMYR,Vaccinium,myrtillus,End of Flowering,first senesced flower,plot
+Jakobshorn,Warmrem,VACULI,Vaccinium,uliginosum,End of Flowering,first senesced flower,plot
+Niwot Ridge,Lefty,ARTSCO,Artemisia,scopulorum,End of Flowering,Flower senescent ,individual
+Niwot Ridge,EK,CARXXX,Carex,spp.,End of Flowering,Flower senescent ,individual
+Niwot Ridge,Audobon,DESCES,Deschampsia,cespitosa,End of Flowering,Flower senescent ,individual
+Niwot Ridge,Trough,DESCES,Deschampsia,cespitosa,End of Flowering,Flower senescent ,individual
+Niwot Ridge,Audobon,GEUROS,Geum,rosii,End of Flowering,Flower senescent ,individual
+Niwot Ridge,EK,GEUROS,Geum,rossii,End of Flowering,Flower senescent ,individual
+Alexandra Fiord,Dryas,CASTET,Cassiope,tetragona,End of Flowering,last day a mature flower was observed,individual
+Alexandra Fiord,Cassiope ,CASTET,Cassiope,tetragona,End of Flowering,last day a mature flower was observed,individual
+Toolik Lake,Moist ,ANDPOL,Andromeda,polifolia,End of Flowering,last petal drop,individual
+Toolik Lake,Snowfield,ANDPOL,Andromeda,polifolia,End of Flowering,last petal drop,individual
+Endalen,Cassiope ,DRYOCT,Dryas,octopetala,End of Flowering,last petal drop,plot
+Endalen,Heath,DRYOCT,Dryas,octopetala,End of Flowering,last petal drop,plot
+Toolik Lake,Snowfield,LEDDEC,Ledum,decumbens,End of Flowering,last petal drop,individual
+Finse,Alpine Meadow,RANACR,Ranunculus,acris,End of Flowering,last petal drop,plot
+Toolik Lake,Snowfield,RUBCHA,Rubus,chamaemorus,End of Flowering,last petal drop,individual
+Finse,Alpine Meadow,SCOAUT,Scorzoneroides,autumnalis,End of Flowering,last petal drop,plot
+Faroe Islands,Dry Meadow ,SILACA,Silene,acaulis,End of Flowering,last petal drop,plot
+Finse,Alpine Moist Heath,SILACA,Silene,acaulis,End of Flowering,last petal drop,plot
+Toolik Lake,Moist ,VACULI,Vaccinium,uliginosum,End of Flowering,last petal drop,individual
+Toolik Lake,Snowfield,VACVIT,Vaccinium,vitis-idaea,End of Flowering,last petal drop,individual
+Niwot Ridge,Lefty,GEUROS,Geum,rosii,End of Flowering,last petal shed,individual
+Niwot Ridge,Trough,GEUROS,Geum,rossii,End of Flowering,last petal shed,individual
+Niwot Ridge,Itexnutsnow,ARTSCO,Artemisia,scopulorum,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,BISBIS,Bistorta,bistortoides,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,CALLEP,Caltha,leptosepala,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,CASOCC,Castilleja,occidentalis,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,CHIJAM,Chionophila,jamesii,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,DESCES,Deschampsia,cespitosa,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,FESBRA,Festuca,brachyphylla,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,GENALG,Gentiana,algida,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,GENAMA,Gentianella,amarella,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,GEUROS,Geum,rosii,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Sadsnfc,GEUROS,Geum,rossii,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,LEWPYG,Lewisia,pygmaea,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,MERLAN,Mertensia,lanceolata,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,PERVIV,Persicaria,vivipara,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,POTDIV,Potentilla,diversifolia,End of Flowering,last visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,STELON,Stellaria,longipes,End of Flowering,last visible flower in plot,plot
+Utqiagvik,Dry,ALOALP,Alopecurus,alpinus,Flowering,Inflorescence emergence (total plot first),plot
+Adventdalen,Heath,ALOMAG,Alopecurus,magellanicus,Flowering,flower_plot_first,plot
+Adventdalen,Meadow ,ALOMAG,Alopecurus,magellanicus,Flowering,flower_plot_first,plot
+Toolik Lake,Moist ,ANDPOL,Andromeda,polifolia,Flowering,First flower bud visible,individual
+Toolik Lake,Snowfield,ANDPOL,Andromeda,polifolia,Flowering,First flower open,individual
+Jakobshorn,Warmrem,ANTALP,Antennaria,alpina,Flowering,first open flower,plot
+Atqasuk,Dry,ANTFRI,Antennaria,friesiana,Flowering,flower open (plot); anthers visible if graminoid,plot
+Toolik Lake,Dry,ARCALP,Arctous,alpina,Flowering,First flower bud visible,individual
+Alexandra Fiord,Dryas,ARCLAT,Arctagrostis,latifolia,Flowering,first day a flower bud was observed,individual
+Alexandra Fiord,Fert,ARCLAT,Arctagrostis,latifolia,Flowering,first day a flower bud was observed,individual
+Utqiagvik,Dry,ARCLAT,Arctagrostis,latifolia,Flowering,Inflorescence emergence (total plot first),plot
+Jakobshorn,Warmrem,ARNMON,Arnica,montana,Flowering,first open flower,plot
+Atqasuk,Dry,ARTCAMBOR,Artemisia,campestris,Flowering,flower bud visible (total plot),plot
+Niwot Ridge,Lefty,ARTSCO,Artemisia,scopulorum,Flowering,first visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,ARTSCO,Artemisia,scopulorum,Flowering,Flower open,individual
+Val Bercla,Itex,BARALP,Bartsia,alpina,Flowering,First flower open,plot
+Finse,Stony Snowbed,BECGLA,Beckwithia,glacialis,Flowering,First flower open,plot
+Kangerlussuaq,Bashful,BETNAN,Betula,nana,Flowering,bloom,plot
+Kangerlussuaq,Doc,BETNAN,Betula,nana,Flowering,bloom,plot
+Toolik Lake,Moist ,BETNAN,Betula,nana,Flowering,First flower open,individual
+Kangerlussuaq,Dopey,BETNAN,Betula,nana,Flowering,Flower set,plot
+Niwot Ridge,Itexnutsnow,BISBIS,Bistorta,bistortoides,Flowering,first visible flower in plot,plot
+Utqiagvik,Wet,CALHOL,Calamagrostis,holmii,Flowering,Inflorescence emergence (total plot first),plot
+Niwot Ridge,Itexnutsnow,CALLEP,Caltha,leptosepala,Flowering,first visible flower in plot,plot
+Jakobshorn,Warmrem,CAMROT,Campanula,rotundifolia,Flowering,first open flower,plot
+Atqasuk,Wet,CARAQU,Carex,aquatilis,Flowering,flower open (plot); anthers visible if graminoid,plot
+Gavia Pass,Salix,CARBELALP,Cardamine,bellidifolia,Flowering,unopened buds visible,individual
+Gavia Pass,Polytrichastrum,CARBELALP,Cardamine,bellidifolia,Flowering,unopened buds visible,individual
+Toolik Lake,Snowfield,CARBIG,Carex,bigelowii,Flowering,First flower open,individual
+Toolik Lake,Moist ,CARBIG,Carex,bigelowii,Flowering,First flower open,individual
+Atqasuk,Dry,CARBIG,Carex,bigelowii,Flowering,flower open (plot); anthers visible if graminoid,plot
+Jakobshorn,Warmrem,CARCUR,Carex,curvula,Flowering,first open flower,plot
+Utqiagvik,Dry,CARMIC,Carex,microcarpa,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Moist ,CARMIC,Carex,microcarpa,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Wet,CARPRA,Cardamine,pratensis,Flowering,flower bud visible (total plot),plot
+Atqasuk,Wet,CARRAR,Carex,rariflora,Flowering,flower open (plot); anthers visible if graminoid,plot
+Atqasuk,Wet,CARROT,Carex,rotundata,Flowering,flower open (plot); anthers visible if graminoid,plot
+Endalen,Dryas Heath,CARRUP,Carex,rupestris,Flowering,first anther,plot
+Niwot Ridge,Itexnutsnow,CARSCO,Carex,scopulorum,Flowering,first visible flower in plot,plot
+Utqiagvik,Wet,CARSUB,Carex,subspathacea,Flowering,flower open (plot); anthers visible if graminoid,plot
+Kangerlussuaq,Dopey,CARSUP,Carex,supina,Flowering,bloom,plot
+Kangerlussuaq,Bashful,CARSUP,Carex,supina,Flowering,bloom,plot
+Kangerlussuaq,Doc,CARSUP,Carex,supina,Flowering,bloom,plot
+Niwot Ridge,EK,CARXXX,Carex,spp.,Flowering,Flower open,individual
+Niwot Ridge,Lefty,CARXXX,Carex,spp.,Flowering,Flower open,individual
+Niwot Ridge,Itexnutsnow,CASOCC,Castilleja,occidentalis,Flowering,first visible flower in plot,plot
+Alexandra Fiord,Cassiope ,CASTET,Cassiope,tetragona,Flowering, first day a mature flower was observed,individual
+Alexandra Fiord,Dryas,CASTET,Cassiope,tetragona,Flowering,first day a flower bud was observed,individual
+Alexandra Fiord,Fert,CASTET,Cassiope,tetragona,Flowering,first day pedicel elongation was observed,individual
+Endalen,Cassiope ,CASTET,Cassiope,tetragona,Flowering,First flower open,plot
+Latnjajaure,Dry Heath,CASTET,Cassiope,tetragona,Flowering,First flower open,plot
+Toolik Lake,Snowfield,CASTET,Cassiope,tetragona,Flowering,First flower open,individual
+Atqasuk,Dry,CASTET,Cassiope,tetragona,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Dry,CASTET,Cassiope,tetragona,Flowering,flower open (plot); anthers visible if graminoid,plot
+Adventdalen,Heath,CASTET,Cassiope,tetragona,Flowering,flower_plot_first,plot
+Kangerlussuaq,Bashful,CERALP,Cerastium,alpinum,Flowering,bloom,plot
+Kangerlussuaq,Doc,CERALP,Cerastium,alpinum,Flowering,bloom,plot
+Kangerlussuaq,Dopey,CERALP,Cerastium,alpinum,Flowering,bloom,plot
+Utqiagvik,Wet,CERBEE,Cerastium,beeringianum,Flowering,flower open (plot); anthers visible if graminoid,plot
+Niwot Ridge,Itexnutsnow,CHIJAM,Chionophila,jamesii,Flowering,first visible flower in plot,plot
+Utqiagvik,Wet,CHRTET,Chrysosplenium,tetrandrum,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Wet,COCOFF,Cochlearia,officinalis,Flowering,flower open (plot); anthers visible if graminoid,plot
+Niwot Ridge,Itexnutsnow,DESCES,Deschampsia,cespitosa,Flowering,first visible flower in plot,plot
+Niwot Ridge,Audobon,DESCES,Deschampsia,cespitosa,Flowering,Flower open,individual
+Niwot Ridge,Trough,DESCES,Deschampsia,cespitosa,Flowering,Flower open,individual
+Jakobshorn,Warmrem,DESFLE,Deschampsia,flexuosa,Flowering,first open flower,plot
+Atqasuk,Dry,DIALAP,Diapensia,lapponica,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Dry,DRALAC,Draba,lactea,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Wet,DRALAC,Draba,lactea,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Dry,DRAMIC,Draba,micropetala,Flowering,flower open (individual); anthers visible if graminoid,individual
+Kangerlussuaq,Bashful,DRAXXX,Draba,spp.,Flowering,bloom,plot
+Kangerlussuaq,Doc,DRAXXX,Draba,spp.,Flowering,bloom,plot
+Kangerlussuaq,Dopey,DRAXXX,Draba,spp.,Flowering,bloom,plot
+Alexandra Fiord,Cassiope ,DRYINT,Dryas,integrifolia,Flowering, first day a mature flower was observed,individual
+Alexandra Fiord,Dryas,DRYINT,Dryas,integrifolia,Flowering, first day a mature flower was observed,individual
+Alexandra Fiord,Fert,DRYINT,Dryas,integrifolia,Flowering, first day a mature flower was observed,individual
+Alexandra Fiord,Meadow ,DRYINT,Dryas,integrifolia,Flowering, first day a mature flower was observed,individual
+Alexandra Fiord,Willow,DRYINT,Dryas,integrifolia,Flowering, first day a mature flower was observed,individual
+Endalen,Cassiope ,DRYOCT,Dryas,octopetala,Flowering,First flower bud visible,plot
+Endalen,Dryas Heath,DRYOCT,Dryas,octopetala,Flowering,First flower open,plot
+Latnjajaure,Dry Meadow ,DRYOCT,Dryas,octopetala,Flowering,First flower open,plot
+Toolik Lake,Dry,DRYOCT,Dryas,octopetala,Flowering,First flower open,individual
+Adventdalen,Heath,DRYOCT,Dryas,octopetala,Flowering,flower_plot_first,plot
+Adventdalen,Meadow ,DRYOCT,Dryas,octopetala,Flowering,flower_plot_first,plot
+Atqasuk,Wet,DUPFIS,Dupontia,fisheri,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Dry,DUPFIS,Dupontia,fisheri,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Wet,DUPFIS,Dupontia,fisheri,Flowering,Inflorescence emergence (total plot first),plot
+Toolik Lake,Snowfield,EMPNIG,Empetrum,nigrum,Flowering,First flower bud visible,individual
+Jakobshorn,Warmrem,EMPNIG,Empetrum,nigrum,Flowering,first open flower,plot
+Atqasuk,Wet,ERIANG,Eriophorum,angustifolium,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Wet,ERIANG,Eriophorum,angustifolium,Flowering,Inflorescence emergence (total plot first),plot
+Atqasuk,Wet,ERICHA,Eriophorum,chamissonis,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Wet,ERICHA,Eriophorum,chamissonis,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Wet,ERISCH,Eriophorum,scheuchzeri,Flowering,flower open (individual); anthers visible if graminoid,individual
+Latnjajaure,Tussock Tundra,ERIVAG,Eriophorum,vaginatum,Flowering,first anther ,plot
+Daring Lake,Ternplot F,ERIVAG,Eriophorum,vaginatum,Flowering,first anther visible,individual
+Toolik Lake,Moist ,ERIVAG,Eriophorum,vaginatum,Flowering,First flower open,individual
+Toolik Lake,Snowfield,ERIVAG,Eriophorum,vaginatum,Flowering,First flower open,individual
+Jakobshorn,Warmrem,EUPMIN,Euphrasia,minima,Flowering,first open flower,plot
+Niwot Ridge,Itexnutsnow,FESBRA,Festuca,brachyphylla,Flowering,first visible flower in plot,plot
+Jakobshorn,Warmrem,GENACA,Gentiana,acaulis,Flowering,first open flower,plot
+Niwot Ridge,Itexnutsnow,GENALG,Gentiana,algida,Flowering,first visible flower in plot,plot
+Niwot Ridge,Itexnutsnow,GENAMA,Gentianella,amarella,Flowering,first visible flower in plot,plot
+Niwot Ridge,Sadsnfc,GEUROS,Geum,rosii,Flowering,first flower or inflorescence open,individual
+Niwot Ridge,Audobon,GEUROS,Geum,rossii,Flowering,Flower open,individual
+Niwot Ridge,EK,GEUROS,Geum,rosii,Flowering,Flower open,plot
+Niwot Ridge,Itexnutsnow,GEUROS,Geum,rossii,Flowering,first visible flower in plot,plot
+Niwot Ridge,Lefty,GEUROS,Geum,rosii,Flowering,Flower open,individual
+Niwot Ridge,Trough,GEUROS,Geum,rossii,Flowering,Flower open,individual
+Jakobshorn,Warmrem,HELVER,Helictotrichon,versicolor,Flowering,first open flower,plot
+Atqasuk,Dry,HIEALPINA,Hierochloe,alpina,Flowering,flower open (plot); anthers visible if graminoid,plot
+Jakobshorn,Warmrem,HIEBUP,Hieracium,bupleuroides,Flowering,first open flower,plot
+Utqiagvik,Wet,HIEPAU,Hierochloe,pauciflora,Flowering,flower open (plot); anthers visible if graminoid,plot
+Jakobshorn,Warmrem,HOMALP,Homogyne,alpina,Flowering,first open flower,plot
+Jakobshorn,Warmrem,JACINC,Jacobaea,incana,Flowering,first open flower,plot
+Utqiagvik,Dry,JUNBIG,Juncus,biglumis,Flowering,flower open (individual); anthers visible if graminoid,individual
+Utqiagvik,Wet,JUNBIG,Juncus,biglumis,Flowering,Inflorescence emergence (total plot first),plot
+Daring Lake,Ternplot B,LEDDEC,Ledum,decumbens,Flowering,First flower bud visible,individual
+Toolik Lake,Moist ,LEDDEC,Ledum,decumbens,Flowering,First flower bud visible,individual
+Toolik Lake,Snowfield,LEDDEC,Ledum,decumbens,Flowering,First flower bud visible,individual
+Atqasuk,Dry,LEDPAL,Ledum,palustre,Flowering,flower open (plot); anthers visible if graminoid,plot
+Gavia Pass,Salix,LEUALP,Leucanthemopsis,alpina,Flowering,anthesis,individual
+Gavia Pass,Polytrichastrum,LEUALP,Leucanthemopsis,alpina,Flowering,anthesis,individual
+Val Bercla,Itex,LEUALP,Leucanthemopsis,alpina,Flowering,First flower open,plot
+Jakobshorn,Warmrem,LEUALP,Leucanthemopsis,alpina,Flowering,first open flower,plot
+Val Bercla,Itex,LEUHAL,Leucanthemum,halleri,Flowering,First flower open,plot
+Niwot Ridge,Itexnutsnow,LEWPYG,Lewisia,pygmaea,Flowering,first visible flower in plot,plot
+Toolik Lake,Dry,LOIPRO,Loiseleuria,procumbens,Flowering,First flower open,individual
+Jakobshorn,Warmrem,LOIPRO,Loiseleuria,procumbens,Flowering,first open flower,plot
+Jakobshorn,Warmrem,LUZALP,Luzula,alpinopilosa,Flowering,first open flower,plot
+Adventdalen,Heath,LUZARCUATCON,Luzula,arcuata,Flowering,flower_plot_first,plot
+Adventdalen,Meadow ,LUZARCUATCON,Luzula,arcuata,Flowering,flower_plot_first,plot
+Atqasuk,Dry,LUZCON,Luzula,confusa,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Dry,LUZCON,Luzula,confusa,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Wet,LUZCON,Luzula,confusa,Flowering,flower open (plot); anthers visible if graminoid,plot
+Jakobshorn,Warmrem,LUZLUT,Luzula,lutea,Flowering,first open flower,plot
+Atqasuk,Dry,LUZNIV,Luzula,nivalis,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Dry,LUZNIV,Luzula,nivalis,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Wet,LUZNIV,Luzula,nivalis,Flowering,Inflorescence emergence (total plot first),plot
+Niwot Ridge,Itexnutsnow,LUZSPI,Luzula,spicata,Flowering,first visible flower in plot,plot
+Atqasuk,Wet,LUZWAH,Luzula,wahlenbergii,Flowering,flower open (plot); anthers visible if graminoid,plot
+Niwot Ridge,Itexnutsnow,MERLAN,Mertensia,lanceolata,Flowering,first visible flower in plot,plot
+Atqasuk,Dry,MINOBT,Minuartia,obtusiloba,Flowering,flower open (plot); anthers visible if graminoid,plot
+Jakobshorn,Warmrem,NARSTR,Nardus,stricta,Flowering,first open flower,plot
+Alexandra Fiord,Willow,OXYDIG,Oxyria,digyna,Flowering,first day stalk elongation is observed,individual
+Utqiagvik,Dry,PAPLAP,Papaver,lapponicum,Flowering,flower bud visible (total plot),plot
+Alexandra Fiord,Cassiope ,PAPRAD,Papaver,radicatum,Flowering, first day a mature flower was observed,individual
+Alexandra Fiord,Dryas,PAPRAD,Papaver,radicatum,Flowering,first day an elongating bud was observed,individual
+Alexandra Fiord,Willow,PAPRAD,Papaver,radicatum,Flowering,first day an elongating bud was observed,individual
+Adventdalen,Heath,PEDHIR,Pedicularis,hirsuta,Flowering,flower_plot_first,plot
+Adventdalen,Meadow ,PEDHIR,Pedicularis,hirsuta,Flowering,flower_plot_first,plot
+Utqiagvik,Dry,PEDLAN,Pedicularis,lanata,Flowering,flower open (plot); anthers visible if graminoid,plot
+Atqasuk,Wet,PEDSUD,Pedicularis,sudetica,Flowering,flower open (plot); anthers visible if graminoid,plot
+Val Bercla,Itex,PEDVER,Pedicularis,verticillata,Flowering,First flower open,plot
+Toolik Lake,Snowfield,PERBIS,Persicaria,bistorta,Flowering,First flower open,individual
+Niwot Ridge,Sadsnfc,PERBIS,Persicaria,bistorta,Flowering,first flower or inflorescence open,individual
+Niwot Ridge,EK,PERBIS,Persicaria,bistorta,Flowering,Flower buds swelling/bud burst,individual
+Atqasuk,Dry,PERBIS,Persicaria,bistorta,Flowering,flower open (plot); anthers visible if graminoid,plot
+Toolik Lake,Snowfield,PERVIV,Persicaria,vivipara,Flowering,First flower bud visible,individual
+Endalen,Cassiope ,PERVIV,Persicaria,vivipara,Flowering,First flower open,plot
+Endalen,Dryas,PERVIV,Persicaria,vivipara,Flowering,First flower open,plot
+Endalen,Heath,PERVIV,Persicaria,vivipara,Flowering,First flower open,plot
+Latnjajaure,Dry Meadow ,PERVIV,Persicaria,vivipara,Flowering,First flower open,plot
+Val Bercla,Itex,PERVIV,Persicaria,vivipara,Flowering,First flower open,plot
+Niwot Ridge,Itexnutsnow,PERVIV,Persicaria,vivipara,Flowering,first visible flower in plot,plot
+Adventdalen,Heath,PERVIV,Persicaria,vivipara,Flowering,flower_plot_first,plot
+Adventdalen,Meadow ,PERVIV,Persicaria,vivipara,Flowering,flower_plot_first,plot
+Atqasuk,Wet,PERVIV,Persicaria,vivipara,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Wet,PERVIV,Persicaria,vivipara,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Wet,PETFRI,Petasites,frigidus,Flowering,Inflorescence emergence (total plot first),plot
+Jakobshorn,Warmrem,PHYHEM,Phyteuma, hemisphaericum,Flowering,first open flower,plot
+Utqiagvik,Dry,POAARC,Poa,arctica,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Wet,POAARC,Poa,arctica,Flowering,Inflorescence emergence (total plot first),plot
+Niwot Ridge,Itexnutsnow,POTDIV,Potentilla,diversifolia,Flowering,first visible flower in plot,plot
+Utqiagvik,Dry,POTHYP,Potentilla,hyparctica,Flowering,flower open (plot); anthers visible if graminoid,plot
+Kangerlussuaq,Doc,POTPAL,Comarum,palustre,Flowering,bloom,plot
+Val Bercla,Itex,PRIINT,Primula,integrifolia,Flowering,First flower open,plot
+Toolik Lake,Snowfield,PYRGRA,Pyrola,grandiflora,Flowering,First flower bud visible,individual
+Finse,Alpine Meadow,RANACR,Ranunculus,acris,Flowering,First flower open,plot
+Latnjajaure,Wet Sedge,RANNIV,Ranunculus,nivalis,Flowering,First flower open,plot
+Utqiagvik,Wet,RANNIV,Ranunculus,nivalis,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Wet,RANPYG,Ranunculus,pygmaeus,Flowering,flower open (plot); anthers visible if graminoid,plot
+Jakobshorn,Warmrem,RANVIL,Ranunculus,villarsii,Flowering,first open flower,plot
+Toolik Lake,Moist ,RUBCHA,Rubus,chamaemorus,Flowering,First flower bud visible,individual
+Toolik Lake,Snowfield,RUBCHA,Rubus,chamaemorus,Flowering,First flower open,individual
+Alexandra Fiord,Dome Dolomite ,SALARC,Salix,arctica,Flowering,first day a mature flower was observed,individual
+Alexandra Fiord,Dome Granite,SALARC,Salix,arctica,Flowering,first day a mature flower was observed,individual
+Alexandra Fiord,Meadow ,SALARC,Salix,arctica,Flowering,first day a mature flower was observed,individual
+Alexandra Fiord,Willow,SALARC,Salix,arctica,Flowering,first day a mature flower was observed,individual
+Kangerlussuaq,Doc,SALGLA,Salix,glauca,Flowering,bloom,plot
+Kangerlussuaq,Dopey,SALGLA,Salix,glauca,Flowering,bloom,plot
+Atqasuk,Dry,SALPHL,Salix,phlebophylla,Flowering,female flower open (plot),plot
+Toolik Lake,Dry,SALPHL,Salix,phlebophylla,Flowering,First flower open,individual
+Atqasuk,Wet,SALPOL,Salix,polaris,Flowering,female flower open (plot),plot
+Endalen,Cassiope ,SALPOL,Salix,polaris,Flowering,First flower bud visible,plot
+Endalen,Dryas Heath,SALPOL,Salix,polaris,Flowering,First flower bud visible,plot
+Endalen,Snowbed,SALPOL,Salix,polaris,Flowering,First flower bud visible,plot
+Adventdalen,Heath,SALPOL,Salix,polaris,Flowering,flower_plot_first,plot
+Adventdalen,Meadow ,SALPOL,Salix,polaris,Flowering,flower_plot_first,plot
+Atqasuk,Wet,SALPUL,Salix,pulchra,Flowering,female flower open (plot),plot
+Toolik Lake,Moist ,SALPUL,Salix,pulchra,Flowering,First flower bud visible,individual
+Toolik Lake,Snowfield,SALRET,Salix,retusa,Flowering,First flower open,individual
+Val Bercla,Itex,SALRET,Salix,retusa,Flowering,First flower open,plot
+Val Bercla,Itex,SALRETI,Salix,reticulata,Flowering,First flower open,plot
+Utqiagvik,Dry,SAXCER,Saxifraga,cernua,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Wet,SAXCER,Saxifraga,cernua,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Dry,SAXFOL,Saxifraga,foliolosa,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Wet,SAXFOL,Saxifraga,foliolosa,Flowering,Inflorescence emergence (total plot first),plot
+Utqiagvik,Wet,SAXHIE,Saxifraga,hieraciifolia,Flowering,flower open (plot); anthers visible if graminoid,plot
+Utqiagvik,Wet,SAXHIR,Saxifraga,hirculus,Flowering,flower bud visible (total plot),plot
+Utqiagvik,Dry,SAXNIV,Saxifraga,nivalis,Flowering,flower bud visible (total plot),plot
+Alexandra Fiord,Dome Dolomite ,SAXOPP,Saxifraga,oppositifolia,Flowering,first day flower bud break was observed,individual
+Alexandra Fiord,Dome Granite,SAXOPP,Saxifraga,oppositifolia,Flowering,first day flower bud break was observed,individual
+Alexandra Fiord,Saxopp,SAXOPP,Saxifraga,oppositifolia,Flowering,first day flower bud break was observed,individual
+Endalen,Dryas Heath,SAXOPP,Saxifraga,oppositifolia,Flowering,First flower open,plot
+Val Bercla,Itex ,SAXOPP,Saxifraga,oppositifolia,Flowering,First flower open,plot
+Utqiagvik,Dry,SAXPUN,Saxifraga,punctata,Flowering,flower open (plot); anthers visible if graminoid,plot
+Finse,Alpine Meadow,SCOAUT,Scorzoneroides,autumnalis,Flowering,First flower open,plot
+Jakobshorn,Warmrem,SCOHEL,Scorzoneroides,helvetica,Flowering,first open flower,plot
+Val Bercla,Itex,SESCAE,Sesleria,caerulea,Flowering,First flower open,plot
+Faroe Islands,Dry Meadow ,SILACA,Silene,acaulis,Flowering,First flower open,plot
+Finse,Alpine Moist Heath,SILACA,Silene,acaulis,Flowering,First flower open,plot
+Val Bercla,Itex,SILACA,Silene,acaulis,Flowering,First flower open,plot
+Utqiagvik,Wet,SILURA,Silene,uralensis,Flowering,flower open (plot); anthers visible if graminoid,plot
+Adventdalen,Heath,STECRA,Stellaria,crassipes,Flowering,flower_plot_first,plot
+Adventdalen,Meadow ,STECRA,Stellaria,crassipes,Flowering,flower_plot_first,plot
+Niwot Ridge,Itexnutsnow,STELON,Stellaria,longipes,Flowering,first visible flower in plot,plot
+Utqiagvik,Wet,STELON,Stellaria,longipes,Flowering,flower bud visible (total plot),plot
+Utqiagvik,Dry,STELON,Stellaria,longipes,Flowering,flower bud visible (total plot),plot
+Kangerlussuaq,Bashful,STELON,Stellaria,longipes,Flowering,Flower set,plot
+Kangerlussuaq,Dopey,STELON,Stellaria,longipes,Flowering,Flower set,plot
+Utqiagvik,Dry,TEPINT,Tephroseris,integrifolia,Flowering,Inflorescence emergence (total plot first),plot
+White Mts,3100,TRIAND,Trifolium,andersonii,Flowering,First anthers visible,plot
+Atqasuk,Dry,TRISPI,Trisetum,spicatum,Flowering,Inflorescence emergence (total plot first),plot
+Jakobshorn,Warmrem,VACMYR,Vaccinium,myrtillus,Flowering,first open flower,plot
+Toolik Lake,Moist ,VACULI,Vaccinium,uliginosum,Flowering,First flower bud visible,individual
+Jakobshorn,Warmrem,VACULI,Vaccinium,uliginosum,Flowering,first open flower,plot
+Daring Lake,Ternplot B,VACVIT,Vaccinium,vitis-idaea,Flowering,First flower bud visible,individual
+Toolik Lake,Dry,VACVIT,Vaccinium,vitis-idaea,Flowering,First flower bud visible,individual
+Toolik Lake,Moist ,VACVIT,Vaccinium,vitis-idaea,Flowering,First flower bud visible,individual
+Toolik Lake,Snowfield,VACVIT,Vaccinium,vitis-idaea,Flowering,First flower open,individual
+Atqasuk,Dry,VACVIT,Vaccinium,vitis-idaea,Flowering,flower open (plot); anthers visible if graminoid,plot
+Gavia Pass,Salix,VERALP,Veronica,alpina,Flowering,unopened buds visible,individual
+Gavia Pass,Polytrichastrum,VERALP,Veronica,alpina,Flowering,unopened buds visible,individual
+Utqiagvik,Dry,ALOALP,Alopecurus,alpinus,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,ARCLAT,Arctagrostis,latifolia,Fruiting,first seed development (total plot),plot
+Kangerlussuaq,Bashful,BETNAN,Betula,nana,Fruiting,Fruit set,plot
+Kangerlussuaq,Doc,BETNAN,Betula,nana,Fruiting,Fruit set,plot
+Kangerlussuaq,Dopey,BETNAN,Betula,nana,Fruiting,Fruit set,plot
+Atqasuk,Wet,CARAQU,Carex,aquatilis,Fruiting,first seed development (total plot),plot
+Gavia Pass,Salix,CARBELALP,Cardamine,bellidifolia,Fruiting,expanding fruits,individual
+Gavia Pass,Polytrichastrum,CARBELALP,Cardamine,bellidifolia,Fruiting,expanding fruits,individual
+Atqasuk,Dry,CARBIG,Carex,bigelowii,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,CARMIC,Carex,microcarpa,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,CARMIC,Carex,microcarpa,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,CARPRA,Cardamine,pratensis,Fruiting,first seed development (total plot),plot
+Atqasuk,Wet,CARRAR,Carex,rariflora,Fruiting,first seed development (total plot),plot
+Atqasuk,Wet,CARROT,Carex,rotundata,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,CARSUB,Carex,subspathacea,Fruiting,first seed development (total plot),plot
+Kangerlussuaq,Bashful,CARSUP,Carex,supina,Fruiting,Fruit set,plot
+Kangerlussuaq,Doc,CARSUP,Carex,supina,Fruiting,Fruit set,plot
+Kangerlussuaq,Dopey,CARSUP,Carex,supina,Fruiting,Fruit set,plot
+Alexandra Fiord,Cassiope ,CASTET,Cassiope,tetragona,Fruiting,first day an immature fruit was observed,individual
+Alexandra Fiord,Dryas,CASTET,Cassiope,tetragona,Fruiting,first day an immature fruit was observed,individual
+Alexandra Fiord,Fert,CASTET,Cassiope,tetragona,Fruiting,first day an immature fruit was observed,individual
+Atqasuk,Dry,CASTET,Cassiope,tetragona,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,CASTET,Cassiope,tetragona,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,CERBEE,Cerastium,beeringianum,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,CHRTET,Chrysosplenium,tetrandrum,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,COCOFF,Cochlearia,officinalis,Fruiting,first seed development (total plot),plot
+Atqasuk,Dry,DIALAP,Diapensia,lapponica,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,DRALAC,Draba,lactea,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,DRALAC,Draba,lactea,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,DRAMIC,Draba,micropetala,Fruiting,first seed development (total plot),plot
+Kangerlussuaq,Bashful,DRAXXX,Draba,spp.,Fruiting,Fruit set,plot
+Kangerlussuaq,Doc,DRAXXX,Draba,spp.,Fruiting,Fruit set,plot
+Kangerlussuaq,Dopey,DRAXXX,Draba,spp.,Fruiting,Fruit set,plot
+Alexandra Fiord,Cassiope ,DRYINT,Dryas,integrifolia,Fruiting,first day that a capsule was observed,individual
+Alexandra Fiord,Dryas,DRYINT,Dryas,integrifolia,Fruiting,first day that a capsule was observed,individual
+Alexandra Fiord,Fert,DRYINT,Dryas,integrifolia,Fruiting,first day that a capsule was observed,individual
+Alexandra Fiord,Meadow ,DRYINT,Dryas,integrifolia,Fruiting,first day that a capsule was observed,individual
+Alexandra Fiord,Willow,DRYINT,Dryas,integrifolia,Fruiting,first day that a capsule was observed,individual
+Atqasuk,Wet,DUPFIS,Dupontia,fisheri,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,DUPFIS,Dupontia,fisheri,Fruiting,first seed development (total plot),plot
+Atqasuk,Wet,ERIANG,Eriophorum,angustifolium,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,ERIANG,Eriophorum,angustifolium,Fruiting,first seed development (total plot),plot
+Atqasuk,Wet,ERICHA,Eriophorum,chamissonis,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,ERICHA,Eriophorum,chamissonis,Fruiting,first seed development (total plot),plot
+Atqasuk,Dry,HIEALPINA,Hierochloe,alpina,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,HIEPAU,Hierochloe,pauciflora,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,JUNBIG,Juncus,biglumis,Fruiting,first seed development (individual),individual
+Utqiagvik,Wet,JUNBIG,Juncus,biglumis,Fruiting,first seed development (total plot),plot
+Daring Lake,Ternplot B,LEDDEC,Ledum,decumbens,Fruiting,first fruit visible,individual
+Atqasuk,Dry,LEDPAL,Ledum,palustre,Fruiting,first seed development (total plot),plot
+Gavia Pass,Polytrichastrum,LEUALP,Leucanthemopsis,alpina,Fruiting,expanding fruits,individual
+Gavia Pass,Salix,LEUALP,Leucanthemopsis,alpina,Fruiting,expanding fruits,individual
+Atqasuk,Dry,LUZCON,Luzula,confusa,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,LUZCON,Luzula,confusa,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,LUZCON,Luzula,confusa,Fruiting,first seed development (total plot),plot
+Atqasuk,Dry,LUZNIV,Luzula,nivalis,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,LUZNIV,Luzula,nivalis,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,LUZNIV,Luzula,nivalis,Fruiting,first seed development (total plot),plot
+Atqasuk,Wet,LUZWAH,Luzula,wahlenbergii,Fruiting,first seed development (total plot),plot
+Atqasuk,Dry,MINOBT,Minuartia,obtusiloba,Fruiting,first seed development (total plot),plot
+Alexandra Fiord,Willow,OXYDIG,Oxyria,digyna,Fruiting,first day developed seeds are observed,individual
+Utqiagvik,Dry,PAPLAP,Papaver,lapponicum,Fruiting,first seed development (total plot),plot
+Alexandra Fiord,Cassiope ,PAPRAD,Papaver,radicatum,Fruiting,first day an immature capsule was observed,individual
+Alexandra Fiord,Dryas,PAPRAD,Papaver,radicatum,Fruiting,first day an immature capsule was observed,individual
+Alexandra Fiord,Willow,PAPRAD,Papaver,radicatum,Fruiting,first day an immature capsule was observed,individual
+Utqiagvik,Dry,PEDLAN,Pedicularis,lanata,Fruiting,first seed development (total plot),plot
+Atqasuk,Wet,PEDSUD,Pedicularis,sudetica,Fruiting,first seed development (total plot),plot
+Atqasuk,Dry,PERBIS,Persicaria,bistorta,Fruiting,first seed development (total plot),plot
+Atqasuk,Wet,PERVIV,Persicaria,vivipara,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,PETFRI,Petasites,frigidus,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,POAARC,Poa,arctica,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,POAARC,Poa,arctica,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,POTHYP,Potentilla,hyparctica,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,RANNIV,Ranunculus,nivalis,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,RANPYG,Ranunculus,pygmaeus,Fruiting,first seed development (total plot),plot
+Alexandra Fiord,Dome Dolomite ,SALARC,Salix,arctica,Fruiting,First day female catkins are swelling,individual
+Alexandra Fiord,Dome Granite,SALARC,Salix,arctica,Fruiting,First day female catkins are swelling,individual
+Alexandra Fiord,Meadow ,SALARC,Salix,arctica,Fruiting,First day female catkins are swelling,individual
+Alexandra Fiord,Willow,SALARC,Salix,arctica,Fruiting,First day female catkins are swelling,individual
+Kangerlussuaq,Doc,SALGLA,Salix,glauca,Fruiting,Fruit set,plot
+Kangerlussuaq,Dopey,SALGLA,Salix,glauca,Fruiting,Fruit set,plot
+Atqasuk,Dry,SALPHL,Salix,phlebophylla,Fruiting,first seed development (plot),plot
+Atqasuk,Wet,SALPOL,Salix,polaris,Fruiting,first seed development (plot),plot
+Atqasuk,Wet,SALPUL,Salix,pulchra,Fruiting,first seed development (plot),plot
+Utqiagvik,Wet,SAXCER,Saxifraga,cernua,Fruiting,Bulbil visible,plot
+Utqiagvik,Dry,SAXFOL,Saxifraga,foliolosa,Fruiting,Bulbil visible,plot
+Utqiagvik,Wet,SAXFOL,Saxifraga,foliolosa,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,SAXHIE,Saxifraga,hieraciifolia,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,SAXHIR,Saxifraga,hirculus,Fruiting,first seed development (total plot),plot
+Alexandra Fiord,Dome Dolomite ,SAXOPP,Saxifraga,oppositifolia,Fruiting,first day that a mature capsule was observed,individual
+Alexandra Fiord,Dome Granite,SAXOPP,Saxifraga,oppositifolia,Fruiting,first day that a mature capsule was observed,individual
+Alexandra Fiord,Saxopp,SAXOPP,Saxifraga,oppositifolia,Fruiting,first day that a mature capsule was observed,individual
+Utqiagvik,Dry,SAXPUN,Saxifraga,punctata,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,SILURA,Silene,uralensis,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,STELON,Stellaria,longipes,Fruiting,first seed development (total plot),plot
+Utqiagvik,Wet,STELON,Stellaria,longipes,Fruiting,first seed development (total plot),plot
+Utqiagvik,Dry,TEPINT,Tephroseris,integrifolia,Fruiting,first seed development (total plot),plot
+Daring Lake,Ternplot B,VACVIT,Vaccinium,vitis-idaea,Fruiting,first fruit visible,individual
+Atqasuk,Dry,VACVIT,Vaccinium,vitis-idaea,Fruiting,first seed development (total plot),plot
+Gavia Pass,Polytrichastrum,VERALP,Veronica,alpina,Fruiting,expanding fruits,individual
+Gavia Pass,Salix,VERALP,Veronica,alpina,Fruiting,expanding fruits,individual
+Adventdalen,Heath ,ALOMAG,Alopecurus,magellanicus,Green up,greenleaf_plot_first,plot
+Adventdalen,Heath ,DRYOCT,Dryas,octopetala,Green up,greenleaf_plot_first,plot
+Adventdalen,Heath ,LUZARCUATCON,Luzula,arcuata,Green up,greenleaf_plot_first,plot
+Adventdalen,Heath ,PEDHIR,Pedicularis,hirsuta,Green up,greenleaf_plot_first,plot
+Adventdalen,Heath ,SALPOL,Salix,polaris,Green up,greenleaf_plot_first,plot
+Adventdalen,Heath ,STECRA,Stellaria,crassipes,Green up,greenleaf_plot_first,plot
+Adventdalen,Meadow ,ALOMAG,Alopecurus,magellanicus,Green up,greenleaf_plot_first,plot
+Adventdalen,Meadow ,DRYOCT,Dryas,octopetala,Green up,greenleaf_plot_first,plot
+Adventdalen,Meadow ,LUZARCUATCON,Luzula,arcuata,Green up,greenleaf_plot_first,plot
+Adventdalen,Meadow ,PEDHIR,Pedicularis,hirsuta,Green up,greenleaf_plot_first,plot
+Adventdalen,Meadow ,SALPOL,Salix,polaris,Green up,greenleaf_plot_first,plot
+Adventdalen,Meadow ,STECRA,Stellaria,crassipes,Green up,greenleaf_plot_first,plot
+Alexandra Fiord,Cassiope ,CASTET,Cassiope,tetragona,Green up,first day a green leaf was observed,individual
+Alexandra Fiord,Cassiope ,DRYINT,Dryas,integrifolia,Green up, first day a new leaf was observed,individual
+Alexandra Fiord,Cassiope ,PAPRAD,Papaver,radicatum,Green up, first day a new leaf was observed,individual
+Alexandra Fiord,Dome Dolomite ,SALARC,Salix,arctica,Green up,first day a mature leaf was observed,individual
+Alexandra Fiord,Dome Dolomite ,SAXOPP,Saxifraga,oppositifolia,Green up,first day vegetative bud break (green) was observed ,individual
+Alexandra Fiord,Granite ,SALARC,Salix,arctica,Green up,first day a mature leaf was observed,individual
+Alexandra Fiord,Granite ,SAXOPP,Saxifraga,oppositifolia,Green up,first day vegetative bud break (green) was observed ,individual
+Alexandra Fiord,Dryas,ARCLAT,Arctagrostis,latifolia,Green up,first day a mature leaf was observed,individual
+Alexandra Fiord,Dryas,CASTET,Cassiope,tetragona,Green up,first day a green leaf was observed,individual
+Alexandra Fiord,Dryas,DRYINT,Dryas,integrifolia,Green up, first day a new leaf was observed,individual
+Alexandra Fiord,Dryas,PAPRAD,Papaver,radicatum,Green up, first day a new leaf was observed,individual
+Alexandra Fiord,Fert,ARCLAT,Arctagrostis,latifolia,Green up,first day an expanded leaf was observed,individual
+Alexandra Fiord,Fert,DRYINT,Dryas,integrifolia,Green up,first day a mature leaf was observed,individual
+Alexandra Fiord,Meadow ,DRYINT,Dryas,integrifolia,Green up, first day a new leaf was observed,individual
+Alexandra Fiord,Meadow ,SALARC,Salix,arctica,Green up,first day a leaf bud break was observed,individual
+Alexandra Fiord,Saxopp,SAXOPP,Saxifraga,oppositifolia,Green up,first day vegetative bud break (green) was observed ,individual
+Alexandra Fiord,Willow,DRYINT,Dryas,integrifolia,Green up, first day a new leaf was observed,individual
+Alexandra Fiord,Willow,OXYDIG,Oxyria,digyna,Green up, first day a new leaf was observed,individual
+Alexandra Fiord,Willow,PAPRAD,Papaver,radicatum,Green up, first day a new leaf was observed,individual
+Alexandra Fiord,Willow,SALARC,Salix,arctica,Green up,first day a leaf bud break was observed,individual
+Atqasuk,Dry,ANTFRI,Antennaria,friesiana,Green up,Leaf bud burst (total plot first),plot
+Atqasuk,Dry,ARCLAT,Arctagrostis,latifolia,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Dry,CARBIG,Carex,bigelowii,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Dry,CASTET,Cassiope,tetragona,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Dry,DIALAP,Diapensia,lapponica,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Dry,HIEALPINA,Hierochloe,alpina,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Dry,LEDPAL,Ledum,palustre,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Dry,LUZCON,Luzula,confusa,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Dry,MINOBT,Minuartia,obtusiloba,Green up,Leaf bud burst (total plot first),plot
+Atqasuk,Dry,SALPHL,Salix,phlebophylla,Green up,Female plant Leaf bud burst (total plot first),plot
+Atqasuk,Dry,TRISPI,Trisetum,spicatum,Green up,Leaf bud burst (total plot first),plot
+Atqasuk,Dry,VACVIT,Vaccinium,vitis-idaea,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Wet,BETNAN,Betula,nana,Green up,Leaf bud burst (total plot first),plot
+Atqasuk,Wet,CARAQU,Carex,aquatilis,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Wet,CARRAR,Carex,rariflora,Green up,Leaf bud burst (total plot first),plot
+Atqasuk,Wet,CARROT,Carex,rotundata,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Wet,DUPFIS,Dupontia,fisheri,Green up,Leaf bud burst (total plot first),plot
+Atqasuk,Wet,ERIANG,Eriophorum,angustifolium,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Wet,LUZWAH,Luzula,wahlenbergii,Green up,Leaf bud burst (total plot first),plot
+Atqasuk,Wet,PEDSUD,Pedicularis,sudetica,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Wet,SALPOL,Salix,polaris,Green up,Female plant Leaf bud burst (total plot first),plot
+Atqasuk,Wet,SALPUL,Salix,pulchra,Green up,Leaf bud burst (individual plant),individual
+Atqasuk,Wet,SAXFOL,Saxifraga,foliolosa,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Dry,ALOALP,Alopecurus,alpinus,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Dry,ARCLAT,Arctagrostis,latifolia,Green up,Leaf bud burst (total plot first),plot
+Imnavait,Dry,CASTET,Cassiope,tetragona,Green up,first leaf bud,individual
+Utqiagvik,Dry,DRALAC,Draba,lactea,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Dry,DRAMIC,Draba,micropetala,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Dry,DUPFIS,Dupontia,fisheri,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Dry,FESBRA,Festuca,brachyphylla,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Dry,JUNBIG,Juncus,biglumis,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Dry,LUZCON,Luzula,confusa,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Dry,POAARC,Poa,arctica,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Dry,POTHYP,Potentilla,hyparctica,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Dry,SAXCER,Saxifraga,cernua,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Dry,SAXFOL,Saxifraga,foliolosa,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Dry,SAXNIV,Saxifraga,nivalis,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Dry,SAXPUN,Saxifraga,punctata,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,CALHOL,Calamagrostis,holmii,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Wet,CARPRA,Cardamine,pratensis,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Wet,CARSUB,Carex,subspathacea,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,CERBEE,Cerastium,beeringianum,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Wet,CHRTET,Chrysosplenium,tetrandrum,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,COCOFF,Cochlearia,officinalis,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,DRALAC,Draba,lactea,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,DRAMIC,Draba,micropetala,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,DUPFIS,Dupontia,fisheri,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,ERISCH,Eriophorum,scheuchzeri,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Wet,HIEPAU,Hierochloe,pauciflora,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,JUNBIG,Juncus,biglumis,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,LUZCON,Luzula,confusa,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,PETFRI,Petasites,frigidus,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,POAARC,Poa,arctica,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,RANNIV,Ranunculus,nivalis,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,RANPYG,Ranunculus,pygmaeus,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,SAXCER,Saxifraga,cernua,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,SAXFOL,Saxifraga,foliolosa,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,SAXHIE,Saxifraga,hieraciifolia,Green up,Leaf bud burst (total plot first),plot
+Utqiagvik,Wet,SAXHIR,Saxifraga,hirculus,Green up,Leaf bud burst (individual plant),individual
+Utqiagvik,Wet,STEHUM,Stellaria,humifusa,Green up,Leaf bud burst (individual plant),individual
+Healy,Cipher,BETNAN,Betula,nana,Green up,bud burst,plot
+Healy,Cipher,CARXXX,Carex,spp.,Green up,bud burst,plot
+Healy,Cipher,RUBCHA,Rubus,chamaemorus,Green up,bud burst,plot
+Healy,Cipher,VACULI,Vaccinium,uliginosum,Green up,bud burst,plot
+Imnavait,Mat,BETNAN,Betula,nana,Green up,full leaf expansion,individual
+Imnavait,Mat,CARBIG,Carex,bigelowii,Green up,first leaf bud,individual
+Toolik Lake,Snowfield,CASTET,Cassiope,tetragona,Green up,first leaf visible,individual
+Imnavait,Mat,ERIVAG,Eriophorum,vaginatum,Green up,first leaf bud,individual
+Imnavait,Mat,LEDPAL,Ledum,palustre,Green up,full leaf expansion,individual
+Imnavait,Mat,SALPUL,Salix,pulchra,Green up,first leaf bud,individual
+Imnavait,Mat,VACVIT,Vaccinium,vitis-idaea,Green up,full leaf expansion,individual
+Jakobshorn,Warmrem,VACMYR,Vaccinium,myrtillus,Green up,first green leaf visible,plot
+Jakobshorn,Warmrem,VACULI,Vaccinium,uliginosum,Green up,first green leaf visible,plot
+Kangerlussuaq,Bashful,CERALP,Cerastium,alpinum,Green up,New green leaf tissue ,plot
+Kangerlussuaq,Bashful,SALGLA,Salix,glauca,Green up,leaf opening,plot
+Kangerlussuaq,Doc,CERALP,Cerastium,alpinum,Green up,New green leaf tissue ,plot
+Kangerlussuaq,Dopey,CERALP,Cerastium,alpinum,Green up,New green leaf tissue ,plot
+Kangerlussuaq,Dopey,SALGLA,Salix,glauca,Green up,leaf opening,plot
+Kangerlussuaq,Dopey,STELON,Stellaria,longipes,Green up,New green leaf tissue ,plot
+Latnjajaure,Dry Meadow ,DRYOCT,Dryas,octopetala,Green up,first leaf expanded,plot
+Niwot Ridge,Audobon,GEUROS,Geum,rosii,Green up,Start of vegetative growth (start of shoot elongation),individual
+Niwot Ridge,EF,CARXXX,Carex,spp.,Green up,Start of vegetative growth (start of shoot elongation),individual
+Niwot Ridge,Lefty,ARTSCO,Artemisia,scopulorum,Green up,Start of vegetative growth (start of shoot elongation),individual
+Niwot Ridge,Lefty,CARXXX,Carex,spp.,Green up,Start of vegetative growth (start of shoot elongation),individual
+Niwot Ridge,Lefty,GEUROS,Geum,rosii,Green up,Start of vegetative growth (start of shoot elongation),individual
+Niwot Ridge,Trough,GEUROS,Geum,rossii,Green up,Start of vegetative growth (start of shoot elongation),individual
+Toolik Lake,Dry,ARCALP,Arctous,alpina,Green up,first leaf visible,individual
+Toolik Lake,Dry,DRYOCT,Dryas,octopetala,Green up,first leaf visible,individual
+Toolik Lake,Dry,LOIPRO,Loiseleuria,procumbens,Green up,first leaf visible,individual
+Toolik Lake,Dry,SALPHL,Salix,phlebophylla,Green up,first leaf visible,individual
+Toolik Lake,Dry,VACVIT,Vaccinium,vitis-idaea,Green up,first leaf visible,individual
+Toolik Lake,Moist,ANDPOL,Andromeda,polifolia,Green up,first leaf visible,individual
+Toolik Lake,Moist,BETNAN,Betula,nana,Green up,first leaf visible,individual
+Toolik Lake,Moist,CARBIG,Carex,bigelowii,Green up,first leaf visible,individual
+Toolik Lake,Moist,CASTET,Cassiope,tetragona,Green up,first leaf visible,individual
+Toolik Lake,Moist,ERIVAG,Eriophorum,vaginatum,Green up,first leaf visible,individual
+Toolik Lake,Moist,LEDDEC,Ledum,decumbens,Green up,first leaf visible,individual
+Toolik Lake,Moist,RUBCHA,Rubus,chamaemorus,Green up,first leaf visible,individual
+Toolik Lake,Moist,SALPUL,Salix,pulchra,Green up,first leaf visible,individual
+Toolik Lake,Moist,VACULI,Vaccinium,uliginosum,Green up,first leaf visible,individual
+Toolik Lake,Moist,VACVIT,Vaccinium,vitis-idaea,Green up,first leaf visible,individual
+Toolik Lake,Snowfield,ANDPOL,Andromeda,polifolia,Green up,first leaf visible,individual
+Toolik Lake,Snowfield,CARBIG,Carex,bigelowii,Green up,first leaf visible,individual
+Utqiagvik,Snowfield,CASTET,Cassiope,tetragona,Green up,Leaf bud burst (total plot first),plot
+Toolik Lake,Snowfield,EMPNIG,Empetrum,nigrum,Green up,first leaf visible,individual
+Toolik Lake,Snowfield,ERIVAG,Eriophorum,vaginatum,Green up,first leaf visible,individual
+Toolik Lake,Snowfield,LEDDEC,Ledum,decumbens,Green up,first leaf visible,individual
+Toolik Lake,Snowfield,PYRGRA,Pyrola,grandiflora,Green up,first leaf visible,individual
+Toolik Lake,Snowfield,RUBCHA,Rubus,chamaemorus,Green up,first leaf visible,individual
+Toolik Lake,Snowfield,SALRET,Salix,retusa,Green up,first leaf visible,individual
+Toolik Lake,Snowfield,VACVIT,Vaccinium,vitis-idaea,Green up,first leaf visible,individual
+Val Bercla,Itex,PRIINT,Primula,integrifolia,Green up,first green visible,plot
+Val Bercla,Itex,SALRET,Salix,retusa,Green up,first green visible,plot
+Val Bercla,Itex,SALRETI,Salix,reticulata,Green up,first green visible,plot
+Val Bercla,Itex,SILACA,Silene,acaulis,Green up,first green visible,plot
+Adventdalen,Heath,DRYOCT,Dryas,octopetala,Leaf Senescence,senescence50_plot_first,plot
+Adventdalen,Heath,SALPOL,Salix,polaris,Leaf Senescence,senescence50_plot_first,plot
+Adventdalen,Meadow,LUZARCUATCON,Luzula,arcuata,Leaf Senescence,senescence50_plot_first,plot
+Adventdalen,Meadow,SALPOL,Salix,polaris,Leaf Senescence,senescence50_plot_first,plot
+Alexandra Fiord,Cassiope,DRYINT,Dryas,integrifolia,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Cassiope,PAPRAD,Papaver,radicatum,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Dome Dolomite ,SALARC,Salix,arctica,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Dome Granite,SALARC,Salix,arctica,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Dryas,ARCLAT,Arctagrostis,latifolia,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Dryas,DRYINT,Dryas,integrifolia,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Fert,ARCLAT,Arctagrostis,latifolia,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Meadow,DRYINT,Dryas,integrifolia,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Meadow,SALARC,Salix,arctica,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Willow,DRYINT,Dryas,integrifolia,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Willow,OXYDIG,Oxyria,digyna,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Willow,PAPRAD,Papaver,radicatum,Leaf Senescence,first day a senesced leaf was observed,individual
+Alexandra Fiord,Willow,SALARC,Salix,arctica,Leaf Senescence,first day a senesced leaf was observed,individual
+Atqasuk,Dry ,ANTFRI,Antennaria,friesiana,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Dry,ARCLAT,Arctagrostis,latifolia,Leaf Senescence,first visible Leaf Senescence (individual),individual
+Atqasuk,Dry,CARBIG,Carex,bigelowii,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Dry,CASTET,Cassiope,tetragona,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Dry,DIALAP,Diapensia,lapponica,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Dry,HIEALPINA,Hierochloe,alpina,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Dry,LEDPAL,Ledum,palustre,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Dry,LUZCON,Luzula,confusa,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Dry,MINOBT,Minuartia,obtusiloba,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Dry,SALPHL,Salix,phlebophylla,Leaf Senescence,first visible Leaf Senescence (total plot  female),plot
+Atqasuk,Dry,TRISPI,Trisetum,spicatum,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Dry,VACVIT,Vaccinium,vitis-idaea,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Wet,BETNAN,Betula,nana,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Wet,CARAQU,Carex,aquatilis,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Wet,CARRAR,Carex,rariflora,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Wet,CARROT,Carex,rotundata,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Wet,DUPFIS,Dupontia,fisheri,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Wet,ERIANG,Eriophorum,angustifolium,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Wet,LUZWAH,Luzula,wahlenbergii,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Atqasuk,Wet,PEDSUD,Pedicularis,sudetica,Leaf Senescence,first visible Leaf Senescence (individual),individual
+Atqasuk,Wet,SALPOL,Salix,polaris,Leaf Senescence,first visible Leaf Senescence (total plot  female),plot
+Atqasuk,Wet,SALPUL,Salix,pulchra,Leaf Senescence,first visible Leaf Senescence (total plot  female),plot
+Atqasuk,Wet,SAXFOL,Saxifraga,foliolosa,Leaf Senescence,first visible Leaf Senescence (individual),individual
+Utqiagvik,Dry,ALOALP,Alopecurus,alpinus,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Dry,ARCLAT,Arctagrostis,latifolia,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Imnavait,Mat,CASTET,Cassiope,tetragona,Leaf Senescence,first leaf color change,individual
+Utqiagvik,Dry,DRALAC,Draba,lactea,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Dry,DRAMIC,Draba,micropetala,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Dry,DUPFIS,Dupontia,fisheri,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Dry,FESBRA,Festuca,brachyphylla,Leaf Senescence,first visible Leaf Senescence (individual),individual
+Utqiagvik,Dry,JUNBIG,Juncus,biglumis,Leaf Senescence,first visible Leaf Senescence (individual),individual
+Utqiagvik,Dry,LUZCON,Luzula,confusa,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Dry,POAARC,Poa,arctica,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Dry,POTHYP,Potentilla,hyparctica,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Dry,SAXCER,Saxifraga,cernua,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Dry,SAXFOL,Saxifraga,foliolosa,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Dry,SAXNIV,Saxifraga,nivalis,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Dry,SAXPUN,Saxifraga,punctata,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,CALHOL,Calamagrostis,holmii,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,CARPRA,Cardamine,pratensis,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,CARSUB,Carex,subspathacea,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,CERBEE,Cerastium,beeringianum,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,CHRTET,Chrysosplenium,tetrandrum,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,COCOFF,Cochlearia,officinalis,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,DRALAC,Draba,lactea,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,DRAMIC,Draba,micropetala,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,DUPFIS,Dupontia,fisheri,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,ERISCH,Eriophorum,scheuchzeri,Leaf Senescence,first visible Leaf Senescence (individual),individual
+Utqiagvik,Wet,HIEPAU,Hierochloe,pauciflora,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,JUNBIG,Juncus,biglumis,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,LUZCON,Luzula,confusa,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,PETFRI,Petasites,frigidus,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,POAARC,Poa,arctica,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Latnjajaure,Wet Sedge ,RANNIV,Ranunculus,nivalis,Leaf Senescence,first color change,plot
+Utqiagvik,Wet,RANPYG,Ranunculus,pygmaeus,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,SAXCER,Saxifraga,cernua,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,SAXFOL,Saxifraga,foliolosa,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,SAXHIE,Saxifraga,hieraciifolia,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,SAXHIR,Saxifraga,hirculus,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Utqiagvik,Wet,STEHUM,Stellaria,humifusa,Leaf Senescence,first visible Leaf Senescence (individual),individual
+Endalen,Cassiope,DRYOCT,Dryas,octopetala,Leaf Senescence,first color change,plot
+Endalen,Cassiope,SALPOL,Salix,polaris,Leaf Senescence,first color change,plot
+Endalen,Dryas,DRYOCT,Dryas,octopetala,Leaf Senescence,first color change,plot
+Endalen,Dryas,SALPOL,Salix,polaris,Leaf Senescence,first color change,plot
+Healy,Cipher,BETNAN,Betula,nana,Leaf Senescence,at least one leaf with no green (turning red or yellow),plot
+Healy,Cipher,CARXXX,Carex,spp.,Leaf Senescence,at least one leaf with no green (turning red or yellow),plot
+Healy,Cipher,ERIVAG,Eriophorum,vaginatum,Leaf Senescence,at least one leaf with no green (turning red or yellow),plot
+Healy,Cipher,RUBCHA,Rubus,chamaemorus,Leaf Senescence,at least one leaf with no green (turning red or yellow),plot
+Healy,Cipher,VACULI,Vaccinium,uliginosum,Leaf Senescence,at least one leaf with no green (turning red or yellow),plot
+Imnavait,Mat,BETNAN,Betula,nana,Leaf Senescence,one leaf wholly colored,individual
+Imnavait,Mat,CARBIG,Carex,bigelowii,Leaf Senescence,first leaf color change,individual
+Toolik Lake,Snowfield,CASTET,Cassiope,tetragona,Leaf Senescence,first color change,individual
+Imnavait,Mat,ERIVAG,Eriophorum,vaginatum,Leaf Senescence,first leaf color change,individual
+Imnavait,Mat,LEDPAL,Ledum,palustre,Leaf Senescence,first leaf color change,individual
+Imnavait,Mat,SALPUL,Salix,pulchra,Leaf Senescence,first leaf color change,individual
+Imnavait,Mat,VACVIT,Vaccinium,vitis-idaea,Leaf Senescence,first leaf color change,individual
+Jakobshorn,Warmrem,CAMROT,Campanula,rotundifolia,Leaf Senescence,first colored leaf,plot
+Jakobshorn,Warmrem,VACMYR,Vaccinium,myrtillus,Leaf Senescence,first colored leaf,plot
+Jakobshorn,Warmrem,VACULI,Vaccinium,uliginosum,Leaf Senescence,first colored leaf,plot
+Latnjajaure,Dry Meadow ,DRYOCT,Dryas,octopetala,Leaf Senescence,first color change,plot
+Utqiagvik,Wet ,RANNIV,Ranunculus,nivalis,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Niwot Ridge,Audobon ,GEUROS,Geum,rosii,Leaf Senescence,leaves turning red,individual
+Niwot Ridge,EK,CARXXX,Carex,spp.,Leaf Senescence,50% senescence,individual
+Niwot Ridge,EK,GEUROS,Geum,rossii,Leaf Senescence,leaves turning red,individual
+Niwot Ridge,Lefty,ARTSCO,Artemisia,scopulorum,Leaf Senescence,50% senescence,individual
+Niwot Ridge,Lefty,CARXXX,Carex,spp.,Leaf Senescence,50% senescence,individual
+Niwot Ridge,Lefty,GEUROS,Geum,rosii,Leaf Senescence,leaves turning red,individual
+Niwot Ridge,Trough ,GEUROS,Geum,rossii,Leaf Senescence,leaves turning red,individual
+Toolik Lake,Dry ,ARCALP,Arctous,alpina,Leaf Senescence,first color change,individual
+Toolik Lake,Dry ,DRYOCT,Dryas,octopetala,Leaf Senescence,first color change,individual
+Toolik Lake,Dry ,LOIPRO,Loiseleuria,procumbens,Leaf Senescence,first color change,individual
+Toolik Lake,Dry ,SALPHL,Salix,phlebophylla,Leaf Senescence,first color change,individual
+Toolik Lake,Dry ,VACVIT,Vaccinium,vitis-idaea,Leaf Senescence,first color change,individual
+Toolik Lake,Moist ,ANDPOL,Andromeda,polifolia,Leaf Senescence,first color change,individual
+Toolik Lake,Moist ,BETNAN,Betula,nana,Leaf Senescence,first color change,individual
+Toolik Lake,Moist ,CARBIG,Carex,bigelowii,Leaf Senescence,first color change,individual
+Toolik Lake,Moist ,CASTET,Cassiope,tetragona,Leaf Senescence,first color change,individual
+Toolik Lake,Moist ,ERIVAG,Eriophorum,vaginatum,Leaf Senescence,first color change,individual
+Toolik Lake,Moist ,LEDDEC,Ledum,decumbens,Leaf Senescence,first color change,individual
+Toolik Lake,Moist ,RUBCHA,Rubus,chamaemorus,Leaf Senescence,first color change,individual
+Toolik Lake,Moist ,SALPUL,Salix,pulchra,Leaf Senescence,first color change,individual
+Toolik Lake,Moist ,VACULI,Vaccinium,uliginosum,Leaf Senescence,first color change,individual
+Toolik Lake,Snowfield,ANDPOL,Andromeda,polifolia,Leaf Senescence,first color change,individual
+Toolik Lake,Snowfield,CARBIG,Carex,bigelowii,Leaf Senescence,first color change,individual
+Utqiagvik,Dry,CASTET,Cassiope,tetragona,Leaf Senescence,first visible Leaf Senescence (plot),plot
+Toolik Lake,Snowfield,EMPNIG,Empetrum,nigrum,Leaf Senescence,first color change,individual
+Toolik Lake,Snowfield,ERIVAG,Eriophorum,vaginatum,Leaf Senescence,first color change,individual
+Toolik Lake,Snowfield,LEDDEC,Ledum,decumbens,Leaf Senescence,first color change,individual
+Toolik Lake,Snowfield,PYRGRA,Pyrola,grandiflora,Leaf Senescence,first color change,individual
+Toolik Lake,Snowfield,RUBCHA,Rubus,chamaemorus,Leaf Senescence,first color change,individual
+Toolik Lake,Snowfield,SALRET,Salix,retusa,Leaf Senescence,first color change,individual
+Toolik Lake,Moist ,VACVIT,Vaccinium,vitis-idaea,Leaf Senescence,first color change,individual
+Toolik Lake,Snowfield,VACVIT,Vaccinium,vitis-idaea,Leaf Senescence,first color change,individual
+Utqiagvik,Dry,ALOALP,Alopecurus,alpinus,Seed Dispersal,first seed dispersal (total plot),plot
+Adventdalen,Heath,ALOMAG,Alopecurus,magellanicus,Seed Dispersal,dispersal_plot_first,plot
+Adventdalen,Meadow,ALOMAG,Alopecurus,magellanicus,Seed Dispersal,dispersal_plot_first,plot
+Toolik Lake,Moist ,ANDPOL,Andromeda,polifolia,Seed Dispersal,first seed dispersal,individual
+Toolik Lake,Snowfield,ANDPOL,Andromeda,polifolia,Seed Dispersal,first seed dispersal,individual
+Atqasuk,Dry,ANTFRI,Antennaria,friesiana,Seed Dispersal,first seed dispersal (total plot),plot
+Atqasuk,Dry,ARTCAMBOR,Artemisia,campestris,Seed Dispersal,first seed dispersal (total plot),plot
+Toolik Lake,Moist ,BETNAN,Betula,nana,Seed Dispersal,first seed dispersal,individual
+Atqasuk,Wet,CARAQU,Carex,aquatilis,Seed Dispersal,first seed dispersal (total plot),plot
+Gavia Pass,Salix,CARBELALP,Cardamine,bellidifolia,Seed Dispersal,seed dispersal,individual
+Gavia Pass,Polytrichastrum,CARBELALP,Cardamine,bellidifolia,Seed Dispersal,seed dispersal,individual
+Toolik Lake,Moist,CARBIG,Carex,bigelowii,Seed Dispersal,first seed dispersal,individual
+Toolik Lake,Snowfield,CARBIG,Carex,bigelowii,Seed Dispersal,first seed dispersal,individual
+Atqasuk,Dry,CARBIG,Carex,bigelowii,Seed Dispersal,first seed dispersal (total plot),plot
+Atqasuk,Wet,CARRAR,Carex,rariflora,Seed Dispersal,first seed dispersal (total plot),plot
+Endalen,Dryas Heath,CARRUP,Carex,rupestris,Seed Dispersal,first seed dispersal,plot
+Toolik Lake,Snowfield,CASTET,Cassiope,tetragona,Seed Dispersal,first seed dispersal,individual
+Atqasuk,Dry,CASTET,Cassiope,tetragona,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Dry,CASTET,Cassiope,tetragona,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Wet,CHRTET,Chrysosplenium,tetrandrum,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Wet,COCOFF,Cochlearia,officinalis,Seed Dispersal,first seed dispersal (total plot),plot
+Atqasuk,Dry,DIALAP,Diapensia,lapponica,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Dry,DRALAC,Draba,lactea,Seed Dispersal,first seed dispersal (individual),individual
+Utqiagvik,Wet,DRALAC,Draba,lactea,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Dry,DRAMIC,Draba,micropetala,Seed Dispersal,first seed dispersal (individual),individual
+Alexandra Fiord,Cassiope,DRYINT,Dryas,integrifolia,Seed Dispersal,first day that seed dispersal was observed,individual
+Alexandra Fiord,Dryas,DRYINT,Dryas,integrifolia,Seed Dispersal,first day that seed dispersal was observed,individual
+Alexandra Fiord,Meadow,DRYINT,Dryas,integrifolia,Seed Dispersal,first day that seed dispersal was observed,individual
+Alexandra Fiord,Willow,DRYINT,Dryas,integrifolia,Seed Dispersal,first day that seed dispersal was observed,individual
+Adventdalen,Heath,DRYOCT,Dryas,octopetala,Seed Dispersal,dispersal_plot_first,plot
+Adventdalen,Meadow,DRYOCT,Dryas,octopetala,Seed Dispersal,dispersal_plot_first,plot
+Latnjajaure,Dry Meadow ,DRYOCT,Dryas,octopetala,Seed Dispersal,first seed dispersal,plot
+Toolik Lake,Dry,DRYOCT,Dryas,octopetala,Seed Dispersal,first seed dispersal,individual
+Endalen,Cassiope,DRYOCT,Dryas,octopetala,Seed Dispersal,seed twist ,plot
+Endalen,Dryas Heath,DRYOCT,Dryas,octopetala,Seed Dispersal,seed twist ,plot
+Atqasuk,Wet,DUPFIS,Dupontia,fisheri,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Wet,DUPFIS,Dupontia,fisheri,Seed Dispersal,first seed dispersal (total plot),plot
+Toolik Lake,Snowfield,EMPNIG,Empetrum,nigrum,Seed Dispersal,first seed dispersal,individual
+Atqasuk,Wet,ERIANG,Eriophorum,angustifolium,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Wet,ERIANG,Eriophorum,angustifolium,Seed Dispersal,first seed dispersal (total plot),plot
+Atqasuk,Wet,ERICHA,Eriophorum,chamissonis,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Wet,ERICHA,Eriophorum,chamissonis,Seed Dispersal,first seed dispersal (total plot),plot
+Latnjajaure,Tussock Tundra,ERIVAG,Eriophorum,vaginatum,Seed Dispersal,first seed dispersal,plot
+Toolik Lake,Moist,ERIVAG,Eriophorum,vaginatum,Seed Dispersal,first seed dispersal,individual
+Toolik Lake,Snowfield,ERIVAG,Eriophorum,vaginatum,Seed Dispersal,first seed dispersal,individual
+Daring Lake,Ternplot F,ERIVAG,Eriophorum,vaginatum,Seed Dispersal,seed shed,individual
+Atqasuk,Dry,HIEALPINA,Hierochloe,alpina,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Wet,HIEPAU,Hierochloe,pauciflora,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Wet,JUNBIG,Juncus,biglumis,Seed Dispersal,first seed dispersal (individual),individual
+Utqiagvik,Dry,JUNBIG,Juncus,biglumis,Seed Dispersal,first seed dispersal (total plot),plot
+Toolik Lake,Moist,LEDDEC,Ledum,decumbens,Seed Dispersal,first seed dispersal,individual
+Toolik Lake,Snowfield,LEDDEC,Ledum,decumbens,Seed Dispersal,first seed dispersal,individual
+Atqasuk,Dry,LEDPAL,Ledum,palustre,Seed Dispersal,first seed dispersal (total plot),plot
+Gavia Pass,Salix,LEUALP,Leucanthemopsis,alpina,Seed Dispersal,seed dispersal,individual
+Gavia Pass,Polytrichastrum,LEUALP,Leucanthemopsis,alpina,Seed Dispersal,seed dispersal,individual
+Toolik Lake,Dry,LOIPRO,Loiseleuria,procumbens,Seed Dispersal,first seed dispersal,individual
+Adventdalen,Heath,LUZARCUATCON,Luzula,arcuata,Seed Dispersal,dispersal_plot_first,plot
+Adventdalen,Meadow,LUZARCUATCON,Luzula,arcuata,Seed Dispersal,dispersal_plot_first,plot
+Atqasuk,Dry,LUZCON,Luzula,confusa,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Dry,LUZCON,Luzula,confusa,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Wet,LUZCON,Luzula,confusa,Seed Dispersal,first seed dispersal (total plot),plot
+Atqasuk,Dry,LUZNIV,Luzula,nivalis,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Dry,LUZNIV,Luzula,nivalis,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Wet,LUZNIV,Luzula,nivalis,Seed Dispersal,first seed dispersal (total plot),plot
+Atqasuk,Wet,LUZWAH,Luzula,wahlenbergii,Seed Dispersal,first seed dispersal (total plot),plot
+Atqasuk,Dry,MINOBT,Minuartia,obtusiloba,Seed Dispersal,first seed dispersal (total plot),plot
+Alexandra Fiord,Willow,OXYDIG,Oxyria,digyna,Seed Dispersal,first day seeds begin to fall from the inflorencence,individual
+Utqiagvik,Dry,PAPLAP,Papaver,lapponicum,Seed Dispersal,first seed dispersal (total plot),plot
+Adventdalen,Heath,PEDHIR,Pedicularis,hirsuta,Seed Dispersal,dispersal_plot_first,plot
+Adventdalen,Meadow,PEDHIR,Pedicularis,hirsuta,Seed Dispersal,dispersal_plot_first,plot
+Utqiagvik,Dry,PEDLAN,Pedicularis,lanata,Seed Dispersal,first seed dispersal (total plot),plot
+Atqasuk,Wet,PEDSUD,Pedicularis,sudetica,Seed Dispersal,first seed dispersal (total plot),plot
+Toolik Lake,Snowfield,PERBIS,Persicaria,bistorta,Seed Dispersal,first seed dispersal,individual
+Atqasuk,Dry,PERBIS,Persicaria,bistorta,Seed Dispersal,first seed dispersal (total plot),plot
+Adventdalen,Heath,PERVIV,Persicaria,vivipara,Seed Dispersal,dispersal_plot_first,plot
+Adventdalen,Meadow,PERVIV,Persicaria,vivipara,Seed Dispersal,dispersal_plot_first,plot
+Atqasuk,Wet,PERVIV,Persicaria,vivipara,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Dry,POAARC,Poa,arctica,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Dry,POTHYP,Potentilla,hyparctica,Seed Dispersal,first seed dispersal (total plot),plot
+Latnjajaure,Wet Sedge,RANNIV,Ranunculus,nivalis,Seed Dispersal,first seed dispersal,plot
+Utqiagvik,Wet,RANNIV,Ranunculus,nivalis,Seed Dispersal,first seed dispersal (total plot),plot
+Utqiagvik,Wet,RANPYG,Ranunculus,pygmaeus,Seed Dispersal,first seed dispersal (total plot),plot
+Alexandra Fiord,Dome Dolomite ,SALARC,Salix,arctica,Seed Dispersal,first day that seed dispersal was observed,individual
+Alexandra Fiord,Dome Granite,SALARC,Salix,arctica,Seed Dispersal,first day that seed dispersal was observed,individual
+Alexandra Fiord,Meadow,SALARC,Salix,arctica,Seed Dispersal,first day that seed dispersal was observed,individual
+Alexandra Fiord,Willow,SALARC,Salix,arctica,Seed Dispersal,first day that seed dispersal was observed,individual
+Toolik Lake,Dry,SALPHL,Salix,phlebophylla,Seed Dispersal,first seed dispersal,individual
+Atqasuk,Dry,SALPHL,Salix,phlebophylla,Seed Dispersal,first seed dispersal (total plot),plot
+Adventdalen,Heath,SALPOL,Salix,polaris,Seed Dispersal,dispersal_plot_first,plot
+Adventdalen,Meadow,SALPOL,Salix,polaris,Seed Dispersal,dispersal_plot_first,plot
+Endalen,Snowbed,SALPOL,Salix,polaris,Seed Dispersal,first seed dispersal,plot
+Atqasuk,Wet,SALPOL,Salix,polaris,Seed Dispersal,first seed dispersal (total plot),plot
+Toolik Lake,Moist,SALPUL,Salix,pulchra,Seed Dispersal,first seed dispersal,individual
+Atqasuk,Wet,SALPUL,Salix,pulchra,Seed Dispersal,first seed dispersal (total plot),plot
+Toolik Lake,Snowfield,SALRET,Salix,retusa,Seed Dispersal,first seed dispersal,individual
+Utqiagvik,Wet,SAXHIE,Saxifraga,hieraciifolia,Seed Dispersal,first seed dispersal (total plot),plot
+Alexandra Fiord,Saxopp,SAXOPP,Saxifraga,oppositifolia,Seed Dispersal,first day a dehiscing capsule was observed,individual
+Endalen,Dryas Heath,SAXOPP,Saxifraga,oppositifolia,Seed Dispersal,first seed dispersal,plot
+Utqiagvik,Dry,SAXPUN,Saxifraga,punctata,Seed Dispersal,first seed dispersal (total plot),plot
+Toolik Lake,Dry,VACVIT,Vaccinium,vitis-idaea,Seed Dispersal,first seed dispersal,individual
+Toolik Lake,Moist,VACVIT,Vaccinium,vitis-idaea,Seed Dispersal,first seed dispersal,individual
+Toolik Lake,Snowfield,VACVIT,Vaccinium,vitis-idaea,Seed Dispersal,first seed dispersal,individual
+Atqasuk,Dry,VACVIT,Vaccinium,vitis-idaea,Seed Dispersal,first seed dispersal (total plot),plot
+Gavia Pass,Salix,VERALP,Veronica,alpina,Seed Dispersal,seed dispersal,individual
+Gavia Pass,Polytrichastrum,VERALP,Veronica,alpina,Seed Dispersal,seed dispersal,individual
