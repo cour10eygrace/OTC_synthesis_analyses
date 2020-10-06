@@ -121,7 +121,7 @@ Toolik Lake,Dry,LOIPRO,Loiseleuria,procumbens,End of Flowering,first petal drop,
 Toolik Lake,Snowfield,PERBIS,Persicaria,bistorta,End of Flowering,first petal drop,individual
 Toolik Lake,Moist ,RUBCHA,Rubus,chamaemorus,End of Flowering,first petal drop,individual
 Toolik Lake,Snowfield,SALRET,Salix,retusa,End of Flowering,first petal drop,individual
-Endalen,Dryas Heath,SAXOPP,Saxifraga,oppositifolia,End of Flowering,first petal drop,plot
+Endalen,Dryas,SAXOPP,Saxifraga,oppositifolia,End of Flowering,first petal drop,plot
 Toolik Lake,Dry,VACVIT,Vaccinium,vitis-idaea,End of Flowering,first petal drop,individual
 Toolik Lake,Moist ,VACVIT,Vaccinium,vitis-idaea,End of Flowering,first petal drop,individual
 Niwot Ridge,Sadsnfc,PERBIS,Persicaria,bistorta,End of Flowering,first petal shed,individual
@@ -213,7 +213,7 @@ Utqiagvik,Moist ,CARMIC,Carex,microcarpa,Flowering,Inflorescence emergence (tota
 Utqiagvik,Wet,CARPRA,Cardamine,pratensis,Flowering,flower bud visible (total plot),plot
 Atqasuk,Wet,CARRAR,Carex,rariflora,Flowering,flower open (plot); anthers visible if graminoid,plot
 Atqasuk,Wet,CARROT,Carex,rotundata,Flowering,flower open (plot); anthers visible if graminoid,plot
-Endalen,Dryas Heath,CARRUP,Carex,rupestris,Flowering,first anther,plot
+Endalen,Dryas,CARRUP,Carex,rupestris,Flowering,first anther,plot
 Niwot Ridge,Itexnutsnow,CARSCO,Carex,scopulorum,Flowering,first visible flower in plot,plot
 Utqiagvik,Wet,CARSUB,Carex,subspathacea,Flowering,flower open (plot); anthers visible if graminoid,plot
 Kangerlussuaq,Dopey,CARSUP,Carex,supina,Flowering,bloom,plot
@@ -255,7 +255,7 @@ Alexandra Fiord,Fert,DRYINT,Dryas,integrifolia,Flowering, first day a mature flo
 Alexandra Fiord,Meadow ,DRYINT,Dryas,integrifolia,Flowering, first day a mature flower was observed,individual
 Alexandra Fiord,Willow,DRYINT,Dryas,integrifolia,Flowering, first day a mature flower was observed,individual
 Endalen,Cassiope ,DRYOCT,Dryas,octopetala,Flowering,First flower bud visible,plot
-Endalen,Dryas Heath,DRYOCT,Dryas,octopetala,Flowering,First flower open,plot
+Endalen,Dryas,DRYOCT,Dryas,octopetala,Flowering,First flower open,plot
 Latnjajaure,Dry Meadow ,DRYOCT,Dryas,octopetala,Flowering,First flower open,plot
 Toolik Lake,Dry,DRYOCT,Dryas,octopetala,Flowering,First flower open,individual
 Adventdalen,Heath,DRYOCT,Dryas,octopetala,Flowering,flower_plot_first,plot
@@ -371,7 +371,7 @@ Atqasuk,Dry,SALPHL,Salix,phlebophylla,Flowering,female flower open (plot),plot
 Toolik Lake,Dry,SALPHL,Salix,phlebophylla,Flowering,First flower open,individual
 Atqasuk,Wet,SALPOL,Salix,polaris,Flowering,female flower open (plot),plot
 Endalen,Cassiope ,SALPOL,Salix,polaris,Flowering,First flower bud visible,plot
-Endalen,Dryas Heath,SALPOL,Salix,polaris,Flowering,First flower bud visible,plot
+Endalen,Dryas,SALPOL,Salix,polaris,Flowering,First flower bud visible,plot
 Endalen,Snowbed,SALPOL,Salix,polaris,Flowering,First flower bud visible,plot
 Adventdalen,Heath,SALPOL,Salix,polaris,Flowering,flower_plot_first,plot
 Adventdalen,Meadow ,SALPOL,Salix,polaris,Flowering,flower_plot_first,plot
@@ -390,7 +390,7 @@ Utqiagvik,Dry,SAXNIV,Saxifraga,nivalis,Flowering,flower bud visible (total plot)
 Alexandra Fiord,Dome Dolomite ,SAXOPP,Saxifraga,oppositifolia,Flowering,first day flower bud break was observed,individual
 Alexandra Fiord,Dome Granite,SAXOPP,Saxifraga,oppositifolia,Flowering,first day flower bud break was observed,individual
 Alexandra Fiord,Saxopp,SAXOPP,Saxifraga,oppositifolia,Flowering,first day flower bud break was observed,individual
-Endalen,Dryas Heath,SAXOPP,Saxifraga,oppositifolia,Flowering,First flower open,plot
+Endalen,Dryas,SAXOPP,Saxifraga,oppositifolia,Flowering,First flower open,plot
 Val Bercla,Itex ,SAXOPP,Saxifraga,oppositifolia,Flowering,First flower open,plot
 Utqiagvik,Dry,SAXPUN,Saxifraga,punctata,Flowering,flower open (plot); anthers visible if graminoid,plot
 Finse,Alpine Meadow,SCOAUT,Scorzoneroides,autumnalis,Flowering,First flower open,plot
@@ -813,7 +813,7 @@ Toolik Lake,Moist,CARBIG,Carex,bigelowii,Seed Dispersal,first seed dispersal,ind
 Toolik Lake,Snowfield,CARBIG,Carex,bigelowii,Seed Dispersal,first seed dispersal,individual
 Atqasuk,Dry,CARBIG,Carex,bigelowii,Seed Dispersal,first seed dispersal (total plot),plot
 Atqasuk,Wet,CARRAR,Carex,rariflora,Seed Dispersal,first seed dispersal (total plot),plot
-Endalen,Dryas Heath,CARRUP,Carex,rupestris,Seed Dispersal,first seed dispersal,plot
+Endalen,Dryas,CARRUP,Carex,rupestris,Seed Dispersal,first seed dispersal,plot
 Toolik Lake,Snowfield,CASTET,Cassiope,tetragona,Seed Dispersal,first seed dispersal,individual
 Atqasuk,Dry,CASTET,Cassiope,tetragona,Seed Dispersal,first seed dispersal (total plot),plot
 Utqiagvik,Dry,CASTET,Cassiope,tetragona,Seed Dispersal,first seed dispersal (total plot),plot
@@ -832,7 +832,7 @@ Adventdalen,Meadow,DRYOCT,Dryas,octopetala,Seed Dispersal,dispersal_plot_first,p
 Latnjajaure,Dry Meadow ,DRYOCT,Dryas,octopetala,Seed Dispersal,first seed dispersal,plot
 Toolik Lake,Dry,DRYOCT,Dryas,octopetala,Seed Dispersal,first seed dispersal,individual
 Endalen,Cassiope,DRYOCT,Dryas,octopetala,Seed Dispersal,seed twist ,plot
-Endalen,Dryas Heath,DRYOCT,Dryas,octopetala,Seed Dispersal,seed twist ,plot
+Endalen,Dryas,DRYOCT,Dryas,octopetala,Seed Dispersal,seed twist ,plot
 Atqasuk,Wet,DUPFIS,Dupontia,fisheri,Seed Dispersal,first seed dispersal (total plot),plot
 Utqiagvik,Wet,DUPFIS,Dupontia,fisheri,Seed Dispersal,first seed dispersal (total plot),plot
 Toolik Lake,Snowfield,EMPNIG,Empetrum,nigrum,Seed Dispersal,first seed dispersal,individual
@@ -895,7 +895,7 @@ Atqasuk,Wet,SALPUL,Salix,pulchra,Seed Dispersal,first seed dispersal (total plot
 Toolik Lake,Snowfield,SALRET,Salix,retusa,Seed Dispersal,first seed dispersal,individual
 Utqiagvik,Wet,SAXHIE,Saxifraga,hieraciifolia,Seed Dispersal,first seed dispersal (total plot),plot
 Alexandra Fiord,Saxopp,SAXOPP,Saxifraga,oppositifolia,Seed Dispersal,first day a dehiscing capsule was observed,individual
-Endalen,Dryas Heath,SAXOPP,Saxifraga,oppositifolia,Seed Dispersal,first seed dispersal,plot
+Endalen,Dryas,SAXOPP,Saxifraga,oppositifolia,Seed Dispersal,first seed dispersal,plot
 Utqiagvik,Dry,SAXPUN,Saxifraga,punctata,Seed Dispersal,first seed dispersal (total plot),plot
 Toolik Lake,Dry,VACVIT,Vaccinium,vitis-idaea,Seed Dispersal,first seed dispersal,individual
 Toolik Lake,Moist,VACVIT,Vaccinium,vitis-idaea,Seed Dispersal,first seed dispersal,individual
