@@ -1,172 +1,171 @@
 Site:Subsite,Estimate_days,Error_days,CI_lower_days,CI_upper_days,Phenology ,n_obs
 Adventdalen_Heath,-0.56844,0.722744,-2.10311,0.839655,Green up,134
-Adventdalen_Meadow,-0.94691,0.72106,-2.56246,0.28811,Green up,142
 Adventdalen_Heath,-2.32637,0.811854,-3.97808,-0.72006,Flowering,128
-Adventdalen_Meadow,-2.55152,0.802097,-4.23932,-1.02705,Flowering,151
-Adventdalen_Heath,-1.93192,0.75225,-3.44149,-0.40798,End of Flowering ,111
-Adventdalen_Meadow,-1.99251,0.738612,-3.54874,-0.54604,End of Flowering ,95
+Adventdalen_Heath,-1.84977,0.7518396,-3.394936,-0.30354077,End of Flowering,111
 Adventdalen_Heath,-3.03812,1.703769,-6.62092,0.278005,Seed Dispersal,86
+Adventdalen_Heath,0.74494,0.532319,-0.40121,1.775951,Leaf Senescence,57
+Adventdalen_Meadow,-0.94691,0.72106,-2.56246,0.28811,Green up,142
+Adventdalen_Meadow,-2.55152,0.802097,-4.23932,-1.02705,Flowering,151
+Adventdalen_Meadow,-1.887788,0.7569735,-3.489223,-0.4106347,End of Flowering,95
 Adventdalen_Meadow,-2.92092,1.680304,-6.32592,0.376833,Seed Dispersal,122
-Adventdalen_Heath,0.74494,0.532319,-0.40121,1.775951,Leaf Senescence ,57
-Adventdalen_Meadow,0.726394,0.54406,-0.45806,1.758302,Leaf Senescence ,50
+Adventdalen_Meadow,0.726394,0.54406,-0.45806,1.758302,Leaf Senescence,50
 Alexandra Fiord_Cassiope,-0.81769,0.618856,-2.14249,0.328599,Green up,1186
-Alexandra Fiord_Dome Dolomite,-0.10442,0.847063,-1.80536,1.614686,Green up,490
-Alexandra Fiord_Dome Granite,-0.11833,0.850566,-1.82672,1.597734,Green up,454
-Alexandra Fiord_Dryas,-0.84986,0.626934,-2.22989,0.271551,Green up,1502
-Alexandra Fiord_Fert,-0.92484,0.682464,-2.42063,0.273684,Green up,20
-Alexandra Fiord_Meadow,-1.02145,0.675339,-2.4894,0.165944,Green up,780
-Alexandra Fiord_Saxopp,-0.87462,0.67095,-2.37639,0.320198,Green up,240
-Alexandra Fiord_Willow ,-1.13268,0.669255,-2.63441,0.014992,Green up,2735
 Alexandra Fiord_Cassiope,-2.42477,0.746404,-3.95853,-1.02809,Flowering,719
-Alexandra Fiord_Dome Dolomite,-2.22209,0.88618,-4.03788,-0.50016,Flowering,187
-Alexandra Fiord_Dome Granite,-2.2097,0.877245,-3.96336,-0.47018,Flowering,179
-Alexandra Fiord_Dryas,-2.32478,0.778053,-3.87548,-0.74727,Flowering,1026
-Alexandra Fiord_Fert,-2.51224,0.834491,-4.19273,-0.88218,Flowering,27
-Alexandra Fiord_Meadow,-2.54759,0.769004,-4.14218,-1.08439,Flowering,300
-Alexandra Fiord_Saxopp,-2.43592,0.788389,-4.07639,-0.93992,Flowering,240
-Alexandra Fiord_Willow ,-2.70939,0.761265,-4.32183,-1.30898,Flowering,2138
-Alexandra Fiord_Cassiope,-2.03398,0.69127,-3.51266,-0.6901,End of Flowering ,482
-Alexandra Fiord_Dome Dolomite,-2.07228,0.810068,-3.85954,-0.55785,End of Flowering ,210
-Alexandra Fiord_Dome Granite,-1.95071,0.78854,-3.55247,-0.3383,End of Flowering ,214
-Alexandra Fiord_Dryas,-1.99818,0.696938,-3.41466,-0.61462,End of Flowering ,657
-Alexandra Fiord_Fert,-1.96485,0.739555,-3.49462,-0.49554,End of Flowering ,19
-Alexandra Fiord_Meadow,-2.03662,0.722972,-3.56877,-0.63813,End of Flowering ,223
-Alexandra Fiord_Saxopp,-1.92448,0.729777,-3.38227,-0.43012,End of Flowering ,280
-Alexandra Fiord_Willow ,-2.0028,0.686891,-3.39973,-0.66435,End of Flowering ,1462
+Alexandra Fiord_Cassiope,-1.943,0.7015364,-3.402665,-0.56967344,End of Flowering,482
 Alexandra Fiord_Cassiope,-2.70508,1.947098,-6.82207,0.99188,Fruiting,598
-Alexandra Fiord_Dome Dolomite,-2.95255,2.097911,-7.39943,0.822901,Fruiting,107
-Alexandra Fiord_Dome Granite,-2.56008,2.145186,-6.93366,1.686702,Fruiting,81
-Alexandra Fiord_Dryas,-2.60012,1.949667,-6.7659,1.123692,Fruiting,692
-Alexandra Fiord_Fert,-2.5945,2.089246,-6.9334,1.423699,Fruiting,17
-Alexandra Fiord_Meadow,-2.66568,1.973488,-6.89432,0.982104,Fruiting,204
-Alexandra Fiord_Saxopp,-2.08817,2.128134,-6.41286,2.14271,Fruiting,207
-Alexandra Fiord_Willow ,-2.57678,1.932534,-6.64888,1.14385,Fruiting,1772
 Alexandra Fiord_Cassiope,-2.89041,1.657625,-6.30314,0.433105,Seed Dispersal,75
+Alexandra Fiord_Cassiope,0.784083,0.483372,-0.19372,1.753409,Leaf Senescence,521
+Alexandra Fiord_Dome Dolomite,-0.10442,0.847063,-1.80536,1.614686,Green up,490
+Alexandra Fiord_Dome Dolomite,-2.22209,0.88618,-4.03788,-0.50016,Flowering,187
+Alexandra Fiord_Dome Dolomite,-2.011768,0.8203247,-3.821342,-0.47579925,End of Flowering,210
+Alexandra Fiord_Dome Dolomite,-2.95255,2.097911,-7.39943,0.822901,Fruiting,107
+Alexandra Fiord_Dome Dolomite,0.792751,0.561307,-0.34658,1.926479,Leaf Senescence,30
+Alexandra Fiord_Dome Granite,-0.11833,0.850566,-1.82672,1.597734,Green up,454
+Alexandra Fiord_Dome Granite,-2.2097,0.877245,-3.96336,-0.47018,Flowering,179
+Alexandra Fiord_Dome Granite,-1.885636,0.7843456,-3.512218,-0.31020369,End of Flowering,214
+Alexandra Fiord_Dome Granite,-2.56008,2.145186,-6.93366,1.686702,Fruiting,81
+Alexandra Fiord_Dome Granite,0.790608,0.567413,-0.37134,1.956692,Leaf Senescence,57
+Alexandra Fiord_Dryas,-0.84986,0.626934,-2.22989,0.271551,Green up,1502
+Alexandra Fiord_Dryas,-2.32478,0.778053,-3.87548,-0.74727,Flowering,1026
+Alexandra Fiord_Dryas,-1.892064,0.6930657,-3.304877,-0.49166272,End of Flowering,660
+Alexandra Fiord_Dryas,-2.60012,1.949667,-6.7659,1.123692,Fruiting,692
 Alexandra Fiord_Dryas,-2.79302,1.650597,-6.02674,0.513634,Seed Dispersal,141
+Alexandra Fiord_Dryas,0.71738,0.497826,-0.34588,1.657582,Leaf Senescence,764
+Alexandra Fiord_Fert,-0.92484,0.682464,-2.42063,0.273684,Green up,20
+Alexandra Fiord_Fert,-2.51224,0.834491,-4.19273,-0.88218,Flowering,27
+Alexandra Fiord_Fert,-1.866317,0.7510032,-3.438036,-0.33734451,End of Flowering,19
+Alexandra Fiord_Fert,-2.5945,2.089246,-6.9334,1.423699,Fruiting,17
+Alexandra Fiord_Fert,0.747511,0.528405,-0.36643,1.785124,Leaf Senescence,10
+Alexandra Fiord_Meadow,-1.02145,0.675339,-2.4894,0.165944,Green up,780
+Alexandra Fiord_Meadow,-2.54759,0.769004,-4.14218,-1.08439,Flowering,300
+Alexandra Fiord_Meadow,-1.943498,0.724528,-3.467652,-0.55495845,End of Flowering,223
+Alexandra Fiord_Meadow,-2.66568,1.973488,-6.89432,0.982104,Fruiting,204
 Alexandra Fiord_Meadow,-2.96078,1.662384,-6.3988,0.250613,Seed Dispersal,84
-Alexandra Fiord_Willow ,-3.02451,1.591434,-6.22371,0.069436,Seed Dispersal,676
-Alexandra Fiord_Cassiope,0.784083,0.483372,-0.19372,1.753409,Leaf Senescence ,521
-Alexandra Fiord_Dome Dolomite,0.792751,0.561307,-0.34658,1.926479,Leaf Senescence ,30
-Alexandra Fiord_Dome Granite,0.790608,0.567413,-0.37134,1.956692,Leaf Senescence ,57
-Alexandra Fiord_Dryas,0.71738,0.497826,-0.34588,1.657582,Leaf Senescence ,764
-Alexandra Fiord_Fert,0.747511,0.528405,-0.36643,1.785124,Leaf Senescence ,10
-Alexandra Fiord_Meadow,0.731068,0.499261,-0.35277,1.666013,Leaf Senescence ,405
-Alexandra Fiord_Saxopp,0.696956,0.473022,-0.35699,1.588414,Leaf Senescence ,1417
+Alexandra Fiord_Meadow,0.731068,0.499261,-0.35277,1.666013,Leaf Senescence,405
+Alexandra Fiord_Saxopp,-0.87462,0.67095,-2.37639,0.320198,Green up,240
+Alexandra Fiord_Saxopp,-2.43592,0.788389,-4.07639,-0.93992,Flowering,240
+Alexandra Fiord_Saxopp,-1.811274,0.7190709,-3.207991,-0.31331894,End of Flowering,280
+Alexandra Fiord_Saxopp,-2.08817,2.128134,-6.41286,2.14271,Fruiting,207
+Alexandra Fiord_Saxopp,0.696956,0.473022,-0.35699,1.588414,Leaf Senescence,1417
+Alexandra Fiord_Willow ,-1.13268,0.669255,-2.63441,0.014992,Green up,2735
 Alexandra Fiord_Willow ,-0.66517,0.614508,-2.00596,0.490171,Green up,4233
-Atqasuk_Wet ,-0.39329,0.64142,-1.78057,0.85217,Green up,2968
-Atqasuk_Dry ,-2.29003,0.771774,-3.87495,-0.7464,Flowering,4198
-Atqasuk_Wet ,-2.31872,0.772241,-3.88176,-0.81166,Flowering,1515
-Atqasuk_Dry ,-1.80753,0.703404,-3.2152,-0.42144,End of Flowering ,4254
-Atqasuk_Wet ,-1.87116,0.691785,-3.2608,-0.49934,End of Flowering ,1628
-Atqasuk_Dry ,-2.40103,1.984195,-6.61822,1.145593,Fruiting,3249
-Atqasuk_Wet ,-2.38538,1.989135,-6.63773,1.280095,Fruiting,1462
-Atqasuk_Dry ,-2.50388,1.616345,-5.70262,0.732746,Seed Dispersal,1693
-Atqasuk_Wet ,-2.88841,1.571193,-6.11569,0.184073,Seed Dispersal,1106
-Atqasuk_Dry ,0.660632,0.455402,-0.35388,1.498597,Leaf Senescence,2900
-Atqasuk_Wet ,0.83438,0.443949,-0.02655,1.768237,Leaf Senescence ,1887
+Alexandra Fiord_Willow ,-2.70939,0.761265,-4.32183,-1.30898,Flowering,2138
+Alexandra Fiord_Willow ,-1.901581,0.6778009,-3.265019,-0.55037325,End of Flowering,1462
+Alexandra Fiord_Willow ,-2.57678,1.932534,-6.64888,1.14385,Fruiting,1772
+Alexandra Fiord_Willow ,-3.02451,1.591434,-6.22371,0.069436,Seed Dispersal,676
 Atqasuk_Dry ,-0.86477,0.571164,-2.17248,0.111263,Green up,5425
-Utqiagvik_Wet ,-0.17886,0.64514,-1.55362,1.001041,Green up,7356
-Utqiagvik_Dry,-2.74437,0.745122,-4.35778,-1.39762,Flowering,6021
-Utqiagvik_Wet ,-2.05552,0.751103,-3.58385,-0.59239,Flowering,6466
-Utqiagvik_Dry,-2.16546,0.667835,-3.51501,-0.85766,End of Flowering ,4936
-Utqiagvik_Wet ,-1.89636,0.671637,-3.21955,-0.54234,End of Flowering ,4720
-Utqiagvik_Dry,-2.37636,1.958252,-6.58485,1.292254,Fruiting,2969
-Utqiagvik_Wet ,-2.68984,1.965208,-6.85518,0.987122,Fruiting,3111
-Utqiagvik_Dry,-2.67224,1.614048,-5.9218,0.545626,Seed Dispersal,1107
-Utqiagvik_Wet ,-2.61386,1.700817,-5.92761,0.881991,Seed Dispersal,295
-Utqiagvik_Dry,0.834211,0.430192,-0.0333,1.709019,Leaf Senescence ,2901
-Utqiagvik_Wet ,0.75638,0.420089,-0.11018,1.556728,Leaf Senescence ,3233
-Utqiagvik_Dry,-2.44632,0.869525,-4.15699,-0.61366,Flowering,1318
-Daring Lake _Ternplot F,-2.20431,0.837496,-3.84433,-0.47239,Flowering,513
-Daring Lake _Ternplot B,-1.78652,0.786248,-3.28522,-0.08268,End of Flowering ,1088
+Atqasuk_Dry ,-2.29003,0.771774,-3.87495,-0.7464,Flowering,4198
+Atqasuk_Dry ,-1.684234,0.6779699,-3.017167,-0.28700292,End of Flowering,4254
+Atqasuk_Dry ,-2.40103,1.984195,-6.61822,1.145593,Fruiting,3249
+Atqasuk_Dry ,-2.50388,1.616345,-5.70262,0.732746,Seed Dispersal,1693
+Atqasuk_Dry ,0.660632,0.455402,-0.35388,1.498597,Leaf Senescence,2900
+Atqasuk_Wet ,-0.39329,0.64142,-1.78057,0.85217,Green up,2968
+Atqasuk_Wet ,-2.31872,0.772241,-3.88176,-0.81166,Flowering,1515
+Atqasuk_Wet ,-1.750578,0.6800782,-3.107465,-0.35442342,End of Flowering,1628
+Atqasuk_Wet ,-2.38538,1.989135,-6.63773,1.280095,Fruiting,1462
+Atqasuk_Wet ,-2.88841,1.571193,-6.11569,0.184073,Seed Dispersal,1106
+Atqasuk_Wet ,0.83438,0.443949,-0.02655,1.768237,Leaf Senescence,1887
+Daring Lake _Ternplot B,-1.634192,0.7857815,-3.111703,0.13271758,End of Flowering,1088
 Daring Lake _Ternplot B,-2.30248,2.050937,-6.55234,1.611912,Fruiting,880
+Daring Lake _Ternplot F,-2.20431,0.837496,-3.84433,-0.47239,Flowering,513
 Daring Lake _Ternplot F,-2.56062,1.718476,-5.88556,1.122231,Seed Dispersal,436
 Endalen _Cassiope,-2.46483,0.771033,-4.05676,-0.98219,Flowering,138
-Endalen_Dryas,-2.76443,0.835736,-4.58086,-1.26417,Flowering,136
-Endalen_Snowbed,-2.29544,0.802864,-3.89821,-0.67793,Flowering,70
-Endalen _Cassiope,-2.00438,0.743527,-3.56672,-0.51819,End of Flowering ,74
-Endalen_Dryas,-2.04511,0.764361,-3.67945,-0.6,End of Flowering ,43
+Endalen _Cassiope,-1.836428,0.7554935,-3.376495,-0.24707857,End of Flowering,74
 Endalen _Cassiope,-2.91442,1.745591,-6.45167,0.513477,Seed Dispersal,37
+Endalen_Dryas,-2.76443,0.835736,-4.58086,-1.26417,Flowering,136
+Endalen_Dryas,-1.910034,0.8044249,-3.587783,-0.27975099,End of Flowering,43
 Endalen_Dryas,-2.97451,1.940535,-7.16845,0.745684,Seed Dispersal,78
+Endalen_Snowbed,-2.29544,0.802864,-3.89821,-0.67793,Flowering,70
 Endalen_Snowbed,-3.02209,2.107998,-7.45148,1.119044,Seed Dispersal,24
 Faroe Islands _Dry Meadow,-2.57326,0.848984,-4.37796,-0.9926,Flowering,58
-Faroe Islands _Dry Meadow,-2.00542,0.756621,-3.5922,-0.52283,End of Flowering ,58
+Faroe Islands _Dry Meadow,-1.893515,0.7548102,-3.460091,-0.40454715,End of Flowering,58
 Finse_Alpine Meadow ,-2.36631,0.854845,-4.13389,-0.68846,Flowering,87
+Finse_Alpine Meadow ,-1.920133,0.8770046,-3.794159,-0.16245303,End of Flowering,85
 Finse_Alpine Moist Heath,-2.48745,0.834007,-4.17792,-0.87143,Flowering,38
+Finse_Alpine Moist Heath,-1.866568,0.7882938,-3.484713,-0.26782375,End of Flowering,38
 Finse_Stony Snowbed ,-2.37154,0.85227,-4.10208,-0.70111,Flowering,75
-Finse_Alpine Meadow ,-1.97098,0.88515,-3.80756,-0.21513,End of Flowering ,85
-Finse_Alpine Moist Heath,-1.97356,0.769733,-3.53507,-0.44935,End of Flowering ,38
 Gavia Pass_Polytrichastrum,-2.37672,0.813135,-4.05997,-0.85068,Flowering,1056
-Gavia Pass_Salix,-2.29038,0.800391,-3.89721,-0.69655,Flowering,940
 Gavia Pass_Polytrichastrum,-3.10566,2.136181,-7.72148,0.777073,Fruiting,952
-Gavia Pass_Salix,-2.52949,2.014774,-6.64019,1.415809,Fruiting,911
 Gavia Pass_Polytrichastrum,-3.41518,1.84878,-7.55636,-0.06459,Seed Dispersal,890
+Gavia Pass_Salix,-2.29038,0.800391,-3.89721,-0.69655,Flowering,940
+Gavia Pass_Salix,-2.52949,2.014774,-6.64019,1.415809,Fruiting,911
 Gavia Pass_Salix,-2.98326,1.709713,-6.53343,0.378445,Seed Dispersal,906
 Healy _Cipher ,-1.10356,0.785062,-2.89478,0.23029,Green up,493
-Healy _Cipher ,0.716757,0.510698,-0.38496,1.686453,Leaf Senescence ,668
+Healy _Cipher ,0.716757,0.510698,-0.38496,1.686453,Leaf Senescence,668
 Imnavait _Mat,-0.8342,0.685037,-2.33056,0.427569,Green up,816
 Imnavait_Mat,0.866508,0.543968,-0.15206,2.064414,Leaf Senescence,519
 Jakobshorn_Warmrem ,-0.63487,0.752997,-2.21433,0.873534,Green up,26
 Jakobshorn_Warmrem ,-2.54016,0.814248,-4.25953,-0.99901,Flowering,168
-Jakobshorn_Warmrem ,-1.93023,0.779203,-3.51571,-0.34675,End of Flowering ,88
-Jakobshorn_Warmrem ,0.802663,0.570136,-0.38169,2.035036,Leaf Senescence ,30
+Jakobshorn_Warmrem ,-1.850716,0.7741516,-3.457091,-0.23536157,End of Flowering,88
+Jakobshorn_Warmrem ,0.802663,0.570136,-0.38169,2.035036,Leaf Senescence,30
 Kangerlussuaq_Bashful,-0.97661,0.728946,-2.6226,0.250173,Green up,32
-Kangerlussuaq_Doc,-0.78245,0.703857,-2.34101,0.513566,Green up,16
-Kangerlussuaq_Dopey,-0.77735,0.692261,-2.29677,0.523236,Green up,48
 Kangerlussuaq_Bashful,-2.46502,0.795658,-4.10863,-0.94784,Flowering,46
-Kangerlussuaq_Doc,-2.5373,0.804182,-4.1999,-1.03401,Flowering,45
-Kangerlussuaq_Dopey,-2.48096,0.806586,-4.15335,-0.94101,Flowering,45
 Kangerlussuaq_Bashful,-2.65158,2.036707,-6.86155,1.213713,Fruiting,22
+Kangerlussuaq_Doc,-0.78245,0.703857,-2.34101,0.513566,Green up,16
+Kangerlussuaq_Doc,-2.5373,0.804182,-4.1999,-1.03401,Flowering,45
 Kangerlussuaq_Doc,-2.60428,2.024482,-6.8734,1.259293,Fruiting,21
+Kangerlussuaq_Dopey,-0.77735,0.692261,-2.29677,0.523236,Green up,48
+Kangerlussuaq_Dopey,-2.48096,0.806586,-4.15335,-0.94101,Flowering,45
 Kangerlussuaq_Dopey,-2.71827,2.036146,-7.02947,1.085925,Fruiting,19
-Latnjajaure_Dry Meadow,-0.89333,0.758126,-2.56427,0.469271,Green up,50
 Latnjajaure_Dry Heath,-2.57201,0.796537,-4.28779,-1.1097,Flowering,50
+Latnjajaure_Dry Heath,-2.018579,0.761304,-3.69808,-0.6092893,End of Flowering,48
+Latnjajaure_Dry Meadow,-0.89333,0.758126,-2.56427,0.469271,Green up,50
 Latnjajaure_Dry Meadow,-2.41921,0.808295,-4.14293,-0.89084,Flowering,89
-Latnjajaure_Tussock Tundra,-2.74336,0.868075,-4.63362,-1.14634,Flowering,50
-Latnjajaure_Wet Sedge,-2.39091,0.800203,-4.07242,-0.84363,Flowering,50
-Latnjajaure_Dry Heath,-2.08106,0.759093,-3.72587,-0.70377,End of Flowering ,48
-Latnjajaure_Dry Meadow,-2.11301,0.772956,-3.79445,-0.69534,End of Flowering ,39
-Latnjajaure_Wet Sedge,-2.02729,0.757025,-3.64777,-0.58495,End of Flowering ,40
+Latnjajaure_Dry Meadow,-1.997657,0.7771586,-3.735028,-0.53853432,End of Flowering,39
 Latnjajaure_Dry Meadow,-3.1198,1.746435,-6.83853,0.143757,Seed Dispersal,32
+Latnjajaure_Dry Meadow,0.742142,0.525483,-0.40426,1.749568,Leaf Senescence,50
+Latnjajaure_Tussock Tundra,-2.74336,0.868075,-4.63362,-1.14634,Flowering,50
 Latnjajaure_Tussock Tundra,-3.15058,1.76149,-6.91751,0.191833,Seed Dispersal,38
+Latnjajaure_Wet Sedge,-2.39091,0.800203,-4.07242,-0.84363,Flowering,50
 Latnjajaure_Wet Sedge,-2.8518,1.726169,-6.27838,0.640638,Seed Dispersal,48
-Latnjajaure_Dry Meadow,0.742142,0.525483,-0.40426,1.749568,Leaf Senescence ,50
-Latnjajaure_Wet Sedge,0.713778,0.552746,-0.48941,1.762708,Leaf Senescence ,50
+Latnjajaure_Wet Sedge,0.713778,0.552746,-0.48941,1.762708,Leaf Senescence,50
 Niwot Ridge_Audobon,-0.6412,0.702522,-2.13718,0.699779,Green up,42
-Niwot Ridge_EK,-0.98649,0.755015,-2.7177,0.34093,Green up,60
-Niwot Ridge_Lefty,-0.70356,0.68268,-2.14118,0.624423,Green up,132
-Niwot Ridge_Trough,-0.29849,0.814283,-1.93879,1.347785,Green up,77
 Niwot Ridge_Audobon,-2.28154,0.85991,-4.08332,-0.61287,Flowering,101
+Niwot Ridge_Audobon,-1.797392,0.7621915,-3.320064,-0.17898827,End of Flowering,71
+Niwot Ridge_Audobon,0.797703,0.535293,-0.28408,1.873455,Leaf Senescence,42
+Niwot Ridge_EK,-0.98649,0.755015,-2.7177,0.34093,Green up,60
 Niwot Ridge_EK,-2.62506,0.905346,-4.44852,-0.81851,Flowering,75
-Niwot Ridge_Lefty,-2.50807,0.816646,-4.18819,-0.91326,Flowering,53
-Niwot Ridge_Trough,-2.16089,0.986929,-4.16942,-0.2157,Flowering,80
-Niwot Ridge_Itexnutsnow,-2.4262,0.816313,-4.05623,-0.82935,Flowering,158
-Niwot Ridge_Sadsnfc,-2.29088,0.834731,-4.00431,-0.60031,Flowering,168
-Niwot Ridge_Audobon,-1.90104,0.758426,-3.4198,-0.32986,End of Flowering ,71
-Niwot Ridge_EK,-1.86958,0.892085,-3.58113,0.077824,End of Flowering ,72
-Niwot Ridge_Lefty,-1.94073,0.761387,-3.48801,-0.40357,End of Flowering ,51
-Niwot Ridge_Trough,-2.05775,0.92042,-4.03347,-0.28186,End of Flowering ,79
-Niwot Ridge_Itexnutsnow,-1.97342,0.786456,-3.61636,-0.44657,End of Flowering ,111
-Niwot Ridge_Sadsnfc,-1.96139,0.741406,-3.48057,-0.48094,End of Flowering ,209
-Niwot Ridge_Audobon,0.797703,0.535293,-0.28408,1.873455,Leaf Senescence ,42
+Niwot Ridge_EK,-1.71748,0.8733079,-3.395485,0.20831638,End of Flowering,72
 Niwot Ridge_EK,0.844557,0.672371,-0.48201,2.330459,Leaf Senescence,143
-Niwot Ridge_Lefty,0.766722,0.548098,-0.40606,1.84497,Leaf Senescence ,140
-Niwot Ridge_Trough,0.624938,0.926925,-1.44648,2.391472,Leaf Senescence ,81
-Toolik Lake_Dry,-0.88133,0.681138,-2.40551,0.374448,Green up,152
-Toolik Lake_Moist,-0.83336,0.619422,-2.18391,0.296278,Green up,252
+Niwot Ridge_Itexnutsnow,-2.4262,0.816313,-4.05623,-0.82935,Flowering,158
+Niwot Ridge_Itexnutsnow,-1.877171,0.8003082,-3.524603,-0.29530548,End of Flowering,111
+Niwot Ridge_Lefty,-0.70356,0.68268,-2.14118,0.624423,Green up,132
+Niwot Ridge_Lefty,-2.50807,0.816646,-4.18819,-0.91326,Flowering,53
+Niwot Ridge_Lefty,-1.811169,0.7757844,-3.34481,-0.18078343,End of Flowering,51
+Niwot Ridge_Lefty,0.766722,0.548098,-0.40606,1.84497,Leaf Senescence,140
+Niwot Ridge_Sadsnfc,-2.29088,0.834731,-4.00431,-0.60031,Flowering,168
+Niwot Ridge_Sadsnfc,-1.876063,0.7602026,-3.456634,-0.32167947,End of Flowering,209
+Niwot Ridge_Trough,-0.29849,0.814283,-1.93879,1.347785,Green up,77
+Niwot Ridge_Trough,-2.16089,0.986929,-4.16942,-0.2157,Flowering,80
+Niwot Ridge_Trough,-2.023436,0.9092066,-4.038165,-0.28625496,End of Flowering,79
+Niwot Ridge_Trough,0.624938,0.926925,-1.44648,2.391472,Leaf Senescence,81
 Toolik Lake _Snowfield,-0.6573,0.602124,-1.96105,0.492654,Green up,461
-Toolik Lake_Dry,-2.70053,0.786712,-4.3884,-1.2844,Flowering,172
-Toolik Lake_Moist,-2.41618,0.774867,-3.98786,-0.89106,Flowering,236
 Toolik Lake _Snowfield,-2.29545,0.757202,-3.86253,-0.84885,Flowering,525
-Toolik Lake_Dry,-1.97766,0.76145,-3.52671,-0.4779,End of Flowering ,146
-Toolik Lake_Moist,-1.98997,0.762205,-3.55981,-0.48676,End of Flowering ,133
-Toolik Lake _Snowfield,-2.01235,0.703036,-3.46241,-0.65002,End of Flowering ,323
-Toolik Lake_Dry,-2.91076,1.967026,-6.916,1.110306,Seed Dispersal,71
-Toolik Lake_Moist,-2.87064,1.650782,-6.18461,0.368014,Seed Dispersal,104
+Toolik Lake _Snowfield,-1.946721,0.7193193,-3.483546,-0.5569369,End of Flowering,323
 Toolik Lake _Snowfield,-2.80865,1.680271,-6.17542,0.59606,Seed Dispersal,172
-Toolik Lake_Dry,0.808006,0.510308,-0.25278,1.876223,Leaf Senescence ,196
-Toolik Lake_Moist,0.789857,0.475777,-0.20064,1.746432,Leaf Senescence ,328
-Toolik Lake _Snowfield,0.842396,0.463531,-0.06852,1.828873,Leaf Senescence ,559
+Toolik Lake _Snowfield,0.842396,0.463531,-0.06852,1.828873,Leaf Senescence,559
+Toolik Lake_Dry,-0.88133,0.681138,-2.40551,0.374448,Green up,152
+Toolik Lake_Dry,-2.70053,0.786712,-4.3884,-1.2844,Flowering,172
+Toolik Lake_Dry,-1.770444,0.823036,-3.427476,-0.06304422,End of Flowering,146
+Toolik Lake_Dry,-2.91076,1.967026,-6.916,1.110306,Seed Dispersal,71
+Toolik Lake_Dry,0.808006,0.510308,-0.25278,1.876223,Leaf Senescence,196
+Toolik Lake_Moist,-0.83336,0.619422,-2.18391,0.296278,Green up,252
+Toolik Lake_Moist,-2.41618,0.774867,-3.98786,-0.89106,Flowering,236
+Toolik Lake_Moist,-1.932324,0.729968,-3.471048,-0.53349089,End of Flowering,133
+Toolik Lake_Moist,-2.87064,1.650782,-6.18461,0.368014,Seed Dispersal,104
+Toolik Lake_Moist,0.789857,0.475777,-0.20064,1.746432,Leaf Senescence,328
+Utqiagvik_Dry,-2.74437,0.745122,-4.35778,-1.39762,Flowering,6021
+Utqiagvik_Dry,-2.44632,0.869525,-4.15699,-0.61366,Flowering,1318
+Utqiagvik_Dry,-2.097531,0.6780251,-3.493185,-0.77816877,End of Flowering,4936
+Utqiagvik_Dry,-2.37636,1.958252,-6.58485,1.292254,Fruiting,2969
+Utqiagvik_Dry,-2.67224,1.614048,-5.9218,0.545626,Seed Dispersal,1107
+Utqiagvik_Dry,0.834211,0.430192,-0.0333,1.709019,Leaf Senescence,2901
+Utqiagvik_Wet ,-0.17886,0.64514,-1.55362,1.001041,Green up,7356
+Utqiagvik_Wet ,-2.05552,0.751103,-3.58385,-0.59239,Flowering,6466
+Utqiagvik_Wet ,-1.827225,0.6722325,-3.166316,-0.43008649,End of Flowering,4720
+Utqiagvik_Wet ,-2.68984,1.965208,-6.85518,0.987122,Fruiting,3111
+Utqiagvik_Wet ,-2.61386,1.700817,-5.92761,0.881991,Seed Dispersal,295
+Utqiagvik_Wet ,0.75638,0.420089,-0.11018,1.556728,Leaf Senescence,3233
 Val Bercla _ITEX,-2.44643,0.814257,-4.12685,-0.88172,Flowering,158
-Val Bercla _ITEX,-2.00829,0.785218,-3.69319,-0.46345,End of Flowering ,127
+Val Bercla _ITEX,-1.937292,0.8003886,-3.671305,-0.3589926,End of Flowering,127
 White Mts_3100,-2.57673,0.871373,-4.41861,-0.90849,Flowering,18
