@@ -223,40 +223,40 @@ tableS2<-rbind(eti2, eti3, eti4,eti5, eti6, eti7)%>%
   dplyr::select("Parameter","phen","Est","Err", 
                 "CI_low_90","CI_low_95","CI_high_90", "CI_high_95")
 #Bulk ESS
-summary(fit_m2x_green)#7584
-summary(fit_m2x_flow)#9082
-summary(fit_m2x_flowend)#5919
-summary(fit_m2x_fruit)#4898
-summary(fit_m2x_disp)#4361
-summary(fit_m2x_sen)#10321
-summary(fit_m3x_green)#23027
-summary(fit_m3x_flow)#16498
-summary(fit_m3x_flowend)#15860
-summary(fit_m3x_fruit)#11641
-summary(fit_m3x_disp)#8395
-summary(fit_m3x_sen)#18266
-summary(fit_m4x_green)#6819
-summary(fit_m4x_flow)#8069
-summary(fit_m4x_flowend)#5643
-summary(fit_m4x_fruit)#5823
-summary(fit_m4x_disp)#3895
-summary(fit_m4x_sen)#9092
-summary(fit_m5x_green)#5229, 5049
-summary(fit_m5x_flow)#13549, 12481
-summary(fit_m5x_flowend)#8012, 7501
-summary(fit_m5x_fruit)#3796, 5590
-summary(fit_m5x_disp)#5300, 6710
-summary(fit_m5x_sen)#6945, 5475
-summary(fit_m6x_green)#3360
-summary(fit_m6x_flow)#4023
-summary(fit_m6x_flowend)#5409
-summary(fit_m6x_fruit)#3507
-summary(fit_m6x_disp)#5310
-summary(fit_m6x_sen)#6430
-summary(fit_m7x_green)#5812, 9247
-summary(fit_m7x_flow)#8760, 15236
-summary(fit_m7x_flowend)#6679, 9728
-summary(fit_m7x_fruit)#8435, 14237
-summary(fit_m7x_disp)#6611, 13118
-summary(fit_m7x_sen)#10768, 14292
+summary(fit_m2x_green)
+summary(fit_m2x_flow)
+summary(fit_m2x_flowend)
+summary(fit_m2x_fruit)
+summary(fit_m2x_disp)
+summary(fit_m2x_sen)
+summary(fit_m3x_green)
+summary(fit_m3x_flow)
+summary(fit_m3x_flowend)
+summary(fit_m3x_fruit)
+summary(fit_m3x_disp)
+summary(fit_m3x_sen)
+summary(fit_m4x_green)
+summary(fit_m4x_flow)
+summary(fit_m4x_flowend)
+summary(fit_m4x_fruit)
+summary(fit_m4x_disp)
+summary(fit_m4x_sen)
+summary(fit_m5x_green)
+summary(fit_m5x_flow)
+summary(fit_m5x_flowend)
+summary(fit_m5x_fruit)
+summary(fit_m5x_disp)
+summary(fit_m5x_sen)
+summary(fit_m6x_green)
+summary(fit_m6x_flow)
+summary(fit_m6x_flowend)
+summary(fit_m6x_fruit)
+summary(fit_m6x_disp)
+summary(fit_m6x_sen)
+summary(fit_m7x_green)
+summary(fit_m7x_flow)
+summary(fit_m7x_flowend)
+summary(fit_m7x_fruit)
+summary(fit_m7x_disp)
+summary(fit_m7x_sen)
 
