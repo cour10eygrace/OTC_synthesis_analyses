@@ -1,0 +1,2 @@
+This is where all climate data are stored. Daily climate data from local weather stations at or near each site are in the 'ITEX_daily_climate_data.csv' and infilled climate data are in the infilled_data folder. Site-years of climate data used are in site_years.csv. Site name 'Barrow' was renamed to 'Utqiagvik'
+These data are used to calculate species-specific climate windows in the Climate_setup.R script and saved as climate_phenology.Rdata for future analyses. 
