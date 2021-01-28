@@ -8,5 +8,5 @@ sf2<-filter(sf, OTCWinterRemoval=="N")
 
 fit_snowfree<-brm(doy~treatment +(1|site_name) + (1|site_name:year)+
             (1|site_name:subsite) , data=sf2, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=2000, family=gaussian)
-summary(fit_snowfree2)
+summary(fit_snowfree)
 
