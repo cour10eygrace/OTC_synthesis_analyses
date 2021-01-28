@@ -1,10 +1,20 @@
 site_name,subsite,lat,long,elevation,commtype,Ecosystem,OTCWinterRemoval,exstart,TRT,data_provider,data_provider_email,sf_available,ready
+ADVENTDALEN,ADVENTDALEN.HEATH.EC,78.16,16.1,50,DRY,High Arctic,Y,2015,CTL|OTC|SNOWFENCE_DEEP|SNOWFENCE_MEDIUM|SNOWREM|SNOWFENCE_DEEP_OTC|SNOWFENCE_MEDIUM_OTC,Elisabeth J Cooper,elisabeth.cooper[a]uit.no,TRUE,TRUE
+ADVENTDALEN,ADVENTDALEN.MEADOW.EC,78.16,16.1,50,MOIST,High Arctic,Y,2015,CTL|OTC|SNOWFENCE_DEEP|SNOWFENCE_MEDIUM|SNOWREM|SNOWFENCE_DEEP_OTC|SNOWFENCE_MEDIUM_OTC,Elisabeth J Cooper,elisabeth.cooper[a]uit.no,TRUE,TRUE
 ALEXFIORD,ALEXFIORD.DOMEDOLOMITE.GH,78.8833,-75.8,30,DRY,High Arctic,N,1992,CTL|OTC,Greg Henry and Anne Bjorkman,greg.henry[at]ubc.ca and annebj[at]gmail.com ,TRUE,TRUE
 ALEXFIORD,ALEXFIORD.DOMEGRANITE.GH,78.8833,-75.8,30,DRY,High Arctic,N,1992,CTL|OTC,Greg Henry and Anne Bjorkman,greg.henry[at]ubc.ca and annebj[at]gmail.com ,TRUE,TRUE
 ALEXFIORD,ALEXFIORD.DRYAS.GH,78.8833,-75.8,30,MOIST,High Arctic,N,1992,CTL|OTC,Greg Henry and Anne Bjorkman,greg.henry[at]ubc.ca and annebj[at]gmail.com ,TRUE,TRUE
 ALEXFIORD,ALEXFIORD.MEADOW.GH,78.8833,-75.8,30,WET,High Arctic,N,1992,CTL|OTC,Greg Henry and Anne Bjorkman,greg.henry[at]ubc.ca and annebj[at]gmail.com ,TRUE,TRUE
 ALEXFIORD,ALEXFIORD.SAXOPP.GH,78.8833,-75.8,30,DRY,High Arctic,N,1992,CTL|OTC,Greg Henry and Anne Bjorkman,greg.henry[at]ubc.ca and annebj[at]gmail.com ,TRUE,TRUE
 ALEXFIORD,ALEXFIORD.WILLOW.GH,78.8833,-75.8,30,DRY,High Arctic,N,1992,CTL|OTC,Greg Henry and Anne Bjorkman,greg.henry[at]ubc.ca and annebj[at]gmail.com ,TRUE,TRUE
+ALEXFIORD,ALEXFIORD.CASSIOPE.GH,78.8833,-75.8,30,MOIST,High Arctic,N,1992,CTL|OTC|Snowadd_OTC|Snowrem|Snowrem_OTC|Snowadd,Greg Henry and Anne Bjorkman,greg.henry[at]ubc.ca and annebj[at]gmail.com ,TRUE,TRUE
+ALEXFIORD,ALEXFIORD.FERT.GH,78.8833,-75.8,30,MOIST,High Arctic,N,1992,CTL|OTC|Water_OTC|Highfert_OTC|Water|Lowfert|Lowfert_OTC|Highfert,,,TRUE,TRUE
+ATQASUK,ATQASUK.AD.RH,71.18,-156.4,22,DRY,Low Arctic,Y,1996,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
+ATQASUK,ATQASUK.AW.RH,71.18,-156.4,18,WET,Low Arctic,Y,1996,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
+BARROW,BARROW.BD.RH,71.3,-156.666667,5,DRY,High Arctic,Y,1994,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
+BARROW,BARROW.BW.RH,71.3,-156.666667,3,WET,High Arctic,Y,1995,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
+DARING,DARING.TERNPLOT_B.KC,65.86666667,-111.53333,420,MOIST,Low Arctic,Y,2001,CTL|OTC,Karin Clark ,Karin_Clark[a]gov.nt.ca,TRUE,TRUE
+DARING,DARING.TERNPLOT_F.KC,65.86666667,-111.53333,420,WET,Low Arctic,Y,2001,CTL|OTC,Karin Clark ,Karin_Clark[a]gov.nt.ca,TRUE,TRUE
 ENDALEN,ENDALEN.CASSIOPE_LOW.IJ,78.187445,15.75835,100,DRY,High Arctic,N,2002,CTL|OTC,Ingibjorg Svala Jonsdottir,isj[a]hi.is,TRUE,TRUE
 ENDALEN,ENDALEN.DRYAS_HEATH.IJ,78.187445,15.75835,100,DRY,High Arctic,N,2002,CTL|OTC,Ingibjorg Svala Jonsdottir,isj[a]hi.is,TRUE,TRUE
 ENDALEN,ENDALEN.SNOWBED_LOW.IJ,78.187445,15.75835,100,MOIST,High Arctic,N,2002,CTL|OTC,Ingibjorg Svala Jonsdottir,isj[a]hi.is,TRUE,TRUE
@@ -14,6 +24,9 @@ FINSE,FINSE.alpine_moist_heath.KK,60.6051,7.5046,1475,MOIST,Alpine,N,1994,CTL|OT
 FINSE,FINSE.stony_snowbed.KK,60.6051,7.5046,1475,MOIST,Alpine,N,1995,CTL|OTC,Kari Klanderud,kari.klanderud[a]nmbu.no,FALSE,TRUE
 GAVIAPASS,GAVIAPASS.POLYTRICHASTRUM.MC,46.34041,10.49879,2691,MOIST,Alpine,N,2008,CTL|OTC,Michele CARBOGNANI, <michele.carbognani@unipr.it>,TRUE,TRUE
 GAVIAPASS,GAVIAPASS.SALIX.MC,46.34043,10.49831,2693,MOIST,Alpine,N,2008,CTL|OTC,Michele CARBOGNANI, <michele.carbognani@unipr.it>,TRUE,TRUE
+HEALY,HEALY.CiPEHR.MM,63.88,-149.25,115,MOIST,Low Arctic,Y,2011,CTL|OTC|SNOWFENCE_OTC|SNOWFENCE,Marguerite Mauritz and Susan Natali and Ted Shuur and  Heidi Rodenhizer and Justin Ledman,marguerite.mauritz[a]nau.edu and snatali[a]whrc.org and ted.schuur[a]nau.edu and justin.ledman[a] gmail.com and hgr7[a] nau.edu,TRUE,TRUE
+IMNAVAIT,IMNAVAIT.MAT.HS,68.626944,-149.319722,930,MOIST,Low Arctic,Y,1994,CTL|SNOWREM|SNOWREM+OTC,Heidi Stelzer,Steltzer_H [at] fortlewis.edu,TRUE,TRUE
+JAKOBSHORN,JAKOBSHORN.WARMREM.CC,46.77,9.86,2320,DRY,Alpine,Y,2014,CTL|OTC,Janet Prevey,janetprevey[a]gmail.com,FALSE,TRUE
 KANGER,KANGER.BASHFUL.EP,67.017,-50.717,200,MOIST,Low Arctic,N,2003,CTL|OTC,Eric Post,post[a]ucdavis.edu,TRUE,TRUE
 KANGER,KANGER.DOC.EP,67.017,-50.717,200,MOIST,Low Arctic,N,2003,CTL|OTC,Eric Post,post[a]ucdavis.edu,TRUE,TRUE
 KANGER,KANGER.DOPEY.EP,67.017,-50.717,200,MOIST,Low Arctic,N,2003,CTL|OTC,Eric Post,post[a]ucdavis.edu,TRUE,TRUE
@@ -21,28 +34,15 @@ LATNJA,LATNJA.DRY_HEATH.UM,68.33333,18.5,1000,DRY,Low Arctic,N,1993,CTL|OTC,Ulf 
 LATNJA,LATNJA.DRY_MEADOW.UM,68.33333,18.5,1000,DRY,Low Arctic,N,1993,CTL|OTC,Ulf Molau,ulf.molau[a]bioenv.gu.se,TRUE,TRUE
 LATNJA,LATNJA.TUSSOCK_TUNDRA.UM,68.33333,18.5,1000,WET,Low Arctic,N,1993,CTL|OTC,Ulf Molau,ulf.molau[a]bioenv.gu.se,TRUE,TRUE
 LATNJA,LATNJA.WET_SEDGE.UM,68.33333,18.5,1000,WET,Low Arctic,N,1993,CTL|OTC,Ulf Molau,ulf.molau[a]bioenv.gu.se,TRUE,TRUE
-VALBERCLA,VALBERCLA.ITEX.JP,46.47,9.58,2490,MOIST,Alpine,N,1994,CTL|OTC,Janet Prevey,janetprevey[a]gmail.com,FALSE,TRUE
-WHITEMTNS,WHITEMTNS.3100.CK,37.5,-118.17,3700,DRY,Alpine,N,2013,CTL|OTC|SHADE,Christopher Kopp,christopher.kopp[a]gmail.com,FALSE,TRUE
-WHITEMTNS,WHITEMTNS.3700.CK,37.5,-118.17,3100,DRY,Alpine,N,2013,CTL|OTC|SHADE,Christopher Kopp,christopher.kopp[a]gmail.com,FALSE,TRUE
-ALEXFIORD,ALEXFIORD.CASSIOPE.GH,78.8833,-75.8,30,MOIST,High Arctic,N,1992,CTL|OTC|Snowadd_OTC|Snowrem|Snowrem_OTC|Snowadd,Greg Henry and Anne Bjorkman,greg.henry[at]ubc.ca and annebj[at]gmail.com ,TRUE,TRUE
 NIWOT,NIWOT.SADSNFC.MW,40.05587253,-105.5889935,3529.1555,DRY,Alpine,N,1995,CTL|OTC|SNOWFENCE_DEEP|SNOWFENCE_MEDIUM|SNOWFENCE_DEEP_OTC|SNOWFENCE_MEDIUM_OTC,Sarah Elmendorf,sarah.elmendorf@colorado.edu ,TRUE,TRUE
-ALEXFIORD,ALEXFIORD.FERT.GH,78.8833,-75.8,30,MOIST,High Arctic,N,1992,CTL|OTC|Water_OTC|Highfert_OTC|Water|Lowfert|Lowfert_OTC|Highfert,,,TRUE,TRUE
-ATQASUK,ATQASUK.AD.RH,71.18,-156.4,22,DRY,Low Arctic,Y,1996,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
-ATQASUK,ATQASUK.AW.RH,71.18,-156.4,18,WET,Low Arctic,Y,1996,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
-BARROW,BARROW.BD.RH,71.3,-156.666667,5,DRY,High Arctic,Y,1994,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
-BARROW,BARROW.BW.RH,71.3,-156.666667,3,WET,High Arctic,Y,1995,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
-DARING,DARING.TERNPLOT_B.KC,65.86666667,-111.53333,420,MOIST,Low Arctic,Y,2001,CTL|OTC,Karin Clark ,Karin_Clark[a]gov.nt.ca,TRUE,TRUE
-DARING,DARING.TERNPLOT_F.KC,65.86666667,-111.53333,420,WET,Low Arctic,Y,2001,CTL|OTC,Karin Clark ,Karin_Clark[a]gov.nt.ca,TRUE,TRUE
-JAKOBSHORN,JAKOBSHORN.WARMREM.CC,46.77,9.86,2320,DRY,Alpine,Y,2014,CTL|OTC,Janet Prevey,janetprevey[a]gmail.com,FALSE,TRUE
-TOOLIK,TOOLIK.USTOOLIKSNOWFIELD.JW,68.62,-149.6005,720,MOIST,Low Arctic,Y,1994,CTL|OTC,Jeffrey M Welker and Steven F Oberbauer,jmwelker[a]uaa.alaska.edu and oberbaue[a]fiu.edu and marilyn walker/homer energy,TRUE,TRUE
 NIWOT,NIWOT.BS_AUDUBON.CF,40.06154,-105.5907,3469.57,MOIST,Alpine,Y,2018,CTL|OTC |EARLYSNOWMELT|EARLYSNOWMELT_OTC,Chiara forester,chiara.forrester[a]colorad.edu,FALSE,TRUE
 NIWOT,NIWOT.BS_EK.CF,40.05393,-105.5863,3509.52,DRY,Alpine,Y,2018,CTL|OTC |EARLYSNOWMELT|EARLYSNOWMELT_OTC,Chiara forester,chiara.forrester[a]colorad.edu,FALSE,TRUE
 NIWOT,NIWOT.BS_LEFTY.CF,40.05615,-105.5769,3448.47,MOIST,Alpine,Y,2018,CTL|OTC |EARLYSNOWMELT|EARLYSNOWMELT_OTC,Chiara forester,chiara.forrester[a]colorad.edu,FALSE,TRUE
 NIWOT,NIWOT.BS_TROUGH.CF,40.05009,-105.5825,3408.94,WET,Alpine,Y,2018,CTL|OTC |EARLYSNOWMELT|EARLYSNOWMELT_OTC,Chiara forester,chiara.forrester[a]colorad.edu,FALSE,TRUE
 NIWOT,NIWOT.ITEXNUTSNOW.KS,40.0603798,-105.5896948,3528,MOIST,Alpine,Y,2007,CTL|OTC|NIT_OTC|NIT|SNOWADD_NIT_OTC|SNOWADD_OTC,Jane Smith,jane.g.smith[a]colorado.edu,FALSE,TRUE
+TOOLIK,TOOLIK.USTOOLIKSNOWFIELD.JW,68.62,-149.6005,720,MOIST,Low Arctic,Y,1994,CTL|OTC,Jeffrey M Welker and Steven F Oberbauer,jmwelker[a]uaa.alaska.edu and oberbaue[a]fiu.edu and marilyn walker/homer energy,TRUE,TRUE
 TOOLIK,TOOLIK.USTOOLIKDRY.JW,68.62,-149.598,720,DRY,Low Arctic,Y,1994,CTL|OTC|SNOWFENCE_DEEP|SNOWFENCE_MEDIUM|SNOWFENCE_DEEP_OTC|SNOWFENCE_MEDIUM_OTC,Jeffrey M Welker and Steven F Oberbauer,jmwelker[a]uaa.alaska.edu and oberbaue[a]fiu.edu and marilyn walker/homer energy,TRUE,TRUE
 TOOLIK,TOOLIK.USTOOLIKMOIST.JW,68.62,-149.603,720,MOIST,Low Arctic,Y,1994,CTL|OTC|SNOWFENCE_DEEP|SNOWFENCE_MEDIUM|SNOWFENCE_DEEP_OTC|SNOWFENCE_MEDIUM_OTC,Jeffrey M Welker and Steven F Oberbauer,jmwelker[a]uaa.alaska.edu and oberbaue[a]fiu.edu and marilyn walker/homer energy,TRUE,TRUE
-ADVENTDALEN,ADVENTDALEN.HEATH.EC,78.16,16.1,50,DRY,High Arctic,Y,2015,CTL|OTC|SNOWFENCE_DEEP|SNOWFENCE_MEDIUM|SNOWREM|SNOWFENCE_DEEP_OTC|SNOWFENCE_MEDIUM_OTC,Elisabeth J Cooper,elisabeth.cooper[a]uit.no,TRUE,TRUE
-ADVENTDALEN,ADVENTDALEN.MEADOW.EC,78.16,16.1,50,MOIST,High Arctic,Y,2015,CTL|OTC|SNOWFENCE_DEEP|SNOWFENCE_MEDIUM|SNOWREM|SNOWFENCE_DEEP_OTC|SNOWFENCE_MEDIUM_OTC,Elisabeth J Cooper,elisabeth.cooper[a]uit.no,TRUE,TRUE
-HEALY,HEALY.CiPEHR.MM,63.88,-149.25,115,MOIST,Low Arctic,Y,2011,CTL|OTC|SNOWFENCE_OTC|SNOWFENCE,Marguerite Mauritz and Susan Natali and Ted Shuur and  Heidi Rodenhizer and Justin Ledman,marguerite.mauritz[a]nau.edu and snatali[a]whrc.org and ted.schuur[a]nau.edu and justin.ledman[a] gmail.com and hgr7[a] nau.edu,TRUE,TRUE
-IMNAVAIT,IMNAVAIT.MAT.HS,68.626944,-149.319722,930,MOIST,Low Arctic,Y,1994,CTL|SNOWREM|SNOWREM+OTC,Heidi Stelzer,Steltzer_H [at] fortlewis.edu,TRUE,TRUE
+VALBERCLA,VALBERCLA.ITEX.JP,46.47,9.58,2490,MOIST,Alpine,N,1994,CTL|OTC,Janet Prevey,janetprevey[a]gmail.com,FALSE,TRUE
+WHITEMTNS,WHITEMTNS.3100.CK,37.5,-118.17,3700,DRY,Alpine,N,2013,CTL|OTC|SHADE,Christopher Kopp,christopher.kopp[a]gmail.com,FALSE,TRUE
+WHITEMTNS,WHITEMTNS.3700.CK,37.5,-118.17,3100,DRY,Alpine,N,2013,CTL|OTC|SHADE,Christopher Kopp,christopher.kopp[a]gmail.com,FALSE,TRUE
