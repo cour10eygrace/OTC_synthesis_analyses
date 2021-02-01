@@ -24,8 +24,11 @@ library(gganimate)
 library(bayestestR)
 library(here)
 library(ggridges)
-library(ggdistribute)
+#library(ggdistribute)
 library(knitr)
+library(gridExtra)
+library(brms)
+
 
 rstan_options(auto_write = TRUE)
 options(mc.cores = parallel::detectCores())
@@ -34,7 +37,7 @@ options(mc.cores = parallel::detectCores())
 
 
 ```{r load models,echo=FALSE, warning=FALSE, error=FALSE, message=FALSE}
-#takes a minute--update to full local path  
+#takes a minute--update to full local path of model outputs 
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m2x_flow.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m2x_flowend.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m2x_green.Rdata")
@@ -44,6 +47,9 @@ load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m2x_sen.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m5x_flow.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m6x_disp.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m7x_disp.Rdata")
+load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m8x_green.Rdata")
+load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m8x_sen.Rdata")
+
 #load back-scaling constants for each phenophase 
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/greenscale.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/senscale.Rdata")
@@ -274,6 +280,35 @@ gridExtra::grid.arrange(c, d, ncol=2)
 ```
 
 
+```{r Calculate phenoperiod lengths, echo=FALSE,  warning=FALSE, error=FALSE, message=F}
+#calculate length (days) difference between greenup and senescence, flowering and end of flowering, end of flowering and seed dispersal 
+postgreensen<-as.data.frame(postsen2$treatmentOTC*senscales$sd)-(postgreen2$treatmentOTC*greenscales[1,2])
+postflowflowend<-as.data.frame(postflowend2$treatmentOTC*flowendscales$sd)-(postflow2$treatmentOTC*flowscales$sd)
+postflowenddisp<-(postdisp2$treatmentOTC*dispscales[1,2])-as.data.frame(postflowend2$treatmentOTC*flowendscales$sd)
+```
+
+*Fig S1*
+
+*Plot difference greenup to senescence 
+```{r Growing season length, echo=FALSE,  warning=FALSE, error=FALSE, message=F}
+postgreensen$diff<-postgreensen$`postsen2$treatmentOTC * senscales$sd`
+postgreensen$`postsen2$treatmentOTC * senscales$sd`<-NULL
+
+mean(postgreensen$diff)
+sd(postgreensen$diff)
+etis<-ci(postgreensen, method = "ETI", ci = c(0.9, 0.95))
+etis<-t(etis)
+etis<-etis[c(3:4), ]%>%as.data.frame(.)
+
+x<-ggplot(postgreensen, aes(x=diff))+geom_density(fill="#52854C")+theme_classic()+
+  geom_vline(xintercept = 0, color="black")+ 
+  geom_vline(xintercept=as.numeric(as.character(etis$V1)),color="red",lty=2,size=1)+
+  geom_vline(xintercept=as.numeric(as.character(etis$V2)),color="grey",lty=2,size=1)+ 
+  xlab(expression(Delta*"Days GSL in OTCs"))
+x  
+```
+
+
 *Fig S2*
 
 *Interaction between OTC and siteT for dispersal  
@@ -374,6 +409,95 @@ a
 
 ```
 
+
+*Fig S3*
+
+*Interaction between OTC and leaf habit for greenup & senescence 
+
+```{r, echo=FALSE, warning=FALSE, error=FALSE, message=F, results=FALSE,  fig.width=8, fig.height=6}
+#Greenup
+#Intercepts 
+postm8xgreen<- as_tibble(posterior_samples(fit_m8x_green, pars = 
+                                             c("b_Intercept","b_leaf_habitevergreen")))
+postm8xgreen$Decid<-postm8xgreen$b_Intercept
+postm8xgreen$Ever<-postm8xgreen$b_Intercept + postm8xgreen$`b_leaf_habitevergreen` 
+
+postm8xgreen<-dplyr::select(postm8xgreen,Decid, Ever)%>%
+  pivot_longer(cols=c(Decid, Ever), names_to = "leafhabit", values_to = "value")
+
+#Density plots for calculated pairwise differences w transparent background 
+a<-ggplot(postm8xgreen, aes(x=(value*greenscales$sd)+greenscales$mean)) + 
+  geom_density(aes(fill=leafhabit), alpha=0.8) + theme_classic()+
+  xlab("DOY Green up ")+
+  scale_fill_manual(values = c("#EDAE49","#66A182")) +# transparent_theme+
+  #ggtitle(expression(Delta*"Days (OTC - CTL) Green up"))+xlim(-4, 3)+ylim(0,1)+
+  theme(legend.position = "none")
+
+#Slopes (OTC)
+###Calculate pairwise differences between leaf habit types from model posteriors
+postm8xgreen<- as_tibble(posterior_samples(fit_m8x_green, pars = 
+                                           c("b_treatmentOTC","b_treatmentOTC:leaf_habitevergreen")))
+postm8xgreen$Decid<-postm8xgreen$b_treatmentOTC
+postm8xgreen$Ever<-postm8xgreen$Decid + postm8xgreen$`b_treatmentOTC:leaf_habitevergreen` 
+
+postm8xgreen<-dplyr::select(postm8xgreen,Decid, Ever)%>%
+  pivot_longer(cols=c(Decid, Ever), names_to = "leafhabit", values_to = "value")
+
+#Density plots for calculated pairwise differences w transparent background 
+b<-ggplot(postm8xgreen, aes(x=value*greenscales$sd)) + 
+  geom_density(aes(fill=leafhabit), alpha=0.8) + theme_classic()+
+  xlab("Days (OTC - CTL) Green up ")+
+  scale_fill_manual(values = c("#EDAE49","#66A182")) +# transparent_theme+
+  #ggtitle(expression(Delta*"Days (OTC - CTL) Green up"))+xlim(-4, 3)+ylim(0,1)+
+  theme(legend.position = "none")
+
+#Senescnece 
+#Intercepts 
+postm8xsen<- as_tibble(posterior_samples(fit_m8x_sen, pars = 
+                                             c("b_Intercept","b_leaf_habitevergreen")))
+postm8xsen$Decid<-postm8xsen$b_Intercept
+postm8xsen$Ever<-postm8xsen$b_Intercept + postm8xsen$`b_leaf_habitevergreen` 
+
+postm8xsen<-dplyr::select(postm8xsen,Decid, Ever)%>%
+  pivot_longer(cols=c(Decid, Ever), names_to = "leafhabit", values_to = "value")
+
+#Density plots for calculated pairwise differences w transparent background 
+c<-ggplot(postm8xsen, aes(x=(value*senscales$sd)+senscales$mean)) + 
+  geom_density(aes(fill=leafhabit), alpha=0.8) + theme_classic()+
+  xlab("DOY Senescence ")+
+  scale_fill_manual(values = c("#EDAE49","#66A182")) +# transparent_theme+
+  #ggtitle(expression(Delta*"Days (OTC - CTL) Green up"))+xlim(-4, 3)+ylim(0,1)+
+  theme(legend.position = "none")
+#    plot.title = element_text(size = 10, hjust = 1, vjust=1.5))
+
+
+#Slopes (OTC)
+###Calculate pairwise differences between leaf habit types from model posteriors
+postm8xsen<- as_tibble(posterior_samples(fit_m8x_sen, pars = 
+                                             c("b_treatmentOTC","b_treatmentOTC:leaf_habitevergreen")))
+postm8xsen$Decid<-postm8xsen$b_treatmentOTC
+postm8xsen$Ever<-postm8xsen$Decid + postm8xsen$`b_treatmentOTC:leaf_habitevergreen` 
+
+postm8xsen<-dplyr::select(postm8xsen,Decid, Ever)%>%
+  pivot_longer(cols=c(Decid, Ever), names_to = "leafhabit", values_to = "value")
+
+#Density plots for calculated pairwise differences w transparent background 
+d<-ggplot(postm8xsen, aes(x=value*senscales$sd)) + 
+  geom_density(aes(fill=leafhabit), alpha=0.8) + theme_classic()+
+  xlab("Days (OTC - CTL) Senescence ")+
+  scale_fill_manual(values = c("#EDAE49","#66A182")) +# transparent_theme+
+  #ggtitle(expression(Delta*"Days (OTC - CTL) Green up"))+xlim(-4, 3)+ylim(0,1)+
+  theme(
+    legend.position = c(.95, .95),
+    legend.justification = c("right", "top"),
+    legend.box.just = "right",
+    legend.margin = margin(6, 6, 6, 6))
+
+grid.arrange(a,b,c,d)
+
+```
+
+
 ```{r interaction posteriors, echo=FALSE,  warning=FALSE, error=FALSE, message=F,  table.width=8, table.height=6}
 #calculate posteriors and CIs for interactions-Table 3
 #categorical 
@@ -425,32 +549,3 @@ table3<-rbind(etiw, postflow, postdispw, postdisp2w)
 kable(table3, caption="Table 3 Model estimates with bayestest eti intervals")
 ```
 
-
-
-```{r Calculate phenoperiod lengths, echo=FALSE,  warning=FALSE, error=FALSE, message=F}
-#calculate length (days) difference between greenup and senescence, flowering and end of flowering, end of flowering and seed dispersal 
-postgreensen<-as.data.frame(postsen2$treatmentOTC*senscales$sd)-(postgreen2$treatmentOTC*greenscales[1,2])
-postflowflowend<-as.data.frame(postflowend2$treatmentOTC*flowendscales$sd)-(postflow2$treatmentOTC*flowscales$sd)
-postflowenddisp<-(postdisp2$treatmentOTC*dispscales[1,2])-as.data.frame(postflowend2$treatmentOTC*flowendscales$sd)
-```
-
-*Fig S1*
-
-*Plot difference greenup to senescence 
-```{r Growing season length, echo=FALSE,  warning=FALSE, error=FALSE, message=F}
-postgreensen$diff<-postgreensen$`postsen2$treatmentOTC * senscales$sd`
-postgreensen$`postsen2$treatmentOTC * senscales$sd`<-NULL
-
-mean(postgreensen$diff)
-sd(postgreensen$diff)
-etis<-ci(postgreensen, method = "ETI", ci = c(0.9, 0.95))
-etis<-t(etis)
-etis<-etis[c(3:4), ]%>%as.data.frame(.)
-
-x<-ggplot(postgreensen, aes(x=diff))+geom_density(fill="#52854C")+theme_classic()+
-  geom_vline(xintercept = 0, color="black")+ 
-  geom_vline(xintercept=as.numeric(as.character(etis$V1)),color="red",lty=2,size=1)+
-  geom_vline(xintercept=as.numeric(as.character(etis$V2)),color="grey",lty=2,size=1)+ 
-  xlab(expression(Delta*"Days GSL in OTCs"))
-x  
-```

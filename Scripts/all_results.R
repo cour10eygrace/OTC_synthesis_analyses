@@ -1,3 +1,6 @@
+library(bayestestR)
+library(dplyr)
+library(tidyr)
 #takes a minute--update to full local path  
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m2x_flow.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m2x_flowend.Rdata")
