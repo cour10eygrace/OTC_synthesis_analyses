@@ -138,3 +138,15 @@ m7x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*siteT + treatment*s
 fit_m7x_green<- brm(m7x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=10000, family=gaussian)
 save(fit_m7x_green, file="Data/brms_output/fit_m7x_green.Rdata")
 
+#test for effect of leaf habit
+species<-read.csv("Data/LOOKUPS/species_table.csv")
+species<-select(species, -spp)%>%rename(spp=New.spp)
+
+regmodsx<-left_join(regmodsx, select(species, spp, gfnarrowwalker))%>%
+  distinct(.)
+regmodsx<-mutate(regmodsx, leaf_habit=
+                   case_when(gfnarrowwalker=="SEVER"~"evergreen", TRUE~"decid"))
+
+m8x<-bf(estimate|resp_se(std.error, sigma = TRUE)~ treatment*leaf_habit + (treatment|site_name)+ (treatment|site_name:year) + (treatment|spp)+ (treatment|site_name:subsite)) 
+fit_m8x_green<- brm(m8x, data = regmodsx, control = list(adapt_delta=0.99, max_treedepth = 15), cores=2, chains=2, iter=2000, family=gaussian)
+save(fit_m8x_green, file="Data/brms_output/fit_m8x_green.Rdata")
