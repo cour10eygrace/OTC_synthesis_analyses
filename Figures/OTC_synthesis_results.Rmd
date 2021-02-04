@@ -280,22 +280,87 @@ gridExtra::grid.arrange(c, d, ncol=2)
 ```
 
 
-```{r Calculate phenoperiod lengths, echo=FALSE,  warning=FALSE, error=FALSE, message=F}
+```{r Calculate phenoperiod lengths, echo=FALSE,warning=FALSE, results=F,error=FALSE, message=F}
 #calculate length (days) difference between greenup and senescence, flowering and end of flowering, end of flowering and seed dispersal 
 postgreensen<-as.data.frame(postsen2$treatmentOTC*senscales$sd)-(postgreen2$treatmentOTC*greenscales[1,2])
 postflowflowend<-as.data.frame(postflowend2$treatmentOTC*flowendscales$sd)-(postflow2$treatmentOTC*flowscales$sd)
 postflowenddisp<-(postdisp2$treatmentOTC*dispscales[1,2])-as.data.frame(postflowend2$treatmentOTC*flowendscales$sd)
+
+#estimate growing season length (days) between greenup and senescence  
+postm2xgreen<- as_tibble(posterior_samples(fit_m2x_green, pars = 
+                                             c("b_Intercept")))
+postm2xsen<- as_tibble(posterior_samples(fit_m2x_sen, pars = 
+                                             c("b_Intercept")))
+
+postgsl<-as.data.frame((postm2xsen$b_Intercept*senscales$sd)+senscales$mean)-
+  ((postm2xgreen$b_Intercept*greenscales$sd)+greenscales$mean)
+postgsl<-rename(postgsl, length=`(postm2xsen$b_Intercept * senscales$sd) + senscales$mean`)  
+mean(postgsl$length)#50.77 days
+postgreensen$diff<-postgreensen$`postsen2$treatmentOTC * senscales$sd`
+postgreensen$`postsen2$treatmentOTC * senscales$sd`<-NULL
+
+mean(postgreensen$diff)
+sd(postgreensen$diff)
+mean(postgreensen$diff)/mean(postgsl$length)#percent of total growing season change 
+
+
+#calculate Intercept vals for Table 3
+mean((postm2xsen$b_Intercept*senscales$sd)+senscales$mean)
+sd((postm2xsen$b_Intercept*senscales$sd)+senscales$mean)
+mean((postm2xgreen$b_Intercept*greenscales$sd)+greenscales$mean)
+sd((postm2xgreen$b_Intercept*greenscales$sd)+greenscales$mean)
+  
+postm2xgreen_eti<-ci(postm2xgreen, method = "ETI", ci = c(0.9, 0.95))
+postm2xgreen_eti$CI_low<-(postm2xgreen_eti$CI_low*greenscales$sd)+greenscales$mean
+postm2xgreen_eti$CI_high<-(postm2xgreen_eti$CI_high*greenscales$sd)+greenscales$mean
+
+postm2xsen_eti<-ci(postm2xsen, method = "ETI", ci = c(0.9, 0.95))
+postm2xsen_eti$CI_low<-(postm2xsen_eti$CI_low*senscales$sd)+senscales$mean
+postm2xsen_eti$CI_high<-(postm2xsen_eti$CI_high*senscales$sd)+senscales$mean
+
+#estimate flowering season length as days bw flower and flower end 
+postm2xflow<- as_tibble(posterior_samples(fit_m2x_flow, pars = 
+                                             c("b_Intercept")))
+postm2xflowend<- as_tibble(posterior_samples(fit_m2x_flowend, pars = 
+                                             c("b_Intercept")))
+
+#calculate intercept vals for Table 3
+mean((postm2xflowend$b_Intercept*flowendscales$sd)+flowendscales$mean)
+sd((postm2xflowend$b_Intercept*flowendscales$sd)+flowendscales$mean)
+mean((postm2xflow$b_Intercept*flowscales$sd)+flowscales$mean)
+sd((postm2xflow$b_Intercept*flowscales$sd)+flowscales$mean)
+
+postm2xflow_eti<-ci(postm2xflow, method = "ETI", ci = c(0.9, 0.95))
+postm2xflow_eti$CI_low<-(postm2xflow_eti$CI_low*flowscales$sd)+flowscales$mean
+postm2xflow_eti$CI_high<-(postm2xflow_eti$CI_high*flowscales$sd)+flowscales$mean
+
+postm2xflowend_eti<-ci(postm2xflowend, method = "ETI", ci = c(0.9, 0.95))
+postm2xflowend_eti$CI_low<-(postm2xflowend_eti$CI_low*flowendscales$sd)+flowendscales$mean
+postm2xflowend_eti$CI_high<-(postm2xflowend_eti$CI_high*flowendscales$sd)+flowendscales$mean
+
+#estimate fruiting season length as days bw fruiting and seed dispersal
+postm2xfruit<- as_tibble(posterior_samples(fit_m2x_fruit, pars = 
+                                             c("b_Intercept")))
+postm2xdisp<- as_tibble(posterior_samples(fit_m2x_disp, pars = 
+                                             c("b_Intercept")))
+mean((postm2xfruit$b_Intercept*fruitscales$sd)+fruitscales$mean)
+sd((postm2xfruit$b_Intercept*fruitscales$sd)+fruitscales$mean)
+mean((postm2xdisp$b_Intercept*dispscales[1,2])+dispscales[1,1])
+sd((postm2xdisp$b_Intercept*dispscales[1,2])+dispscales[1,1])
+
+postm2xfruit_eti<-ci(postm2xfruit, method = "ETI", ci = c(0.9, 0.95))
+postm2xfruit_eti$CI_low<-(postm2xfruit_eti$CI_low*fruitscales$sd)+fruitscales$mean
+postm2xfruit_eti$CI_high<-(postm2xfruit_eti$CI_high*fruitscales$sd)+fruitscales$mean
+
+postm2xdisp_eti<-ci(postm2xdisp, method = "ETI", ci = c(0.9, 0.95))
+postm2xdisp_eti$CI_low<-(postm2xdisp_eti$CI_low*dispscales[1,2])+dispscales[1,1]
+postm2xdisp_eti$CI_high<-(postm2xdisp_eti$CI_high*dispscales[1,2])+dispscales[1,1]
 ```
 
 *Fig S1*
 
 *Plot difference greenup to senescence 
 ```{r Growing season length, echo=FALSE,  warning=FALSE, error=FALSE, message=F}
-postgreensen$diff<-postgreensen$`postsen2$treatmentOTC * senscales$sd`
-postgreensen$`postsen2$treatmentOTC * senscales$sd`<-NULL
-
-mean(postgreensen$diff)
-sd(postgreensen$diff)
 etis<-ci(postgreensen, method = "ETI", ci = c(0.9, 0.95))
 etis<-t(etis)
 etis<-etis[c(3:4), ]%>%as.data.frame(.)
@@ -306,6 +371,7 @@ x<-ggplot(postgreensen, aes(x=diff))+geom_density(fill="#52854C")+theme_classic(
   geom_vline(xintercept=as.numeric(as.character(etis$V2)),color="grey",lty=2,size=1)+ 
   xlab(expression(Delta*"Days GSL in OTCs"))
 x  
+
 ```
 
 
@@ -414,7 +480,7 @@ a
 
 *Interaction between OTC and leaf habit for greenup & senescence 
 
-```{r, echo=FALSE, warning=FALSE, error=FALSE, message=F, results=FALSE,  fig.width=8, fig.height=6}
+```{r leaf habit, echo=FALSE, warning=FALSE, error=FALSE, message=F, results=FALSE,  fig.width=8, fig.height=6}
 #Greenup
 #Intercepts 
 postm8xgreen<- as_tibble(posterior_samples(fit_m8x_green, pars = 
