@@ -1,4 +1,5 @@
 library(brms)
+library(dplyr)
 #read in available snowmelt data 
 sf<-read.csv("Data/Climate.data/snowfree_data.csv")
 #test effects of OTC and OTC period on doy snowfree 
