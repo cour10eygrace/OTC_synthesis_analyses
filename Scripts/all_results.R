@@ -44,6 +44,10 @@ load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m7x_disp.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m7x_fruit.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m7x_sen.Rdata")
 
+load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m8x_green.Rdata")
+load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m8x_sen.Rdata")
+
+
 #pull out posteriors and calculate bayesian credible intervals 
 #m2  main OTC effects 
 postflow2<- as_tibble(fixef(fit_m2x_flow, summary=F))%>%
@@ -221,8 +225,28 @@ eti7<-pivot_wider(eti, names_from = "CI", values_from = c("CI_low", "CI_high"))
 eti7<-left_join(post7, eti7)%>%dplyr::select("Parameter","phen","CI_low_90",
               "CI_low_95","CI_high_90", "CI_high_95", "Est","Err")%>%as.data.frame(.)
 
+#m8 leaf habit for greenup and sen 
+postgreen8<- as_tibble(fixef(fit_m8x_green, summary=F))%>%
+  dplyr::select(grep("treatmentOTC", colnames(.)), -treatmentOTC)%>%mutate(phen="Green")
+postsen8<- as_tibble(fixef(fit_m8x_sen, summary=F))%>%
+  dplyr::select(grep("treatmentOTC", colnames(.)), -treatmentOTC)%>%mutate(phen="Sen")
+
+post<-as_tibble(rbind(postgreen8,  postsen8))%>%
+  pivot_longer(cols = c("treatmentOTC:leaf_habitevergreen"),  names_to = "Parameter")
+
+post8<-dplyr::group_by(post,Parameter, phen)%>%
+  dplyr::summarise(Est = mean(value), Err=sd(value))
+
+green_eti <- ci(postgreen8, method = "ETI", ci = c(0.9, 0.95))%>%mutate(phen='Green')
+sen_eti <- ci(postsen8, method = "ETI", ci = c(0.9, 0.95))%>%mutate(phen='Sen')
+eti<-rbind(green_eti, sen_eti)
+eti8<-pivot_wider(eti, names_from = "CI", values_from = c("CI_low", "CI_high"))
+eti8<-left_join(post8, eti8)%>%dplyr::select("Parameter","phen","CI_low_90",
+                                             "CI_low_95","CI_high_90", "CI_high_95", "Est","Err")%>%as.data.frame(.)
+
+
 #Table S2
-tableS2<-rbind(eti2, eti3, eti4,eti5, eti6, eti7)%>%
+tableS2<-rbind(eti2, eti3, eti4,eti5, eti6, eti7, eti8)%>%
   dplyr::select("Parameter","phen","Est","Err", 
                 "CI_low_90","CI_low_95","CI_high_90", "CI_high_95")
 #Bulk ESS
@@ -262,4 +286,6 @@ summary(fit_m7x_flowend)
 summary(fit_m7x_fruit)
 summary(fit_m7x_disp)
 summary(fit_m7x_sen)
+summary(fit_m8x_green)
+summary(fit_m8x_sen)
 
