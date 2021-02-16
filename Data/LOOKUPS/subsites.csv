@@ -22,8 +22,8 @@ FAROE,FAROE.DRY_MEADOW.AF,62.0667,-6.95,600,DRY,Alpine,N,2001,CTL|OTC,Anna Maria
 FINSE,FINSE.alpine_meadow.KK,60.6051,7.5046,1475,DRY,Alpine,N,1994,CTL|OTC,Kari Klanderud,kari.klanderud[a]nmbu.no,FALSE,TRUE
 FINSE,FINSE.alpine_moist_heath.KK,60.6051,7.5046,1475,MOIST,Alpine,N,1994,CTL|OTC,Kari Klanderud,kari.klanderud[a]nmbu.no,FALSE,TRUE
 FINSE,FINSE.stony_snowbed.KK,60.6051,7.5046,1475,MOIST,Alpine,N,1995,CTL|OTC,Kari Klanderud,kari.klanderud[a]nmbu.no,FALSE,TRUE
-GAVIAPASS,GAVIAPASS.POLYTRICHASTRUM.MC,46.34041,10.49879,2691,MOIST,Alpine,N,2008,CTL|OTC,Michele CARBOGNANI, <michele.carbognani@unipr.it>,TRUE,TRUE
-GAVIAPASS,GAVIAPASS.SALIX.MC,46.34043,10.49831,2693,MOIST,Alpine,N,2008,CTL|OTC,Michele CARBOGNANI, <michele.carbognani@unipr.it>,TRUE,TRUE
+GAVIAPASS,GAVIAPASS.POLYTRICHASTRUM.MC,46.34041,10.49879,2691,MOIST,Alpine,Y,2008,CTL|OTC,Michele CARBOGNANI, <michele.carbognani@unipr.it>,TRUE,TRUE
+GAVIAPASS,GAVIAPASS.SALIX.MC,46.34043,10.49831,2693,MOIST,Alpine,Y,2008,CTL|OTC,Michele CARBOGNANI, <michele.carbognani@unipr.it>,TRUE,TRUE
 HEALY,HEALY.CiPEHR.MM,63.88,-149.25,115,MOIST,Low Arctic,Y,2011,CTL|OTC|SNOWFENCE_OTC|SNOWFENCE,Marguerite Mauritz and Susan Natali and Ted Shuur and  Heidi Rodenhizer and Justin Ledman,marguerite.mauritz[a]nau.edu and snatali[a]whrc.org and ted.schuur[a]nau.edu and justin.ledman[a] gmail.com and hgr7[a] nau.edu,TRUE,TRUE
 IMNAVAIT,IMNAVAIT.MAT.HS,68.626944,-149.319722,930,MOIST,Low Arctic,Y,1994,CTL|SNOWREM|SNOWREM+OTC,Heidi Stelzer,Steltzer_H [at] fortlewis.edu,TRUE,TRUE
 JAKOBSHORN,JAKOBSHORN.WARMREM.CC,46.77,9.86,2320,DRY,Alpine,Y,2014,CTL|OTC,Janet Prevey,janetprevey[a]gmail.com,FALSE,TRUE
