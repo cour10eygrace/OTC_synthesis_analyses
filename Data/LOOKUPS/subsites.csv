@@ -9,8 +9,8 @@ ALEXFIORD,ALEXFIORD.SAXOPP.GH,78.8833,-75.8,30,DRY,High Arctic,N,1992,CTL|OTC,Gr
 ALEXFIORD,ALEXFIORD.WILLOW.GH,78.8833,-75.8,30,DRY,High Arctic,N,1992,CTL|OTC,Greg Henry and Anne Bjorkman,greg.henry[at]ubc.ca and annebj[at]gmail.com ,TRUE,TRUE
 ALEXFIORD,ALEXFIORD.CASSIOPE.GH,78.8833,-75.8,30,MOIST,High Arctic,N,1992,CTL|OTC|Snowadd_OTC|Snowrem|Snowrem_OTC|Snowadd,Greg Henry and Anne Bjorkman,greg.henry[at]ubc.ca and annebj[at]gmail.com ,TRUE,TRUE
 ALEXFIORD,ALEXFIORD.FERT.GH,78.8833,-75.8,30,MOIST,High Arctic,N,1992,CTL|OTC|Water_OTC|Highfert_OTC|Water|Lowfert|Lowfert_OTC|Highfert,,,TRUE,TRUE
-ATQASUK,ATQASUK.AD.RH,71.18,-156.4,22,DRY,Low Arctic,Y,1996,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
-ATQASUK,ATQASUK.AW.RH,71.18,-156.4,18,WET,Low Arctic,Y,1996,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
+ATQASUK,ATQASUK.AD.RH,70.45,-157.4,22,DRY,Low Arctic,Y,1996,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
+ATQASUK,ATQASUK.AW.RH,70.45,-157.4,18,WET,Low Arctic,Y,1996,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
 BARROW,BARROW.BD.RH,71.3,-156.666667,5,DRY,High Arctic,Y,1994,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
 BARROW,BARROW.BW.RH,71.3,-156.666667,3,WET,High Arctic,Y,1995,CTL|OTC,Robert Hollister,hollistr[at]gvsu.edu,TRUE,TRUE
 DARING,DARING.TERNPLOT_B.KC,65.86666667,-111.53333,420,MOIST,Low Arctic,Y,2001,CTL|OTC,Karin Clark ,Karin_Clark[a]gov.nt.ca,TRUE,TRUE
