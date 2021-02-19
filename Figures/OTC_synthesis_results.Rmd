@@ -45,7 +45,7 @@ load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m2x_disp.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m2x_fruit.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m2x_sen.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m5x_flow.Rdata")
-load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m6x_disp.Rdata")
+load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m6x_flow.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m7x_disp.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m8x_green.Rdata")
 load("~/Git/OTC_synthesis_analyses/Data/brms_output/fit_m8x_sen.Rdata")
@@ -154,7 +154,7 @@ plot
 
 *Fig 4*
 
-*Interactions OTC by soil moisture for flowering and OTC by winter removal for dispersal  
+*Interactions OTC by soil moisture and OTC by winter removal for flowering  
 
 ```{r plot interactions categorical, echo=FALSE, warning=FALSE, error=FALSE, message=F, results=FALSE, fig.width=10, fig.height=8}
 #set custom plotting theme-grobs on y axis  
@@ -222,9 +222,9 @@ p2_grob = ggplotGrob(xdensity)
 # Insert p2_grob inside the ggplot
 c<-C + annotation_custom(grob = p2_grob, ymin = 12, ymax = 22)
 
-#dispersal x otc removal----
+#flower x otc removal----
 ###Calculate OTC-CTL differences for all model replicates 
-dat<-as_tibble(fit_m6x_disp$data)
+dat<-as_tibble(fit_m6x_flow$data)
 xx<-unite(dat, all,spp, site_name, subsite, year, remove=F)%>%dplyr::select(site_name,spp, subsite, year, all, treatment, estimate)%>%group_by(all)%>%
   pivot_wider(names_from = treatment, values_from=estimate)%>%
   mutate(diff=(OTC-CTL))%>%filter(!is.na(diff))
@@ -234,36 +234,42 @@ rem<-filter(subsites, site_name %in% dat$site_name & OTCWinterRemoval!="")%>%
   group_by(site_name)%>%dplyr::select(site_name, OTCWinterRemoval)%>%distinct(.)
 
 #reorder groups and shorten subsite names for plotting 
-xxx<-left_join(xx, rem)%>%mutate(order=case_when(OTCWinterRemoval=="Y"~2,
-                             OTCWinterRemoval=="N"~1))%>%
+xxx<-left_join(xx, rem)%>%
   separate(subsite, c("site_name", 'sub_name', 'inits', 'xtra',remove=F))%>% 
   unite(sub, site_name, sub_name)%>% 
   mutate(xtra=ifelse(is.na(xtra),xtra,inits))%>%unite(sub_name, sub, xtra, na.rm=T)%>%mutate(sub_name=tolower(sub_name))
-  
+#fix niwot differences in subsites issue
+niwot<-filter(xxx, grepl("niwot", sub_name))%>%
+  mutate(OTCWinterRemoval=if_else(inits=="MW", "N", "Y"))#filter out and fix
+xxx<-filter(xxx, !grepl("niwot", sub_name))#filter out
+#put back in and remove duplicates 
+xxx<-rbind(xxx, niwot)%>%mutate(order=case_when(OTCWinterRemoval=="Y"~2,
+                         OTCWinterRemoval=="N"~1))%>%distinct(.)
 
 #ggplot of replicate OTC-CTL differences by subsite and winter removal 
-D<-ggplot(data=xxx, aes(x = reorder(sub_name,order), y=(diff*dispscales[1,2]), fill=OTCWinterRemoval, order=order)) + geom_boxplot()+theme_classic()+
+D<-ggplot(data=xxx, aes(x = reorder(sub_name,order), y=(diff*flowscales$sd), 
+                        fill=OTCWinterRemoval, order=order)) + geom_boxplot()+theme_classic()+
   scale_fill_manual(values=c("#899DA4", "#FAEFD1"))+
   ylab(expression(Delta*"Days (OTC - CTL)"))+
   theme(axis.text.x = element_text(angle = 90, hjust = 1 ,size=8))+
   geom_hline(yintercept = 0, color='grey', lty=2)+ xlab(' ')+ ylim(-20,20)
-  
+
 ###Calculate pairwise differences between moisture types from model posteriors  
-postm6xdisp<- as_tibble(posterior_samples(fit_m6x_disp, pars = 
-  c("b_treatmentOTC","b_treatmentOTC:OTC_WinterRemovalY")))
+postm6xflow<- as_tibble(posterior_samples(fit_m6x_flow, pars = 
+                                            c("b_treatmentOTC","b_treatmentOTC:OTC_WinterRemovalY")))
 
-postm6xdisp$N<-postm6xdisp$b_treatmentOTC
-postm6xdisp$Y<-postm6xdisp$`b_treatmentOTC:OTCWinterRemovalY`+postm6xdisp$N
+postm6xflow$N<-postm6xflow$b_treatmentOTC
+postm6xflow$Y<-postm6xflow$`b_treatmentOTC:OTCWinterRemovalY`+postm6xflow$N
 
-postm6xdisp<-dplyr::select(postm6xdisp, N,Y)%>%
+postm6xflow<-dplyr::select(postm6xflow, N,Y)%>%
   pivot_longer(cols=c(N,Y), names_to = "OTC_WinterRemoval", values_to = "value")
 
 #Density plots for calculated pairwise differences w transparent background 
-xdensity <- ggplot(postm6xdisp, aes(x=value*dispscales[1,2])) + geom_density(aes(fill=OTC_WinterRemoval), alpha=0.8) +
+xdensity <- ggplot(postm6xflow, aes(x=value*flowscales$sd)) + geom_density(aes(fill=OTC_WinterRemoval), alpha=0.8) +
   theme_classic()+ 
   transparent_theme+
   scale_fill_manual(values=c("#899DA4", "#FAEFD1"))+
-  ggtitle(expression(Delta*"Days (OTC - CTL) Dispersal"))+
+  ggtitle(expression(Delta*"Days (OTC - CTL) Flowering"))+
   theme(legend.position = "none", 
         plot.title = element_text(size = 10, hjust = 1, vjust=1.5))
 
@@ -275,7 +281,6 @@ d<-  D + annotation_custom(grob = p2_grob, ymin = 12, ymax = 22)
 
 #combine plots c and d 
 gridExtra::grid.arrange(c, d, ncol=2)
-
 
 ```
 
@@ -479,19 +484,6 @@ a
 ```{r interaction posteriors, echo=FALSE,  warning=FALSE, error=FALSE, message=F,  table.width=8, table.height=6}
 #calculate posteriors and CIs for interactions-Table 3
 #categorical 
-#dispersal X OTC removal 
-postm6xdisp<- as_tibble(posterior_samples(fit_m6x_disp, pars = 
-  c("b_treatmentOTC","b_treatmentOTC:OTC_WinterRemovalY")))%>%mutate(scale=dispscales[1,2], phen="Disp")
-postm6xdisp$Estimate<-mean(postm6xdisp$`b_treatmentOTC:OTCWinterRemovalY`)
-postm6xdisp$Err<-sd(postm6xdisp$`b_treatmentOTC:OTCWinterRemovalY`)
-
-postm6xdisp_eti<-ci(postm6xdisp, method = "ETI", ci = c(0.9, 0.95))%>%mutate(phen="Disp")%>%filter(Parameter=="b_treatmentOTC:OTCWinterRemovalY")
-postm6xdisp<-dplyr::select(postm6xdisp, phen, scale, Estimate, Err)%>%distinct(.)
-postdisp<-left_join(postm6xdisp, postm6xdisp_eti)
-
-#combine and unscale for Table 3
-postdispw<-pivot_wider(postdisp, names_from = "CI", values_from = c("CI_low", "CI_high"))%>%dplyr::select(Estimate, phen, Err, scale, Parameter, grep("CI", colnames(.)))%>%distinct(.)%>%mutate(Estimate=Estimate*scale, Err=Err*scale,CI_low_90=CI_low_90*scale, CI_high_90=CI_high_90*scale, CI_low_95=CI_low_95*scale, CI_high_95=CI_high_95*scale)%>%
-  dplyr::select(Parameter, phen, Estimate, Err, CI_low_90, CI_high_90, CI_low_95, CI_high_95)
 
 #flowering X soil moist 
 postm5xflow<- as_tibble(posterior_samples(fit_m5x_flow, pars = 
@@ -507,6 +499,20 @@ postflow<-left_join(postm5xflow, postm5xflow_eti)
 postflow<-pivot_wider(postflow, names_from = "CI", values_from = c("CI_low", "CI_high"))%>%dplyr::select(Estimate, phen, Err, scale, Parameter, grep("CI", colnames(.)))%>%distinct(.)%>%mutate(Estimate=Estimate*scale, Err=Err*scale, CI_low_90=CI_low_90*scale, CI_high_90=CI_high_90*scale, CI_low_95=CI_low_95*scale, CI_high_95=CI_high_95*scale)%>%
   dplyr::select(Parameter, phen, Estimate, Err, CI_low_90, CI_high_90, CI_low_95, CI_high_95)
 
+#Flower X OTC removal 
+postm6xflow<- as_tibble(posterior_samples(fit_m6x_flow, pars = 
+                                            c("b_treatmentOTC","b_treatmentOTC:OTC_WinterRemovalY")))%>%mutate(scale=flowscales$sd, phen="Flow")
+postm6xflow$Estimate<-mean(postm6xflow$`b_treatmentOTC:OTCWinterRemovalY`)
+postm6xflow$Err<-sd(postm6xflow$`b_treatmentOTC:OTCWinterRemovalY`)
+
+postm6xflow_eti<-ci(postm6xflow, method = "ETI", ci = c(0.9, 0.95))%>%mutate(phen="Flow")%>%filter(Parameter=="b_treatmentOTC:OTCWinterRemovalY")
+postm6xflow<-dplyr::select(postm6xflow, phen, scale, Estimate, Err)%>%distinct(.)
+postfloww<-left_join(postm6xflow, postm6xflow_eti)
+
+#combine and unscale for Table 3
+postfloww<-pivot_wider(postfloww, names_from = "CI", values_from = c("CI_low", "CI_high"))%>%dplyr::select(Estimate, phen, Err, scale, Parameter, grep("CI", colnames(.)))%>%distinct(.)%>%mutate(Estimate=Estimate*scale, Err=Err*scale,CI_low_90=CI_low_90*scale, CI_high_90=CI_high_90*scale, CI_low_95=CI_low_95*scale, CI_high_95=CI_high_95*scale)%>%
+  dplyr::select(Parameter, phen, Estimate, Err, CI_low_90, CI_high_90, CI_low_95, CI_high_95)
+
 #continuous 
 #Dispersal x SiteT 
 postm7xdisp<-as_tibble(posterior_samples(fit_m7x_disp, pars = 
@@ -520,10 +526,10 @@ postm7xdisp_eti<-postm7xdisp_eti<-ci(postm7xdisp, method = "ETI", ci = c(0.9, 0.
 postdisp2<-left_join(postm7xdisp, postm7xdisp_eti)
  
 #combine and unscale for Table 3
-postdisp2w<-pivot_wider(postdisp2, names_from = "CI", values_from = c("CI_low", "CI_high"))%>%dplyr::select(Estimate, Err, phen, scale, Parameter, grep("CI", colnames(.)))%>%distinct(.)%>%mutate(Estimate=Estimate*scale, Err=Err*scale,CI_low_90=CI_low_90*scale, CI_high_90=CI_high_90*scale, CI_low_95=CI_low_95*scale, CI_high_95=CI_high_95*scale)%>%
+postdispw<-pivot_wider(postdisp2, names_from = "CI", values_from = c("CI_low", "CI_high"))%>%dplyr::select(Estimate, Err, phen, scale, Parameter, grep("CI", colnames(.)))%>%distinct(.)%>%mutate(Estimate=Estimate*scale, Err=Err*scale,CI_low_90=CI_low_90*scale, CI_high_90=CI_high_90*scale, CI_low_95=CI_low_95*scale, CI_high_95=CI_high_95*scale)%>%
   dplyr::select(Parameter, phen, Estimate, Err, CI_low_90, CI_high_90, CI_low_95, CI_high_95)
  
-table3<-rbind(etiw, postflow, postdispw, postdisp2w) 
+table3<-rbind(etiw, postflow, postfloww, postdispw) 
 kable(table3, caption="Table 3 Model estimates with bayestest eti intervals")
 ```
 
