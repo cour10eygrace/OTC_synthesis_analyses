@@ -239,11 +239,11 @@ xxx<-left_join(xx, rem)%>%
   unite(sub, site_name, sub_name)%>% 
   mutate(xtra=ifelse(is.na(xtra),xtra,inits))%>%unite(sub_name, sub, xtra, na.rm=T)%>%mutate(sub_name=tolower(sub_name))
 #fix niwot differences in subsites issue
-niwot<-filter(xxx, grepl("niwot", sub_name))%>%
-  mutate(OTCWinterRemoval=if_else(inits=="MW", "N", "Y"))#filter out and fix
-xxx<-filter(xxx, !grepl("niwot", sub_name))#filter out
+#niwot<-filter(xxx, grepl("niwot", sub_name))%>%
+#  mutate(OTCWinterRemoval=if_else(inits=="MW", "N", "Y"))#filter out and fix
+#xxx<-filter(xxx, !grepl("niwot", sub_name))#filter out
 #put back in and remove duplicates 
-xxx<-rbind(xxx, niwot)%>%mutate(order=case_when(OTCWinterRemoval=="Y"~2,
+xxx<-mutate(xxx, order=case_when(OTCWinterRemoval=="Y"~2,
                          OTCWinterRemoval=="N"~1))%>%distinct(.)
 
 #ggplot of replicate OTC-CTL differences by subsite and winter removal 
