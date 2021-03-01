@@ -414,13 +414,13 @@ site_name=="ALEXFIORD"~2, site_name=="ENDALEN"~3,
 site_name=="GAVIAPASS"~4, site_name=="LATNJA"~5, 
 site_name=="ADVENTDALEN"~6, site_name=="ATQASUK"~7, 
 site_name=="TOOLIK"~8, site_name=="DARING"~9))%>%
-  mutate(site_name=case_when(site_name=="BARROW"~"UTQUIAVIK", TRUE~site_name))
+  mutate(site_name=case_when(site_name=="BARROW"~"UTQIAGVIK", TRUE~site_name))
 
 #plot main plot with raw data 
 #unscale siteT and diff estimates 
 A <-ggplot(data=xxx, aes(x = (siteT*dispscales[2,2])+dispscales[2,1], y=diff*dispscales[1,2], 
                        color=reorder(site_name, order)))+
-  geom_point(alpha=0.2, position="jitter")+
+  geom_point(alpha=0.5, position="jitter")+
   geom_hline(yintercept = 0, lty=2)+labs(color="Site")+
   ylab(expression(Delta*"Days (OTC - CTL) "))+ ylim(-20, 17)+
   xlab("Avg temp dispersal period") +theme_classic() + xlim(3, 13) +
@@ -443,22 +443,22 @@ f <-
   fitted(fit_m7x_disp,
          newdata = nd,
          re_formula = NA,
-         probs = c(.1, .9)) %>% 
+         probs = c(.05, .95)) %>% 
   as_tibble() %>% 
   bind_cols(nd)
 
 #calculate OTC-CTL fitted
 f<-group_by(f, siteT)%>%pivot_wider(names_from = treatment, 
-           values_from = c(Estimate, Est.Error, Q10, Q90))%>%
+           values_from = c(Estimate, Est.Error, Q5, Q95))%>%
   mutate(diff=Estimate_OTC-Estimate_CTL,
          diff.err=Est.Error_OTC-Est.Error_CTL, 
-         diff.Q10=Q10_OTC-Q10_CTL, 
-         diff.Q90=Q90_OTC-Q90_CTL)
+         diff.Q5=Q5_OTC-Q5_CTL, 
+         diff.Q95=Q95_OTC-Q95_CTL)
 
 #plot predline 
 f_plot<-
   ggplot(data=f, aes(x = (siteT*dispscales[2,2])+dispscales[2,1], y = diff*dispscales[1,2])) +
-  geom_ribbon(aes(ymin = diff.Q10*dispscales[1,2], ymax = diff.Q90*dispscales[1,2]),
+  geom_ribbon(aes(ymin = diff.Q5*dispscales[1,2], ymax = diff.Q95*dispscales[1,2]),
               fill = "grey", alpha=0.2) +
    xlim(3,13)+ geom_line()+
        theme(panel.background = element_blank())+
