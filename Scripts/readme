@@ -3,5 +3,5 @@ This is where all scripts for OTC analyses are stored. R Script workflow is as f
 2. Climate_setup.R pulls in daily climate (temperature) data for all sites. Calculates site level temp averages (siteT) and year anomalies (siteyeardeltaT) based on average phenology windows for each site x species across years. Writes out climate_phenology.Rdata to be used in brms models  
 3. OTC_int_cens_reg_'phenophase'.R- Separate script for each phenophase (green, flower, flowerend, disp, sen). Calls in 'phenophase'.Rdata, and climate_phenology.Rdata and runs two step (survreg,brms) hierarchical models. Saves model outputs as fitted.Rdata for post processing.
 4. all_results.R-pulls in all brms model results (fitted.Rdata) and calculates parameter estimates and Bayesian credible intervals for all model posteriors. OTC_synthesis_results.Rmd (in Figures folder) creates tables and figures with model outputs. 
-5. random_effects.R-calculates random effects (group level) estimates and variation for supplementary tables and appendices.  
-6. snow_free.R-tests the effect of OTCs on snowmelt dates at year-round OTC sites for supplementary appendix. 
+5. random_effects.R-calculates random effects (group level) estimates and variation for supplementary tables.  
+6. snow_free.R-tests the effect of OTCs on snowmelt dates at year-round OTC sites for supplement. 
